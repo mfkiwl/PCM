@@ -60,30 +60,35 @@ module SOC_W_PCM(input clk, reset,
 			// CPU 0
 			logic cpu0_run, cpu0_continue, cpu0_CE, cpu0_UB, cpu0_LB, cpu0_OE, cpu0_WE;
 			logic [15:0] cpu0_addr;
+			logic [15:0] index0,index1,index2,index3;
+			assign index0 = 16'h0000;
 			wire [15:0] cpu0_data;
 			
-			CPU cpu0( .Clk(clk), .Reset(~reset), .Run(cpu0_run) , .Continue(cpu0_continue), .index(16b'0), .Mem_CE(cpu0_CE), .Mem_UB(cpu0_UB), .Mem_LB(cpu0_LB), .Mem_OE(cpu0_OE), .Mem_WE(cpu0_WE), .ADDR(cpu0_addr), .Data(cpu0_data));
+			CPU cpu0( .Clk(clk), .Reset(~reset), .Run(cpu0_run) , .Continue(cpu0_continue), .index(index0), .Mem_CE(cpu0_CE), .Mem_UB(cpu0_UB), .Mem_LB(cpu0_LB), .Mem_OE(cpu0_OE), .Mem_WE(cpu0_WE), .ADDR(cpu0_addr), .Data_in(cpu0_data));
 			
 			// CPU 1
 			logic cpu1_run, cpu1_continue, cpu1_CE, cpu1_UB, cpu1_LB, cpu1_OE, cpu1_WE;
 			logic [15:0] cpu1_addr;
+			assign index1 = 16'h0001;
 			wire [15:0] cpu1_data;
 			
-			CPU cpu1( .Clk(clk), .Reset(~reset), .Run(cpu1_run) , .Continue(cpu1_continue), .index(16b'1), .Mem_CE(cpu1_CE), .Mem_UB(cpu1_UB), .Mem_LB(cpu1_LB), .Mem_OE(cpu1_OE), .Mem_WE(cpu1_WE), .ADDR(cpu1_addr), .Data(cpu1_data));
+			CPU cpu1( .Clk(clk), .Reset(~reset), .Run(cpu1_run) , .Continue(cpu1_continue), .index(index1), .Mem_CE(cpu1_CE), .Mem_UB(cpu1_UB), .Mem_LB(cpu1_LB), .Mem_OE(cpu1_OE), .Mem_WE(cpu1_WE), .ADDR(cpu1_addr), .Data_in(cpu1_data));
 			
 			// CPU 2
 			logic cpu2_run, cpu2_continue, cpu2_CE, cpu2_UB, cpu2_LB, cpu2_OE, cpu2_WE;
 			logic [15:0] cpu2_addr;
+			assign index2 = 16'h0002;
 			wire [15:0] cpu2_data;
 			
-			CPU cpu2( .Clk(clk), .Reset(~reset), .Run(cpu2_run) , .Continue(cpu2_continue), .index(16b'2), .Mem_CE(cpu2_CE), .Mem_UB(cpu2_UB), .Mem_LB(cpu2_LB), .Mem_OE(cpu2_OE), .Mem_WE(cpu2_WE), .ADDR(cpu2_addr), .Data(cpu2_data));
+			CPU cpu2( .Clk(clk), .Reset(~reset), .Run(cpu2_run) , .Continue(cpu2_continue), .index(index2), .Mem_CE(cpu2_CE), .Mem_UB(cpu2_UB), .Mem_LB(cpu2_LB), .Mem_OE(cpu2_OE), .Mem_WE(cpu2_WE), .ADDR(cpu2_addr), .Data_in(cpu2_data));
 			
 			// CPU 3
 			logic cpu3_run, cpu3_continue, cpu3_CE, cpu3_UB, cpu3_LB, cpu3_OE, cpu3_WE;
 			logic [15:0] cpu3_addr;
+			assign index3 = 16'h0003;
 			wire [15:0] cpu3_data;
 			
-			CPU cpu3( .Clk(clk), .Reset(~reset), .Run(cpu3_run) , .Continue(cpu3_continue), .index(16b'3), .Mem_CE(cpu3_CE), .Mem_UB(cpu3_UB), .Mem_LB(cpu3_LB), .Mem_OE(cpu3_OE), .Mem_WE(cpu3_WE), .ADDR(cpu3_addr), .Data(cpu3_data));
+			CPU cpu3( .Clk(clk), .Reset(~reset), .Run(cpu3_run) , .Continue(cpu3_continue), .index(index3), .Mem_CE(cpu3_CE), .Mem_UB(cpu3_UB), .Mem_LB(cpu3_LB), .Mem_OE(cpu3_OE), .Mem_WE(cpu3_WE), .ADDR(cpu3_addr), .Data_in(cpu3_data));
 			
 					
 					
