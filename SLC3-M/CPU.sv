@@ -1,7 +1,6 @@
 module CPU(	input	logic 		Clk, Reset, Run, Continue,
 				input logic [15:0] index,
 				output logic		Mem_CE, Mem_UB, Mem_LB, Mem_OE, Mem_WE,
-				output logic[11:0]LED,
 				output logic[19:0]ADDR,
 				inout			[15:0]Data);
 

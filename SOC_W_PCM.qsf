@@ -139,3 +139,5 @@ set_global_assignment -name SYSTEMVERILOG_FILE "SLC3-M/ALU.sv"
 set_global_assignment -name QIP_FILE nois_system/synthesis/nois_system.qip
 set_global_assignment -name SYSTEMVERILOG_FILE nois_system/synthesis/SOC_W_PCM.sv
 set_global_assignment -name SYSTEMVERILOG_FILE nois_system/synthesis/PCCM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE PCM_MM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE PCM_MM_reg.sv
