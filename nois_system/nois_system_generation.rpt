@@ -1,0 +1,153 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:\Users\Thomas\Documents\ECE385\finalProj --output-directory=C:\Users\Thomas\Documents\ECE385\finalProj\nois_system --report-file=bsf:C:\Users\Thomas\Documents\ECE385\finalProj\nois_system\nois_system.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:\Users\Thomas\Documents\ECE385\finalProj\nois_system.qsys
+Progress: Loading finalProj/nois_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 14.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 14.0]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 14.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding PCCM_ctl [altera_avalon_pio 14.0]
+Progress: Parameterizing module PCCM_ctl
+Progress: Adding PCCM_rsp [altera_avalon_pio 14.0]
+Progress: Parameterizing module PCCM_rsp
+Progress: Adding onchip_memory2_1 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module onchip_memory2_1
+Progress: Adding sdram [altera_avalon_new_sdram_controller 14.0]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_clk [altpll 14.0]
+Progress: Parameterizing module sdram_clk
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nois_system.nios2_qsys_0: Please note that for early evaluation, preview versions of new Nios II Gen2 Processors are available with this release.
+Info: nois_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nois_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: nois_system.PCCM_rsp: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: nois_system.sdram_clk: sdram_clk.areset_conduit must be exported, or connected to a matching conduit.
+Warning: nois_system.sdram_clk: sdram_clk.locked_conduit must be exported, or connected to a matching conduit.
+Warning: nois_system.sdram_clk: sdram_clk.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:\Users\Thomas\Documents\ECE385\finalProj --output-directory=C:\Users\Thomas\Documents\ECE385\finalProj\nois_system\synthesis --file-set=QUARTUS_SYNTH --report-file=html:C:\Users\Thomas\Documents\ECE385\finalProj\nois_system\nois_system.html --report-file=sopcinfo:C:\Users\Thomas\Documents\ECE385\finalProj\nois_system.sopcinfo --report-file=cmp:C:\Users\Thomas\Documents\ECE385\finalProj\nois_system\nois_system.cmp --report-file=qip:C:\Users\Thomas\Documents\ECE385\finalProj\nois_system\synthesis\nois_system.qip --report-file=svd:C:\Users\Thomas\Documents\ECE385\finalProj\nois_system\synthesis\nois_system.svd --report-file=regmap:C:\Users\Thomas\Documents\ECE385\finalProj\nois_system\synthesis\nois_system.regmap --report-file=xml:C:\Users\Thomas\Documents\ECE385\finalProj\nois_system\nois_system.xml --report-file=debuginfo:C:\Users\Thomas\Documents\ECE385\finalProj\nois_system\synthesis\nois_system.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:\Users\Thomas\Documents\ECE385\finalProj\nois_system.qsys --language=VERILOG
+Progress: Loading finalProj/nois_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 14.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 14.0]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 14.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding PCCM_ctl [altera_avalon_pio 14.0]
+Progress: Parameterizing module PCCM_ctl
+Progress: Adding PCCM_rsp [altera_avalon_pio 14.0]
+Progress: Parameterizing module PCCM_rsp
+Progress: Adding onchip_memory2_1 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module onchip_memory2_1
+Progress: Adding sdram [altera_avalon_new_sdram_controller 14.0]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_clk [altpll 14.0]
+Progress: Parameterizing module sdram_clk
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nois_system.nios2_qsys_0: Please note that for early evaluation, preview versions of new Nios II Gen2 Processors are available with this release.
+Info: nois_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nois_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: nois_system.PCCM_rsp: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: nois_system.sdram_clk: sdram_clk.areset_conduit must be exported, or connected to a matching conduit.
+Warning: nois_system.sdram_clk: sdram_clk.locked_conduit must be exported, or connected to a matching conduit.
+Warning: nois_system.sdram_clk: sdram_clk.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: nois_system: Generating nois_system "nois_system" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src5 and cmd_mux_005.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src5 and cmd_mux_005.sink1
+Info: Inserting clock-crossing logic between rsp_demux_005.src0 and rsp_mux.sink5
+Info: Inserting clock-crossing logic between rsp_demux_005.src1 and rsp_mux_001.sink5
+Info: nios2_qsys_0: Starting RTL generation for module 'nois_system_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec C:/altera/14.0/quartus/bin64/eperlcmd.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nois_system_nios2_qsys_0 --dir=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0001_nios2_qsys_0_gen/ --quartus_bindir=C:/altera/14.0/quartus/bin64 --verilog --config=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0001_nios2_qsys_0_gen//nois_system_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0  ]
+Info: nios2_qsys_0: # 2014.11.17 21:56:11 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2014.11.17 21:56:11 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2014.11.17 21:56:12 (*)   Couldn't query license setup in Quartus directory C:/altera/14.0/quartus/bin64
+Info: nios2_qsys_0: # 2014.11.17 21:56:12 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2014.11.17 21:56:12 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys_0: # 2014.11.17 21:56:12 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2014.11.17 21:56:12 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_qsys_0: # 2014.11.17 21:56:12 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2014.11.17 21:56:12 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2014.11.17 21:56:14 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2014.11.17 21:56:14 (*)   Creating plain-text RTL
+Info: nios2_qsys_0: # 2014.11.17 21:56:16 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'nois_system_nios2_qsys_0'
+Info: nios2_qsys_0: "nois_system" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'nois_system_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nois_system_onchip_memory2_0 --dir=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0002_onchip_memory2_0_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0002_onchip_memory2_0_gen//nois_system_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'nois_system_onchip_memory2_0'
+Info: onchip_memory2_0: "nois_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: jtag_uart_0: Starting RTL generation for module 'nois_system_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nois_system_jtag_uart_0 --dir=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0003_jtag_uart_0_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0003_jtag_uart_0_gen//nois_system_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'nois_system_jtag_uart_0'
+Info: jtag_uart_0: "nois_system" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: sysid_qsys_0: "nois_system" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: PCCM_ctl: Starting RTL generation for module 'nois_system_PCCM_ctl'
+Info: PCCM_ctl:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nois_system_PCCM_ctl --dir=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0005_PCCM_ctl_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0005_PCCM_ctl_gen//nois_system_PCCM_ctl_component_configuration.pl  --do_build_sim=0  ]
+Info: PCCM_ctl: Done RTL generation for module 'nois_system_PCCM_ctl'
+Info: PCCM_ctl: "nois_system" instantiated altera_avalon_pio "PCCM_ctl"
+Info: PCCM_rsp: Starting RTL generation for module 'nois_system_PCCM_rsp'
+Info: PCCM_rsp:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nois_system_PCCM_rsp --dir=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0006_PCCM_rsp_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0006_PCCM_rsp_gen//nois_system_PCCM_rsp_component_configuration.pl  --do_build_sim=0  ]
+Info: PCCM_rsp: Done RTL generation for module 'nois_system_PCCM_rsp'
+Info: PCCM_rsp: "nois_system" instantiated altera_avalon_pio "PCCM_rsp"
+Info: onchip_memory2_1: Starting RTL generation for module 'nois_system_onchip_memory2_1'
+Info: onchip_memory2_1:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nois_system_onchip_memory2_1 --dir=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0007_onchip_memory2_1_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0007_onchip_memory2_1_gen//nois_system_onchip_memory2_1_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_1: Done RTL generation for module 'nois_system_onchip_memory2_1'
+Info: onchip_memory2_1: "nois_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_1"
+Info: sdram: Starting RTL generation for module 'nois_system_sdram'
+Info: sdram:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=nois_system_sdram --dir=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0008_sdram_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=C:/Users/Thomas/AppData/Local/Temp/alt6392_2955952780519266595.dir/0008_sdram_gen//nois_system_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'nois_system_sdram'
+Info: sdram: "nois_system" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: sdram_clk: "nois_system" instantiated altpll "sdram_clk"
+Info: mm_interconnect_0: "nois_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "nois_system" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "nois_system" instantiated altera_reset_controller "rst_controller"
+Info: nios2_qsys_0_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_agent"
+Info: nios2_qsys_0_jtag_debug_module_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_agent"
+Info: nios2_qsys_0_jtag_debug_module_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: onchip_memory2_1_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "onchip_memory2_1_s1_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_006: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_006"
+Info: Reusing file C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_006: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_006"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: onchip_memory2_1_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "onchip_memory2_1_s1_rsp_width_adapter"
+Info: Reusing file C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: nois_system: Done "nois_system" with 34 modules, 58 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

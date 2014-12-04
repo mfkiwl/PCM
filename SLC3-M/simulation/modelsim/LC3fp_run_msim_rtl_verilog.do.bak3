@@ -1,0 +1,33 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/TSB.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT9.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT6.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT5.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT11.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegAddrMux.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Reg16.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/NZPreg.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux4.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux2.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mem2IO.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ISDU.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/HexDriver.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegFile.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SLC.sv}
+
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/testbench.sv}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  testbench
+
+add wave *
+view structure
+view signals
+run 10000 ns

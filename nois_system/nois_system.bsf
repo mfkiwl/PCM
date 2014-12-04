@@ -1,0 +1,216 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 416 528)
+	(text "nois_system" (rect 171 -1 222 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 512 20 524)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 176 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 101 82 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 176 112)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "pccm_rsp_con_export[3..0]" (rect 0 0 112 12)(font "Arial" (font_size 8)))
+		(text "pccm_rsp_con_export[3..0]" (rect 4 181 154 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 176 192)(line_width 3))
+	)
+	(port
+		(pt 0 232)
+		(input)
+		(text "pcm_mem_mm_address[10..0]" (rect 0 0 128 12)(font "Arial" (font_size 8)))
+		(text "pcm_mem_mm_address[10..0]" (rect 4 221 154 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 176 232)(line_width 3))
+	)
+	(port
+		(pt 0 248)
+		(input)
+		(text "pcm_mem_mm_chipselect" (rect 0 0 110 12)(font "Arial" (font_size 8)))
+		(text "pcm_mem_mm_chipselect" (rect 4 237 130 248)(font "Arial" (font_size 8)))
+		(line (pt 0 248)(pt 176 248)(line_width 1))
+	)
+	(port
+		(pt 0 264)
+		(input)
+		(text "pcm_mem_mm_clken" (rect 0 0 93 12)(font "Arial" (font_size 8)))
+		(text "pcm_mem_mm_clken" (rect 4 253 100 264)(font "Arial" (font_size 8)))
+		(line (pt 0 264)(pt 176 264)(line_width 1))
+	)
+	(port
+		(pt 0 280)
+		(input)
+		(text "pcm_mem_mm_write" (rect 0 0 90 12)(font "Arial" (font_size 8)))
+		(text "pcm_mem_mm_write" (rect 4 269 100 280)(font "Arial" (font_size 8)))
+		(line (pt 0 280)(pt 176 280)(line_width 1))
+	)
+	(port
+		(pt 0 312)
+		(input)
+		(text "pcm_mem_mm_writedata[15..0]" (rect 0 0 130 12)(font "Arial" (font_size 8)))
+		(text "pcm_mem_mm_writedata[15..0]" (rect 4 301 166 312)(font "Arial" (font_size 8)))
+		(line (pt 0 312)(pt 176 312)(line_width 3))
+	)
+	(port
+		(pt 0 328)
+		(input)
+		(text "pcm_mem_mm_byteenable[1..0]" (rect 0 0 134 12)(font "Arial" (font_size 8)))
+		(text "pcm_mem_mm_byteenable[1..0]" (rect 4 317 166 328)(font "Arial" (font_size 8)))
+		(line (pt 0 328)(pt 176 328)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(output)
+		(text "pccm_ctl_con_export[3..0]" (rect 0 0 107 12)(font "Arial" (font_size 8)))
+		(text "pccm_ctl_con_export[3..0]" (rect 4 141 154 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 176 152)(line_width 3))
+	)
+	(port
+		(pt 0 296)
+		(output)
+		(text "pcm_mem_mm_readdata[15..0]" (rect 0 0 130 12)(font "Arial" (font_size 8)))
+		(text "pcm_mem_mm_readdata[15..0]" (rect 4 285 160 296)(font "Arial" (font_size 8)))
+		(line (pt 0 296)(pt 176 296)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(output)
+		(text "sdram_wire_addr[12..0]" (rect 0 0 94 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_addr[12..0]" (rect 4 357 136 368)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 176 368)(line_width 3))
+	)
+	(port
+		(pt 0 384)
+		(output)
+		(text "sdram_wire_ba[1..0]" (rect 0 0 81 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_ba[1..0]" (rect 4 373 118 384)(font "Arial" (font_size 8)))
+		(line (pt 0 384)(pt 176 384)(line_width 3))
+	)
+	(port
+		(pt 0 400)
+		(output)
+		(text "sdram_wire_cas_n" (rect 0 0 77 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_cas_n" (rect 4 389 100 400)(font "Arial" (font_size 8)))
+		(line (pt 0 400)(pt 176 400)(line_width 1))
+	)
+	(port
+		(pt 0 416)
+		(output)
+		(text "sdram_wire_cke" (rect 0 0 67 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_cke" (rect 4 405 88 416)(font "Arial" (font_size 8)))
+		(line (pt 0 416)(pt 176 416)(line_width 1))
+	)
+	(port
+		(pt 0 432)
+		(output)
+		(text "sdram_wire_cs_n" (rect 0 0 73 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_cs_n" (rect 4 421 94 432)(font "Arial" (font_size 8)))
+		(line (pt 0 432)(pt 176 432)(line_width 1))
+	)
+	(port
+		(pt 0 464)
+		(output)
+		(text "sdram_wire_dqm[3..0]" (rect 0 0 90 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_dqm[3..0]" (rect 4 453 124 464)(font "Arial" (font_size 8)))
+		(line (pt 0 464)(pt 176 464)(line_width 3))
+	)
+	(port
+		(pt 0 480)
+		(output)
+		(text "sdram_wire_ras_n" (rect 0 0 76 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_ras_n" (rect 4 469 100 480)(font "Arial" (font_size 8)))
+		(line (pt 0 480)(pt 176 480)(line_width 1))
+	)
+	(port
+		(pt 0 496)
+		(output)
+		(text "sdram_wire_we_n" (rect 0 0 74 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_we_n" (rect 4 485 94 496)(font "Arial" (font_size 8)))
+		(line (pt 0 496)(pt 176 496)(line_width 1))
+	)
+	(port
+		(pt 0 448)
+		(bidir)
+		(text "sdram_wire_dq[31..0]" (rect 0 0 86 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_dq[31..0]" (rect 4 437 124 448)(font "Arial" (font_size 8)))
+		(line (pt 0 448)(pt 176 448)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 161 43 340 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 181 67 380 144)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 147 83 324 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 181 107 404 224)(font "Arial" (color 0 0 0)))
+		(text "pccm_ctl_con" (rect 98 123 268 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 181 147 398 304)(font "Arial" (color 0 0 0)))
+		(text "pccm_rsp_con" (rect 92 163 256 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 181 187 398 384)(font "Arial" (color 0 0 0)))
+		(text "pcm_mem_mm" (rect 86 203 232 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 181 227 404 464)(font "Arial" (color 0 0 0)))
+		(text "chipselect" (rect 181 243 422 496)(font "Arial" (color 0 0 0)))
+		(text "clken" (rect 181 259 392 528)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 181 275 392 560)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 181 291 410 592)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 181 307 416 624)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 181 323 422 656)(font "Arial" (color 0 0 0)))
+		(text "sdram_wire" (rect 107 339 274 691)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "addr" (rect 181 363 386 736)(font "Arial" (color 0 0 0)))
+		(text "ba" (rect 181 379 374 768)(font "Arial" (color 0 0 0)))
+		(text "cas_n" (rect 181 395 392 800)(font "Arial" (color 0 0 0)))
+		(text "cke" (rect 181 411 380 832)(font "Arial" (color 0 0 0)))
+		(text "cs_n" (rect 181 427 386 864)(font "Arial" (color 0 0 0)))
+		(text "dq" (rect 181 443 374 896)(font "Arial" (color 0 0 0)))
+		(text "dqm" (rect 181 459 380 928)(font "Arial" (color 0 0 0)))
+		(text "ras_n" (rect 181 475 392 960)(font "Arial" (color 0 0 0)))
+		(text "we_n" (rect 181 491 386 992)(font "Arial" (color 0 0 0)))
+		(text " nois_system " (rect 358 512 794 1034)(font "Arial" ))
+		(line (pt 176 32)(pt 240 32)(line_width 1))
+		(line (pt 240 32)(pt 240 512)(line_width 1))
+		(line (pt 176 512)(pt 240 512)(line_width 1))
+		(line (pt 176 32)(pt 176 512)(line_width 1))
+		(line (pt 177 52)(pt 177 76)(line_width 1))
+		(line (pt 178 52)(pt 178 76)(line_width 1))
+		(line (pt 177 92)(pt 177 116)(line_width 1))
+		(line (pt 178 92)(pt 178 116)(line_width 1))
+		(line (pt 177 132)(pt 177 156)(line_width 1))
+		(line (pt 178 132)(pt 178 156)(line_width 1))
+		(line (pt 177 172)(pt 177 196)(line_width 1))
+		(line (pt 178 172)(pt 178 196)(line_width 1))
+		(line (pt 177 212)(pt 177 332)(line_width 1))
+		(line (pt 178 212)(pt 178 332)(line_width 1))
+		(line (pt 177 348)(pt 177 500)(line_width 1))
+		(line (pt 178 348)(pt 178 500)(line_width 1))
+		(line (pt 0 0)(pt 416 0)(line_width 1))
+		(line (pt 416 0)(pt 416 528)(line_width 1))
+		(line (pt 0 528)(pt 416 528)(line_width 1))
+		(line (pt 0 0)(pt 0 528)(line_width 1))
+	)
+)

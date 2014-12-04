@@ -1,0 +1,208 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do LC3fp_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SLC3_2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package SLC3_2
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/TSB.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module TSB
+# 
+# Top level modules:
+# 	TSB
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT9.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SEXT9
+# 
+# Top level modules:
+# 	SEXT9
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT6.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SEXT6
+# 
+# Top level modules:
+# 	SEXT6
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT5.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SEXT5
+# 
+# Top level modules:
+# 	SEXT5
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT11.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SEXT11
+# 
+# Top level modules:
+# 	SEXT11
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegAddrMux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegAddrMux
+# 
+# Top level modules:
+# 	RegAddrMux
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Reg16.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Reg16
+# 
+# Top level modules:
+# 	Reg16
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/NZPreg.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module NZPreg
+# 
+# Top level modules:
+# 	NZPreg
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux4
+# 
+# Top level modules:
+# 	Mux4
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux2
+# 
+# Top level modules:
+# 	Mux2
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mem2IO.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mem2IO
+# 
+# Top level modules:
+# 	Mem2IO
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ISDU.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ISDU
+# 
+# Top level modules:
+# 	ISDU
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/HexDriver.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# ** Warning: C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv(9): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv(11): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv(12): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv(13): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	ALU
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/test_memory.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package SLC3_2
+# -- Compiling package test_memory_sv_unit
+# -- Importing package SLC3_2
+# -- Compiling module test_memory
+# 
+# Top level modules:
+# 	test_memory
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegFile.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegFile
+# 
+# Top level modules:
+# 	RegFile
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SLC.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SLC
+# 
+# Top level modules:
+# 	SLC
+# 
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/ece298_lab8_fliu14_potok2 {C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# ** Warning: C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/testbench.sv(50): (vlog-LRM-2244) Variable 'sum' is implicitly static. You must explicitly declare it as static or automatic.
+# 
+# 
+# Top level modules:
+# 	testbench
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.SLC3_2
+# Loading work.test_memory_sv_unit
+# Loading work.test_memory
+# Loading work.SLC
+# Loading work.CPU
+# Loading work.SEXT9
+# Loading work.SEXT11
+# Loading work.Mux2
+# Loading work.Mux4
+# Loading work.Reg16
+# Loading work.TSB
+# Loading work.SEXT6
+# Loading work.RegAddrMux
+# Loading work.RegFile
+# Loading work.SEXT5
+# Loading work.ALU
+# Loading work.NZPreg
+# Loading work.ISDU
+# Loading work.Mem2IO
+# Loading work.HexDriver
+# ** Warning: (vsim-3015) C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv(21): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'Din0'. The port definition is at: C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux4.sv(2).
+# 
+#         Region: /testbench/lc/cpu/PCmux
+# ** Warning: (vsim-3017) C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv(51): [TFMPC] - Too few port connections. Expected 9, found 0.
+# 
+#         Region: /testbench/lc/cpu/mem
+# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv(51): [TFMPC] - Missing connection for port 'Clk'.
+# 
+# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv(51): [TFMPC] - Missing connection for port 'Reset'.
+# 
+# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv(51): [TFMPC] - Missing connection for port 'I_O'.
+# 
+# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv(51): [TFMPC] - Missing connection for port 'A'.
+# 
+# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv(51): [TFMPC] - Missing connection for port 'CE'.
+# 
+# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv(51): [TFMPC] - Missing connection for port 'UB'.
+# 
+# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv(51): [TFMPC] - Missing connection for port 'LB'.
+# 
+# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv(51): [TFMPC] - Missing connection for port 'OE'.
+# 
+# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv(51): [TFMPC] - Missing connection for port 'WE'.
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 10000 ns

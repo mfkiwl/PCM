@@ -1,0 +1,510 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\steven\Desktop\ECE 385\ece298_lab8_fliu14_potok2\simulation\modelsim
+vALU
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+ID=SdK_`0:zGNh:jUz^4mR3
+V^gAKd_m0RfI7GN>z13;jX2
+S1
+Z2 dC:\Users\steven\Desktop\ECE 385\ece298_lab8_fliu14_potok2\simulation\modelsim
+w1416283577
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv
+L0 1
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2} -O0
+n@a@l@u
+!i10b 1
+!s100 `3]V4]_5g5=nCMX0@SXA_2
+!s105 ALU_sv_unit
+!s85 0
+!s108 1417050725.667000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ALU.sv|
+!s101 -O0
+vCPU
+R1
+IYLc2^5jBQgF9B@JemH4[f3
+VdGXhG>1ShNMalD^BVkb`n0
+S1
+R2
+w1417050484
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@c@p@u
+!i10b 1
+!s100 ShcJDWS2FS`2oNRfIVB8c1
+!s105 CPU_sv_unit
+!s85 0
+!s108 1417050726.511000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/CPU.sv|
+!s101 -O0
+vHexDriver
+R1
+I?Rjami_L4dUYPb<MfMKU>3
+V2G6=_O>lD=3U`GOXc0nkW3
+S1
+R2
+w1381607608
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/HexDriver.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/HexDriver.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@hex@driver
+!i10b 1
+!s100 _F9[DNb>6f]5e@acZ]2FI2
+!s105 HexDriver_sv_unit
+!s85 0
+!s108 1417050725.495000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/HexDriver.sv|
+!s101 -O0
+vISDU
+R1
+I4jJN7S<R5hQBXVziocDS=0
+Vb;R4PV>5hkG`NWWUD?4Na2
+S1
+R2
+w1416287215
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ISDU.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ISDU.sv
+L0 17
+R3
+r1
+31
+R4
+R5
+n@i@s@d@u
+!i10b 1
+!s100 o8=U58biRPnDQ1^JMQUaj3
+!s105 ISDU_sv_unit
+!s85 0
+!s108 1417050725.042000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ISDU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/ISDU.sv|
+!s101 -O0
+vMem2IO
+R1
+I1O6[]7J^04M8?OJX61mfb1
+VJJkDGlN9Cb_e@nNVX]QQX2
+S1
+R2
+w1417050311
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mem2IO.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mem2IO.sv
+L0 16
+R3
+r1
+31
+R4
+R5
+n@mem2@i@o
+!i10b 1
+!s100 6oo<mlBLQ[ebWdeR@6UFW2
+!s105 Mem2IO_sv_unit
+!s85 0
+!s108 1417050723.323000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mem2IO.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mem2IO.sv|
+!s101 -O0
+vMux2
+R1
+ISH]fhJ@zjOB<3HMKhKe2S3
+VeW^^OAL`hSW3nzJ^1a1jZ2
+S1
+R2
+w1382129560
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux2.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux2.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@mux2
+!i10b 1
+!s100 e6zhl7CP]g05<:Mh[kKhz2
+!s105 Mux2_sv_unit
+!s85 0
+!s108 1417050723.073000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux2.sv|
+!s101 -O0
+vMux4
+R1
+I>K714KC6I[51B@lf>BRH_1
+Va:IdE@M>_QOP:fU4ZmmmR3
+S1
+R2
+w1382129586
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux4.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux4.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@mux4
+!i10b 1
+!s100 CAT5R<6lNaHB@lVn8gg]E3
+!s105 Mux4_sv_unit
+!s85 0
+!s108 1417050722.839000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Mux4.sv|
+!s101 -O0
+vNZPreg
+R1
+II8023iQ<5M3A:kJA>]ceK0
+V4T66jc7VbiFWYcIbVDJoD0
+S1
+R2
+w1382739460
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/NZPreg.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/NZPreg.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@n@z@preg
+!i10b 1
+!s100 Qkec;ii4ek]BjcK[jZhoa3
+!s105 NZPreg_sv_unit
+!s85 0
+!s108 1417050722.714000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/NZPreg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/NZPreg.sv|
+!s101 -O0
+vReg16
+R1
+I9onLRNJZER7]fbf`k9?zz2
+VX_:iaIzJYK1j;b01zA]Lf0
+S1
+R2
+w1417049568
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Reg16.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Reg16.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@reg16
+!i10b 1
+!s100 0[6@Lf[I0=<lYZdg>fK832
+!s105 Reg16_sv_unit
+!s85 0
+!s108 1417050722.417000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Reg16.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/Reg16.sv|
+!s101 -O0
+vRegAddrMux
+R1
+IQPjjb7=]jVPEDL:O]dkJe2
+V@bc`=N_oAK`z7mk`^a]jT1
+S1
+R2
+w1416286862
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegAddrMux.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegAddrMux.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@reg@addr@mux
+!i10b 1
+!s100 HnlFJJf0k6HTY3IVQ5Gh<3
+!s105 RegAddrMux_sv_unit
+!s85 0
+!s108 1417050722.292000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegAddrMux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegAddrMux.sv|
+!s101 -O0
+vRegFile
+R1
+IPO=VD58A;ci_iRfBWE9K_1
+V^8:0gO9C;[Q6<gUjY`VK51
+S1
+R2
+w1417049906
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegFile.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegFile.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@reg@file
+!i10b 1
+!s100 aAHL@E6lIiczXTEFZ2b6m0
+!s105 RegFile_sv_unit
+!s85 0
+!s108 1417050726.339000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegFile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/RegFile.sv|
+!s101 -O0
+vSEXT11
+R1
+IHb@`j=55neaN_^7NWgog63
+VZJme_NgO]WjHZF38Ej4YQ1
+S1
+R2
+w1382191722
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT11.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT11.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@s@e@x@t11
+!i10b 1
+!s100 @oSnEIYOcfIMTEXcbgja_2
+!s105 SEXT11_sv_unit
+!s85 0
+!s108 1417050722.136000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT11.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT11.sv|
+!s101 -O0
+vSEXT5
+R1
+IE=o`XYM0D06cWnHET6K]A1
+V:Wn:f_deZeFYBAz?3:S8h2
+S1
+R2
+w1382191176
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT5.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT5.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@s@e@x@t5
+!i10b 1
+!s100 <K6<eK>AVz=MHXR_0DzZG0
+!s105 SEXT5_sv_unit
+!s85 0
+!s108 1417050721.964000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT5.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT5.sv|
+!s101 -O0
+vSEXT6
+R1
+I411?FH802jYK^A5PTiWbB0
+V05:mzCYaA:SD_C8e?NIjU2
+S1
+R2
+w1382191540
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT6.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT6.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@s@e@x@t6
+!i10b 1
+!s100 K<4ihz1YH;Ykia6?8iNfD0
+!s105 SEXT6_sv_unit
+!s85 0
+!s108 1417050721.808000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT6.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT6.sv|
+!s101 -O0
+vSEXT9
+R1
+IDO9e`dQ]USK8S=]j?8HT]3
+VmhoEoeRCY@O2aZL>eJcJ<2
+S1
+R2
+w1382191608
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT9.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT9.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@s@e@x@t9
+!i10b 1
+!s100 iN`9<GZiRg0lo@2X<O2Ej2
+!s105 SEXT9_sv_unit
+!s85 0
+!s108 1417050721.636000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT9.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SEXT9.sv|
+!s101 -O0
+vSLC
+R1
+I=f4@@mi@BF9nE>>d`S@oF2
+V=`3PecNm3DSa1lm3BTXl91
+S1
+R2
+w1417049313
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SLC.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SLC.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@s@l@c
+!i10b 1
+!s100 f0OWMRe;>]49mG^Ujl_U_2
+!s105 SLC_sv_unit
+!s85 0
+!s108 1417050726.776000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SLC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SLC.sv|
+!s101 -O0
+XSLC3_2
+R1
+I0D6>BMk@Z[8L]1NlEZk8Q1
+V0D6>BMk@Z[8L]1NlEZk8Q1
+S1
+R2
+Z6 w1413301423
+Z7 FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SLC3_2.sv
+Z8 8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/test_memory.sv
+Z9 FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/test_memory.sv
+L0 23
+R3
+r1
+31
+Z10 !s108 1417050725.886000
+Z11 !s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/SLC3_2.sv|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/test_memory.sv|
+Z12 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/test_memory.sv|
+R4
+R5
+n@s@l@c3_2
+!i10b 1
+!s100 Fgh?I]O_Q2N@0B8O<mGK73
+!s85 0
+!s101 -O0
+vtest_memory
+R1
+Z13 DXx4 work 6 SLC3_2 0 22 0D6>BMk@Z[8L]1NlEZk8Q1
+DXx4 work 19 test_memory_sv_unit 0 22 WK6G;g?XkbVHbjI^36=K]2
+VMlGDidiXibbBh?ZnEOB7E1
+r1
+31
+I2@3>3A]AiHMmnGzNlFkDb3
+S1
+R2
+R6
+R8
+R9
+L0 28
+R3
+R10
+R11
+R12
+R4
+R5
+!s85 0
+!i10b 1
+!s100 _EHQl_<6KWOIS=]VSAQFm2
+!s105 test_memory_sv_unit
+!s101 -O0
+Xtest_memory_sv_unit
+R1
+R13
+VWK6G;g?XkbVHbjI^36=K]2
+r1
+31
+IWK6G;g?XkbVHbjI^36=K]2
+S1
+R2
+R6
+R8
+R9
+R7
+L0 26
+R3
+R10
+R11
+R12
+R4
+R5
+!s85 0
+!i10b 1
+!s100 RigO[To2FF^[mZl^jE<7T1
+!i103 1
+!s101 -O0
+vtestbench
+R1
+!i10b 1
+!s100 GNdlHFFd=dF]FPfNMU5_e0
+IVgizMbAg0nSVd6F@3;AK@0
+VhGfW:390DM[oDMzegDH9`2
+!s105 testbench_sv_unit
+S1
+R2
+w1417050703
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/testbench.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/testbench.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1417050726.948000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/testbench.sv|
+!s101 -O0
+R4
+R5
+vTSB
+R1
+I9b6S2Y@@KlUDHHIGnWcM@2
+V_^5eEc7V_c=I7NV?KLWfE3
+S1
+R2
+w1382129546
+8C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/TSB.sv
+FC:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/TSB.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@t@s@b
+!i10b 1
+!s100 KUZFJKIllWN5d;;ZnKS4k1
+!s105 TSB_sv_unit
+!s85 0
+!s108 1417050721.479000
+!s107 C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/TSB.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2|C:/Users/steven/Desktop/ECE 385/ece298_lab8_fliu14_potok2/TSB.sv|
+!s101 -O0

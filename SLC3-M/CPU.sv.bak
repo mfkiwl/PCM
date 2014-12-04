@@ -1,0 +1,49 @@
+module CPU(	input	logic 		Clk, Reset, Run, Continue, ContinueIR,
+				output logic		Mem_CE, Mem_UB, Mem_LB, Mem_OE, Mem_WE,
+				output logic[11:0]LED,
+				output logic[17:0]ADDR,
+				inout			[15:0]Data);
+
+logic			LD_MAR, LD_MDR, LD_IR, LD_CC, LD_REG, LD_PC;
+logic			GatePC, GateMDR, GateALU, GateMARMUX;
+logic	[1:0]	PCMUX;
+logic			SR2MUX, ADDR1MUX, ADDR2MUX, MARMUX;
+logic [2:0]	DR, SR1, SR2, NZP;
+logic	[1:0] ALUK;
+logic [15:0]PCin, PCout, IRout, MARin, MARout, MDRout, ALUout, SR1out, SR2out, imm5, B, PCoffset9, PCoffset11, PCoffset, MARoffset6, MEM_IOaddr;
+logic [4:0] State;
+
+SEXT9			BR_PCin		(.In(IRout[8:0]), .Out(PCoffset9));	
+SEXT11		JSR_PCin		(.In(IRout[10:0]), .Out(PCoffset11));
+Mux2			PCoffsetmux	(.Sel(ADDR1MUX), .Din0(PCoffset9)/*BR*/, .Din1(PCoffset11)/*JSR*/, .Dout(PCoffset));
+Mux4			PCmux			(.Sel(PCMUX), .Din0(PCout+1)/*FETCH*/, .Din1(PCout+PCoffset)/*BR and JSR*/, .Din2(SR2out)/*JMP*/, .Din3(Data)/*Switches*/, .Dout(PCin));
+Reg16 		PC				(.*, .Load(LD_PC), .Din(PCin), .Dout(PCout));
+TSB			PCgate		(.Switch(GatePC), .Din(PCout), .Dout(Data));
+
+Reg16			IR				(.*, .Load(LD_IR), .Din(Data), .Dout(IRout));
+
+SEXT6			LDR_MARin	(.In(IRout[5:0]), .Out(MARoffset6));
+Mux2			MEM_IOmux	(.Sel(ADDR2MUX), .Din0(MARoffset6+SR2out), .Din1(16'hFFFF), .Dout(MEM_IOaddr));	// BaseR+offset for LDR/STR and FFFF for loading PC when starting execution
+Mux2			MARmux		(.Sel(MARMUX), .Din0(Data)/*PC*/, .Din1(MEM_IOaddr), .Dout(MARin));
+TSB			MARMUXgate	(.Switch(GateMARMUX), .Din(MARin), .Dout(Data));
+Reg16			MAR			(.*, .Load(LD_MAR), .Din(Data), .Dout(MARout));
+
+Reg16 		MDR			(.*, .Load(LD_MDR), .Din(Data), .Dout(MDRout));
+TSB			MDRgate		(.Switch(GateMDR), .Din(MDRout), .Dout(Data));
+
+RegAddrMux	regAddrMux	(.*, .IR(IRout));						// SR		= SR1 when there's only one source register
+RegFile		Registers	(.*, .Load(LD_REG), .Din(Data));	//	BaseR = SR1 for JMP, LDR, STR
+
+SEXT5			operand2sext(.In(IRout[4:0]), .Out(imm5));
+Mux2			SR2mux		(.Sel(SR2MUX), .Din0(SR2out)/*SR2 for ADD and AND*/, .Din1(imm5)/*immediate value for ADD and AND*/, .Dout(B));
+ALU			alu			(.*, .A(SR1out));
+TSB			ALUgate		(.Switch(GateALU), .Din(ALUout), .Dout(Data));
+
+NZPreg		nzpreg		(.*, .Load(LD_CC), .LastResult(Data));
+
+ISDU			isdu			(.*, .IR(IRout), .State_out(State));
+
+assign ADDR = {(2'b00), MARout};
+assign LED = IRout[11:0]; //for pause instruction
+
+endmodule

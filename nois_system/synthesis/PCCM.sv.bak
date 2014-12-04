@@ -1,0 +1,22 @@
+module PCCM(input stub);
+			
+			module nois_system (
+		input  wire        clk_clk,                 //           clk.clk
+		input  wire        reset_reset_n,           //         reset.reset_n
+		output wire [3:0]  pccm_ctl_con_export,     //  pccm_ctl_con.export
+		input  wire [3:0]  pccm_rsp_con_export,     //  pccm_rsp_con.export
+		input  wire        pcm_mem_reset_reset,     // pcm_mem_reset.reset
+		input  wire        pcm_mem_reset_reset_req, //              .reset_req
+		input  wire [10:0] pcm_mem_mm_address,      //    pcm_mem_mm.address
+		input  wire        pcm_mem_mm_chipselect,   //              .chipselect
+		input  wire        pcm_mem_mm_clken,        //              .clken
+		input  wire        pcm_mem_mm_write,        //              .write
+		output wire [15:0] pcm_mem_mm_readdata,     //              .readdata
+		input  wire [15:0] pcm_mem_mm_writedata,    //              .writedata
+		input  wire [1:0]  pcm_mem_mm_byteenable    //              .byteenable
+	);
+			
+			
+			
+			endmodule
+			
