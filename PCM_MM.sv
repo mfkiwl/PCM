@@ -20,7 +20,7 @@ module PCM_MM(input clk, reset, init,
 				  output logic cpu3_ready,
 				  output logic [15:0] cpu3_data_out,
 				  
-				  output wire [10:0] pcm_mem_mm_address,
+				  output wire [19:0] pcm_mem_mm_address,
 				  output wire pcm_mem_mm_chipselect,
 				  output wire pcm_mem_mm_clken,
 				  output wire pcm_mem_mm_write,
