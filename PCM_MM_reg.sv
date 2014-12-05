@@ -12,24 +12,25 @@ module PCM_MM_reg(input logic clk, reset, resolved, cpu_write,
 						begin
 							if(reset)
 							begin
-								cpu_out <= 16'h0000;
-								addr_reg <= 16'h0000;
 								cur_state <= WAIT;
-								next_state <= WAIT;
 							end
-							
-							cur_state <= next_state;
+							else
+								cur_state <= next_state;
 							
 						end
 						
 						always_latch
 						begin
-							if(!WAIT)
+							if(cur_state != WAIT)
 							begin
-								if(cpu_write)
+								if(cpu_write == 1'b1)
 									cpu_out <= cpu_in;
 								else
 									cpu_out <= data_in;
+							end
+							else
+							begin
+								cpu_ready = 1'b1;
 							end
 							
 							if(addr_reg != addr)
@@ -44,8 +45,6 @@ module PCM_MM_reg(input logic clk, reset, resolved, cpu_write,
 								addr_reg <= addr;
 							end
 							
-							if(cur_state == WAIT)
-								cpu_ready = 1'b1;
 						end
 						
 						endmodule

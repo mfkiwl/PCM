@@ -1,5 +1,5 @@
-Warning (10268): Verilog HDL information at PCM_MM_reg.sv(27): always construct contains both blocking and non-blocking assignments
 Info (10281): Verilog HDL Declaration information at testbench.sv(10): object "Data_in" differs only in case from object "data_in" in the same scope
+Warning (10268): Verilog HDL information at PCM_MM_reg.sv(24): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at PCM_MM.sv(128): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at ISDU.sv(75): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at ISDU.sv(147): always construct contains both blocking and non-blocking assignments
