@@ -14,7 +14,7 @@
 # vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj {C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module PCM_MM_reg
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv(36): (vlog-2182) 'addr_reg' might be read before written in always_comb block.
+# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv(38): (vlog-2182) 'addr_reg' might be read before written in always_comb block.
 # 
 # 
 # Top level modules:
@@ -52,4 +52,4 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 2000 ns
-# Schedule was not correctly
+# Schedule was set correctly

@@ -110,7 +110,7 @@ task PCM_MM_REG_test(reg [19:0] newaddr);
 @(posedge Clk)
 #2 addr =newaddr ;
 
-if(schedule == 1)
+#1 if(schedule == 1)
 begin
 #5	$display ("Schedule was set correctly");
 end
@@ -136,7 +136,18 @@ Continue = 1;
 
 
 begin
-PCM_MM_REG_test(20'hFFFFF);
+
+Reset = 0;
+
+#5 Reset = 1;
+
+#2 addr = 20'h00000;
+
+#1 resolved = 1'b1;
+
+#1 resolved = 1'b0;
+
+#5 PCM_MM_REG_test(20'hFFFFF);
 
 
 	

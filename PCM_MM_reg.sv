@@ -21,6 +21,8 @@ module PCM_MM_reg(input logic clk, reset, resolved, cpu_write,
 						
 						always_latch
 						begin
+							next_state <= cur_state;
+							
 							if(cur_state != WAIT)
 							begin
 								if(cpu_write == 1'b1)
@@ -43,6 +45,7 @@ module PCM_MM_reg(input logic clk, reset, resolved, cpu_write,
 							begin
 								next_state <= WAIT;
 								addr_reg <= addr;
+								schedule <= 1'b0;
 							end
 							
 						end
