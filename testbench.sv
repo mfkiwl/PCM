@@ -6,24 +6,7 @@ timeprecision 1ns;
 
 logic Clk = 0;
 logic Reset, Run, Continue, ContinueIR; 
-wire  [15:0]  I_O;
-logic [15:0] Data_in,Data_out;
-logic [19:0]  A;
-logic [11:0] LED;
-logic CE, UB, LB, OE, WE;
-logic [6:0] HEX0, HEX1, HEX2, HEX3;
-logic [15:0] PCout, IRout, Data_cpu_out, Other_out;
-wire[15:0] index;
-logic [12:0] sdram_wire_addr;
-logic  [1:0] sdram_wire_ba;
-logic        sdram_wire_cas_n;
-logic		sdram_wire_cke;
-logic		sdram_wire_cs_n;
-logic  [31:0] sdram_wire_dq;
-logic  [3:0] sdram_wire_dqm;
-logic		sdram_wire_ras_n;
-logic		sdram_wire_we_n;
-logic		sdram_wire_clk;
+
 
 logic cpu0_write;										
 logic [19:0] cpu0_addr;
@@ -54,7 +37,7 @@ wire [15:0] pcm_mem_mm_writedata;
 wire [1:0] pcm_mem_mm_byteenable;
 
 //PCM_MM_REG variables
-logic resolved, cpu_write;
+logic resolved, cpu_write, init;
 logic [19:0] addr;
 logic [15:0] data_in, cpu_in;
 logic schedule, cpu_ready;
@@ -65,9 +48,6 @@ logic [15:0] S;
 
 integer ErrorCnt = 0; //Error counter; succesful run means count=0
 
-//test_memory mem(.*, .Reset(~Reset));
-												
-//SLC lc(.*, .DIS3(HEX3), .DIS2(HEX2), .DIS1(HEX1), .DIS0(HEX0), .Data(I_O));
 
 //SOC_W_PCM soc(.*, .clk(Clk), .reset(~Reset));
 
@@ -136,15 +116,11 @@ Continue = 1;
 
 
 begin
-
-Reset = 0;
-
-#5 Reset = 1;
-
-#2 addr = 20'h00000;
-
-#1 resolved = 1'b1;
-
+addr = 20'h00000;
+data_in = 16'h0101;
+#1 init = 1'b1;
+#2 init = 1'b0;
+#4 resolved = 1'b1;
 #1 resolved = 1'b0;
 
 #5 PCM_MM_REG_test(20'hFFFFF);

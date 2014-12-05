@@ -1,4 +1,4 @@
-module PCM_MM(input clk, reset,
+module PCM_MM(input clk, reset, init,
 				  input cpu0_write,										// cpu0
 				  input [19:0] cpu0_addr,
 				  input [15:0] cpu0_data_in,
@@ -32,25 +32,25 @@ module PCM_MM(input clk, reset,
 				  
 				  PCM_MM_reg reg0(.clk(clk), .reset(reset), .resolved(reg0_resolved), .cpu_write(cpu0_write), .addr(cpu0_addr), 
 										.data_in(pcm_mem_mm_readdata), .cpu_in(cpu0_data_in), .schedule(reg0_sched), .cpu_ready(cpu0_ready), 
-										.cpu_out(cpu0_data_out));
+										.cpu_out(cpu0_data_out), .init(init));
 										
 				  logic reg1_resolved, reg1_sched;
 				  
 				  PCM_MM_reg reg1(.clk(clk), .reset(reset), .resolved(reg1_resolved), .cpu_write(cpu1_write), .addr(cpu1_addr), 
 										.data_in(pcm_mem_mm_readdata), .cpu_in(cpu1_data_in), .schedule(reg1_sched), .cpu_ready(cpu1_ready), 
-										.cpu_out(cpu1_data_out));
+										.cpu_out(cpu1_data_out), .init(init));
 										
 				  logic reg2_resolved, reg2_sched;
 				  
 				  PCM_MM_reg reg2(.clk(clk), .reset(reset), .resolved(reg2_resolved), .cpu_write(cpu2_write), .addr(cpu2_addr), 
 										.data_in(pcm_mem_mm_readdata), .cpu_in(cpu2_data_in), .schedule(reg2_sched), .cpu_ready(cpu2_ready), 
-										.cpu_out(cpu2_data_out));
+										.cpu_out(cpu2_data_out), .init(init));
 										
 				  logic reg3_resolved, reg3_sched;
 				  
 				  PCM_MM_reg reg3(.clk(clk), .reset(reset), .resolved(reg3_resolved), .cpu_write(cpu3_write), .addr(cpu3_addr), 
 										.data_in(pcm_mem_mm_readdata), .cpu_in(cpu3_data_in), .schedule(reg3_sched), .cpu_ready(cpu3_ready), 
-										.cpu_out(cpu3_data_out));
+										.cpu_out(cpu3_data_out), .init(init));
 										
 				  enum logic [2:0] {WAIT, OPERATION_0, OPERATION_1, RESOLVED} cur_state, next_state;
 				  logic [3:0] reg0_pos, reg1_pos, reg2_pos, reg3_pos;

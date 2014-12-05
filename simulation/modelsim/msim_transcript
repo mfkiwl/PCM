@@ -14,7 +14,7 @@
 # vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj {C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module PCM_MM_reg
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv(38): (vlog-2182) 'addr_reg' might be read before written in always_comb block.
+# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv(45): (vlog-2182) 'addr_reg' might be read before written in always_comb block.
 # 
 # 
 # Top level modules:
@@ -34,7 +34,7 @@
 # vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj {C:/Users/Thomas/Documents/ECE385/finalProj/testbench.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module testbench
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/testbench.sv(103): (vlog-LRM-2244) Variable 'sum' is implicitly static. You must explicitly declare it as static or automatic.
+# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/testbench.sv(83): (vlog-LRM-2244) Variable 'sum' is implicitly static. You must explicitly declare it as static or automatic.
 # 
 # 
 # Top level modules:
@@ -52,4 +52,20 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 2000 ns
+# Schedule was set correctly
+add wave -position insertpoint  \
+sim:/testbench/pcm_reg/resolved \
+sim:/testbench/pcm_reg/init \
+sim:/testbench/pcm_reg/data_in \
+sim:/testbench/pcm_reg/schedule \
+sim:/testbench/pcm_reg/cpu_ready \
+sim:/testbench/pcm_reg/cpu_out \
+sim:/testbench/pcm_reg/cur_state \
+sim:/testbench/pcm_reg/next_state \
+sim:/testbench/pcm_reg/addr_reg
+restart
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.PCM_MM_reg
+run
 # Schedule was set correctly

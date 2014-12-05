@@ -1,4 +1,4 @@
-module PCM_MM_reg(input logic clk, reset, resolved, cpu_write,
+module PCM_MM_reg(input logic clk, reset, resolved, cpu_write, init,
 						input logic [19:0] addr,
 						input logic [15:0] data_in, cpu_in,
 						output logic schedule, cpu_ready,
@@ -23,8 +23,15 @@ module PCM_MM_reg(input logic clk, reset, resolved, cpu_write,
 						begin
 							next_state <= cur_state;
 							
+							if(init == 1'b1)
+							begin
+								next_state <= CONFLICT;
+								schedule <= 1'b1;
+							end
+							
 							if(cur_state != WAIT)
 							begin
+								cpu_ready = 1'b0;
 								if(cpu_write == 1'b1)
 									cpu_out <= cpu_in;
 								else

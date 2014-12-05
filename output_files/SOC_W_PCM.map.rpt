@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SOC_W_PCM
-Thu Dec 04 23:59:17 2014
+Fri Dec 05 00:40:04 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -47,7 +47,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 04 23:59:17 2014      ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 05 00:40:04 2014      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; SOC_W_PCM                                  ;
 ; Top-level Entity Name              ; SOC_W_PCM                                  ;
@@ -255,6 +255,7 @@ Encoding Type:  One-Hot
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; resolved  ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; cpu_write ; Input  ; Info     ; Stuck at GND                                                                        ;
+; init      ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; addr      ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; data_in   ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; cpu_in    ; Input  ; Info     ; Stuck at GND                                                                        ;
@@ -295,7 +296,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Thu Dec 04 23:59:14 2014
+    Info: Processing started: Fri Dec 05 00:40:02 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SOC_W_PCM -c SOC_W_PCM
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
@@ -513,6 +514,7 @@ Warning (10030): Net "data_in" at SOC_W_PCM.sv(96) has no driver or initial valu
 Warning (10030): Net "cpu_in" at SOC_W_PCM.sv(96) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "resolved" at SOC_W_PCM.sv(94) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "cpu_write" at SOC_W_PCM.sv(94) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "init" at SOC_W_PCM.sv(94) has no driver or initial value, using a default initial value '0'
 Warning (10034): Output port "sdram_wire_addr" at SOC_W_PCM.sv(2) has no driver
 Warning (10034): Output port "sdram_wire_ba" at SOC_W_PCM.sv(3) has no driver
 Warning (10034): Output port "sdram_wire_dqm" at SOC_W_PCM.sv(8) has no driver
@@ -543,7 +545,6 @@ Info (10041): Inferred latch for "addr_reg[16]" at PCM_MM_reg.sv(24)
 Info (10041): Inferred latch for "addr_reg[17]" at PCM_MM_reg.sv(24)
 Info (10041): Inferred latch for "addr_reg[18]" at PCM_MM_reg.sv(24)
 Info (10041): Inferred latch for "addr_reg[19]" at PCM_MM_reg.sv(24)
-Info (10041): Inferred latch for "schedule" at PCM_MM_reg.sv(24)
 Info (10041): Inferred latch for "cpu_out[0]" at PCM_MM_reg.sv(24)
 Info (10041): Inferred latch for "cpu_out[1]" at PCM_MM_reg.sv(24)
 Info (10041): Inferred latch for "cpu_out[2]" at PCM_MM_reg.sv(24)
@@ -560,7 +561,7 @@ Info (10041): Inferred latch for "cpu_out[12]" at PCM_MM_reg.sv(24)
 Info (10041): Inferred latch for "cpu_out[13]" at PCM_MM_reg.sv(24)
 Info (10041): Inferred latch for "cpu_out[14]" at PCM_MM_reg.sv(24)
 Info (10041): Inferred latch for "cpu_out[15]" at PCM_MM_reg.sv(24)
-Info (10041): Inferred latch for "cpu_ready" at PCM_MM_reg.sv(35)
+Info (10041): Inferred latch for "schedule" at PCM_MM_reg.sv(24)
 Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "sdram_wire_dq[0]" has no driver
     Warning (13040): Bidir "sdram_wire_dq[1]" has no driver
@@ -1033,10 +1034,10 @@ Info (21057): Implemented 59 device resources after synthesis - the final resour
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 25 output pins
     Info (21060): Implemented 32 bidirectional pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 493 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 494 warnings
     Info: Peak virtual memory: 560 megabytes
-    Info: Processing ended: Thu Dec 04 23:59:17 2014
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Fri Dec 05 00:40:04 2014
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 
 
