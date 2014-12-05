@@ -46,7 +46,7 @@ module PCM_MM(input clk, reset,
 										.data_in(pcm_mem_mm_readdata), .cpu_in(cpu2_data_in), .schedule(reg2_sched), .cpu_ready(cpu2_ready), 
 										.cpu_out(cpu2_data_out));
 										
-				  logic reg0_resolved, reg0_sched;
+				  logic reg3_resolved, reg3_sched;
 				  
 				  PCM_MM_reg reg3(.clk(clk), .reset(reset), .resolved(reg3_resolved), .cpu_write(cpu3_write), .addr(cpu3_addr), 
 										.data_in(pcm_mem_mm_readdata), .cpu_in(cpu3_data_in), .schedule(reg3_sched), .cpu_ready(cpu3_ready), 
@@ -102,7 +102,7 @@ module PCM_MM(input clk, reset,
 						
 							WAIT:
 							begin
-								if(reg0_waiting != 0 || reg1_waiting != 0 || reg2_waiting != 0 || reg3_waiting != 0 ||)
+								if(reg0_waiting != 0 || reg1_waiting != 0 || reg2_waiting != 0 || reg3_waiting != 0)
 								begin
 									next_state <= OPERATION_0;
 								end
@@ -144,29 +144,29 @@ module PCM_MM(input clk, reset,
 							if(reg0_pos == 4'b1)
 							begin
 								pcm_mem_mm_address <= cpu0_addr;
-								data_in <= pcm_mem_mm_readdata;
-								pcm_mem_mm_writedata <= cpu0_in;
+								cpu0_data_out <= pcm_mem_mm_readdata;
+								pcm_mem_mm_writedata <= cpu0_data_in;
 							end
 							
 							if(reg1_pos == 4'b1)
 							begin
 								pcm_mem_mm_address <= cpu1_addr;
-								data_in <= pcm_mem_mm_readdata;
-								pcm_mem_mm_writedata <= cpu1_in;
+								cpu1_data_out <= pcm_mem_mm_readdata;
+								pcm_mem_mm_writedata <= cpu1_data_in;
 							end
 							
 							if(reg2_pos == 4'b1)
 							begin
 								pcm_mem_mm_address <= cpu2_addr;
-								data_in <= pcm_mem_mm_readdata;
-								pcm_mem_mm_writedata <= cpu2_in;
+								cpu2_data_out <= pcm_mem_mm_readdata;
+								pcm_mem_mm_writedata <= cpu2_data_in;
 							end
 							
 							if(reg3_pos == 4'b1)
 							begin
 								pcm_mem_mm_address <= cpu3_addr;
-								data_in <= pcm_mem_mm_readdata;
-								pcm_mem_mm_writedata <= cpu3_in;
+								cpu3_data_out <= pcm_mem_mm_readdata;
+								pcm_mem_mm_writedata <= cpu3_data_in;
 							end
 							
 						end
@@ -181,32 +181,32 @@ module PCM_MM(input clk, reset,
 							if(reg0_pos == 4'b1)
 							begin
 								pcm_mem_mm_address <= cpu0_addr;
-								data_in <= pcm_mem_mm_readdata;
-								pcm_mem_mm_writedata <= cpu0_in;
+								cpu0_data_out <= pcm_mem_mm_readdata;
+								pcm_mem_mm_writedata <= cpu0_data_in;
 								pcm_mem_mm_write <= cpu0_write;
 							end
 							
 							if(reg1_pos == 4'b1)
 							begin
 								pcm_mem_mm_address <= cpu1_addr;
-								data_in <= pcm_mem_mm_readdata;
-								pcm_mem_mm_writedata <= cpu1_in;
+								cpu1_data_out <= pcm_mem_mm_readdata;
+								pcm_mem_mm_writedata <= cpu1_data_in;
 								pcm_mem_mm_write <= cpu1_write;
 							end
 							
 							if(reg2_pos == 4'b1)
 							begin
 								pcm_mem_mm_address <= cpu2_addr;
-								data_in <= pcm_mem_mm_readdata;
-								pcm_mem_mm_writedata <= cpu2_in;
+								cpu2_data_out <= pcm_mem_mm_readdata;
+								pcm_mem_mm_writedata <= cpu2_data_in;
 								pcm_mem_mm_write <= cpu2_write;
 							end
 							
 							if(reg3_pos == 4'b1)
 							begin
 								pcm_mem_mm_address <= cpu3_addr;
-								data_in <= pcm_mem_mm_readdata;
-								pcm_mem_mm_writedata <= cpu3_in;
+								cpu3_data_out <= pcm_mem_mm_readdata;
+								pcm_mem_mm_writedata <= cpu3_data_in;
 								pcm_mem_mm_write <= cpu3_write;
 							end
 							

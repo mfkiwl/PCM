@@ -1,0 +1,1792 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\steven\Desktop\ECE 385\fp2\simulation\modelsim
+valtera_avalon_sc_fifo
+Z1 !s100 W3NAXA_4LcFdIG0mQCWCc0
+Z2 I3<<^bbHHIE;b?H<LI[Ocm3
+Z3 VjOzUMS5nAQIa6?lLKEfID0
+Z4 dC:\Users\steven\Desktop\ECE 385\fp2\simulation\modelsim
+Z5 w1417672729
+Z6 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Z7 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_sc_fifo.v
+L0 21
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_sc_fifo.v|
+Z10 o-vlog01compat -work nois_system -O0
+Z11 !s92 -vlog01compat -work nois_system {+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules} -O0
+Z12 !s108 1417749653.234000
+Z13 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_sc_fifo.v|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_avalon_st_clock_crosser
+Z14 !s100 T^0CE41ckK0>QFlVWzFMg2
+Z15 IC=8`VJTakC:kJ=AO>Y9ag2
+Z16 V0e:lkDY0^f=mT6IM[:_5b3
+R4
+R5
+Z17 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_st_clock_crosser.v
+Z18 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_st_clock_crosser.v
+L0 22
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_st_clock_crosser.v|
+R10
+R11
+Z20 !s108 1417749666.391000
+Z21 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_st_clock_crosser.v|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_avalon_st_handshake_clock_crosser
+Z22 !s100 1D091Xl94`EN=1Kll>m[R2
+Z23 IOWjYVUi4b;OO[=k=7o2[i1
+Z24 VYDTFiCWV0RkTigPZ<4iW90
+R4
+R5
+Z25 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+Z26 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+L0 24
+R8
+r1
+31
+Z27 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v|
+R10
+R11
+Z28 !s108 1417749666.118000
+Z29 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_arb_adder
+Z30 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z31 !s100 JQdR@35Z:>KOk<oNXW90K2
+Z32 IPJiSh[oE8JL3a:DKR@W6]0
+Z33 VeEm48mj>0hhNR4acO5n:k1
+Z34 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R4
+R5
+Z35 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Z36 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Z37 L0 228
+R8
+r1
+31
+Z38 !s108 1417749667.228000
+Z39 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z40 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z41 o-sv -work nois_system -O0
+Z42 !s92 -sv -work nois_system {+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules} -O0
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_arbitrator
+R30
+Z43 !s100 Zc3Ij4UlFmN:4mcn^Tl][0
+Z44 InD`Iz;ZA1WMASj8?Fzn@i3
+Z45 VkoHZHN`N_KjQAPBBQ3eh^0
+R34
+S1
+R4
+R5
+R35
+R36
+Z46 L0 103
+R8
+r1
+31
+R38
+R39
+R40
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_burst_adapter
+R30
+Z47 !s100 m_oDG2U0M[35WMRd3iC]n1
+Z48 I9l1^hjR7bo9>SWi8Z?l^e3
+Z49 VW_GZhX^360d[UD7Lhj1350
+Z50 !s105 altera_merlin_burst_adapter_sv_unit
+S1
+R4
+R5
+Z51 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_adapter.sv
+Z52 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_adapter.sv
+L0 16
+R8
+r1
+31
+Z53 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_adapter.sv|
+R41
+R42
+Z54 !s108 1417749670.642000
+Z55 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_adapter.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_burst_adapter_13_1
+R30
+Z56 !s100 6V7PgMfWL`FW8NZ^l1dVz0
+Z57 IH^];k6;fM:@;0TiVilKZ^3
+Z58 VGKY3h3FNU`XKi^U_>A6IY0
+Z59 !s105 altera_merlin_burst_adapter_13_1_sv_unit
+S1
+R4
+R5
+Z60 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv
+Z61 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv
+Z62 L0 264
+R8
+r1
+31
+Z63 !s108 1417749669.886000
+Z64 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv|
+Z65 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv|
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_burst_adapter_adder
+R30
+Z66 !s100 7Fe:7Cf95nVzCU1j^VEla1
+Z67 Id7hg[R[@KVaKe@Lo8jnl51
+Z68 VT^DWNd^gjBXG7CAj0hlQD0
+R59
+S1
+R4
+R5
+R60
+R61
+L0 55
+R8
+r1
+31
+R63
+R64
+R65
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_burst_adapter_burstwrap_increment
+R30
+Z69 !s100 VV0VHkZ6]3FOC7]oMk7YT0
+Z70 IN]5fMz5XT_fiE^INZlTY81
+Z71 VHjbSmoaK][OE;MmVBLg=O2
+R59
+S1
+R4
+R5
+R60
+R61
+L0 40
+R8
+r1
+31
+R63
+R64
+R65
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_burst_adapter_full_13_1
+R30
+Z72 !s100 ^F1G:c30U4CM:MgA1fPOG3
+Z73 IeN1NfG^>@ToiJN6B0<[@03
+Z74 VJlOE?Q=hD50T<=;;cS6Qi2
+R59
+S1
+R4
+R5
+R60
+R61
+Z75 L0 470
+R8
+r1
+31
+R63
+R64
+R65
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_burst_adapter_min
+R30
+Z76 !s100 7QnmYCY?BDb9OU?HQ5HVC2
+Z77 IeCY`4^L3oUfXf80W5DT_f0
+Z78 VHB7>Umo4_PQhA:aini:bA0
+R59
+S1
+R4
+R5
+R60
+R61
+L0 98
+R8
+r1
+31
+R63
+R64
+R65
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_burst_adapter_subtractor
+R30
+Z79 !s100 GY7^:MB3izH8OM^QhQPPR0
+Z80 I6V]<n7`GWK1[4K5LgzJ_l3
+Z81 Ve3BCL<XCz>dk7;O1IYNCU2
+R59
+S1
+R4
+R5
+R60
+R61
+L0 77
+R8
+r1
+31
+R63
+R64
+R65
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_burst_adapter_uncompressed_only_13_1
+R30
+Z82 !s100 9ETPhcEO642`>h8YRRS:20
+Z83 I7U_;=EBNm]lb<bJZf2YKm2
+Z84 VLgjGCn;G7ClL0MWad^29Z1
+R59
+S1
+R4
+R5
+R60
+R61
+Z85 L0 416
+R8
+r1
+31
+R63
+R64
+R65
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_burst_uncompressor
+R30
+Z86 !s100 TFL:b<<f6;c32`62`G36R0
+Z87 IdMURRjYmOkbT2@a767LE?0
+Z88 Vk1gIA`RY2OQ1N9QbTULJo2
+Z89 !s105 altera_merlin_burst_uncompressor_sv_unit
+S1
+R4
+R5
+Z90 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Z91 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R8
+r1
+31
+Z92 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+R41
+R42
+Z93 !s108 1417749667.004000
+Z94 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_master_agent
+R30
+Z95 !s100 8oT[4C5V;Z2V?Q<N[EodP2
+Z96 IcOm=adVc8c9N3amUSl[Z_3
+Z97 V[oCE2g[UWhT]48:GJKRkM3
+Z98 !s105 altera_merlin_master_agent_sv_unit
+S1
+R4
+R5
+Z99 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_master_agent.sv
+Z100 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_master_agent.sv
+L0 28
+R8
+r1
+31
+Z101 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_master_agent.sv|
+R41
+R42
+Z102 !s108 1417749672.800000
+Z103 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_master_agent.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_master_translator
+R30
+!i10b 1
+Z104 !s100 Sn]Yz6:WlGYD_o7`?WJJ<3
+Z105 IZ?>fd3ZIc]?@Baba2k6@o0
+Z106 V0KIH7<bW[IFhHJBzB4US?0
+Z107 !s105 altera_merlin_master_translator_sv_unit
+S1
+R4
+R5
+Z108 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_master_translator.sv
+Z109 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_master_translator.sv
+L0 30
+R8
+r1
+!s85 0
+31
+!s108 1417749673.449000
+!s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_master_translator.sv|
+Z110 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_master_translator.sv|
+!s101 -O0
+R41
+R42
+valtera_merlin_slave_agent
+R30
+Z111 !s100 ef;730SWmlm4QUcHKl3<b1
+Z112 IQb;R:0G`ENN4>Yz4[?NH22
+Z113 VQRTL2;ok>5F_@1VCn>z^^3
+Z114 !s105 altera_merlin_slave_agent_sv_unit
+S1
+R4
+R5
+Z115 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_slave_agent.sv
+Z116 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_slave_agent.sv
+L0 34
+R8
+r1
+31
+Z117 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_slave_agent.sv|
+R41
+R42
+Z118 !s108 1417749672.564000
+Z119 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_slave_agent.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_slave_translator
+R30
+Z120 !s100 6<SZ[CC16hLOHF1KiTfHE0
+Z121 I<jE5aGd^jbb:oY<`lB6kK3
+Z122 VA6G6lglY;QOHbkKlTEAXC0
+Z123 !s105 altera_merlin_slave_translator_sv_unit
+S1
+R4
+R5
+Z124 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_slave_translator.sv
+Z125 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_slave_translator.sv
+L0 35
+R8
+r1
+31
+Z126 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_slave_translator.sv|
+R41
+R42
+!i10b 1
+!s85 0
+Z127 !s108 1417749673.063000
+Z128 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_slave_translator.sv|
+!s101 -O0
+valtera_merlin_width_adapter
+R30
+Z129 !s100 H0Ohl]Cj`LhCJd291_C^E0
+Z130 I2UE;RH0`L734F_bKcdYlh3
+Z131 V71zVf1L0kzk9TE;?mbG[J2
+Z132 !s105 altera_merlin_width_adapter_sv_unit
+S1
+R4
+R5
+Z133 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_width_adapter.sv
+Z134 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_width_adapter.sv
+L0 25
+R8
+r1
+31
+Z135 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_width_adapter.sv|
+R41
+R42
+Z136 !s108 1417749666.746000
+Z137 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_merlin_width_adapter.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_reset_controller
+Z138 !s100 [ZB_k]z]CA=]PdR3>LN@D2
+Z139 Ic3QOCEhN:ODU12zd9HSKD0
+Z140 Vd6XZeNR]PniX]Sml3E;hm2
+R4
+R5
+Z141 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_reset_controller.v
+Z142 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_reset_controller.v
+L0 42
+R8
+r1
+31
+Z143 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_reset_controller.v|
+R10
+R11
+Z144 !s108 1417749652.254000
+Z145 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_reset_controller.v|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_reset_synchronizer
+Z146 !s100 1C[8BW5XPFIA@FEdzkJ=E3
+Z147 IL_J:01Z5bhNienb;VUbic1
+Z148 V3CjoOZCIEdzCJgPn8]D7`2
+R4
+R5
+Z149 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_reset_synchronizer.v
+Z150 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_reset_synchronizer.v
+L0 24
+R8
+r1
+31
+Z151 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_reset_synchronizer.v|
+R10
+R11
+Z152 !s108 1417749652.487000
+Z153 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/altera_reset_synchronizer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system
+Z154 !s100 FHb[Ya]?LmAHlizznzl1W2
+Z155 IzLHmA05RjgIjJ?aI3YPz=0
+Z156 V61a]c[=EW4SSGHf4?`iZN2
+R4
+Z157 w1417738570
+Z158 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/nois_system.v
+Z159 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/nois_system.v
+L0 6
+R8
+r1
+31
+Z160 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/nois_system.v|
+R10
+Z161 !s92 -vlog01compat -work nois_system {+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis} -O0
+Z162 !s108 1417749651.982000
+Z163 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/nois_system.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_irq_mapper
+R30
+Z164 !s100 [NY2FzO]O46CP<7DIKez52
+Z165 IFX;bJF7P0K6H4H<_3S85X1
+Z166 VifKAZm0?X0]HEFbJ2cdZm2
+Z167 !s105 nois_system_irq_mapper_sv_unit
+S1
+R4
+R5
+Z168 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_irq_mapper.sv
+Z169 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_irq_mapper.sv
+L0 31
+R8
+r1
+31
+Z170 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_irq_mapper.sv|
+R41
+R42
+Z171 !s108 1417749665.896000
+Z172 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_irq_mapper.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_jtag_uart_0
+Z173 !s100 ;3lj3`:7]86J3oNhQA]8L3
+Z174 INB:7G?g=IjOVPaPecQNkd2
+Z175 V=e8HnG]W3i>_36V;MS3l_3
+R4
+R5
+Z176 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_jtag_uart_0.v
+Z177 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_jtag_uart_0.v
+Z178 L0 327
+R8
+r1
+31
+Z179 !s108 1417749655.277000
+Z180 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_jtag_uart_0.v|
+Z181 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_jtag_uart_0.v|
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_jtag_uart_0_scfifo_r
+Z182 !s100 E<DWHCXMzIKN`m>OblbJN2
+Z183 Ib3V7LiO>baDo<3moBMkU50
+Z184 VH5CW@QdaKUnSo7SWeR?B`1
+R4
+R5
+R176
+R177
+Z185 L0 240
+R8
+r1
+31
+R179
+R180
+R181
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_jtag_uart_0_scfifo_w
+Z186 !s100 SoRhNeFT6^P8bjBgj[C=M0
+Z187 IM_]>0Kg1F_I51WigV;Kca0
+Z188 VgZ@DDVXhzF9^Wn92HfX`;3
+R4
+R5
+R176
+R177
+L0 77
+R8
+r1
+31
+R179
+R180
+R181
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_jtag_uart_0_sim_scfifo_r
+Z189 !s100 ?:Uk7mKnXaEie>jSbFA1a0
+Z190 INOXK2@]bZm:<GJAF9_l9f0
+Z191 V=o9zLRjATJQ]4fSRK=JFj0
+R4
+R5
+R176
+R177
+Z192 L0 162
+R8
+r1
+31
+R179
+R180
+R181
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_jtag_uart_0_sim_scfifo_w
+Z193 !s100 iN>n1zcIGRE_T:bGXcA4X3
+Z194 IPHbXHPj^86c5X?;HCA;0>0
+Z195 V5^c5hzfIHLULIJB;dPaUE2
+R4
+R5
+R176
+R177
+L0 21
+R8
+r1
+31
+R179
+R180
+R181
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0
+Z196 !s100 kMR]:SgWZS<:^BF1<7GNi1
+Z197 IP]RGFn_AnGGCncEm2Nz8@1
+Z198 V__L?QJ9`F:=^zmPK92?`d1
+R4
+R5
+Z199 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0.v
+Z200 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0.v
+L0 9
+R8
+r1
+31
+Z201 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0.v|
+R10
+R11
+Z202 !s108 1417749652.685000
+Z203 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_cmd_demux
+R30
+Z204 !s100 eG[MaBoVI^8R7A`d?I^]N3
+Z205 Ih9oQ<Gc8Vf7JK4FjToY0Z3
+Z206 V_hM0QaIbJ?W6`[BZHOllm2
+Z207 !s105 nois_system_mm_interconnect_0_cmd_demux_sv_unit
+S1
+R4
+R5
+Z208 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_demux.sv
+Z209 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_demux.sv
+L0 43
+R8
+r1
+31
+Z210 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_demux.sv|
+R41
+R42
+Z211 !s108 1417749669.672000
+Z212 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_demux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_cmd_demux_001
+R30
+Z213 !s100 DRCV[CK4mL:gnlih5OD=C1
+Z214 IFQg<P@d:MzfD88nokRdM;3
+Z215 VYgz?04c89C9T]KiHUGbCg1
+Z216 !s105 nois_system_mm_interconnect_0_cmd_demux_001_sv_unit
+S1
+R4
+R5
+Z217 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_demux_001.sv
+Z218 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_demux_001.sv
+L0 43
+R8
+r1
+31
+Z219 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_demux_001.sv|
+R41
+R42
+Z220 !s108 1417749669.214000
+Z221 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_demux_001.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_cmd_mux
+R30
+Z222 !s100 11L^bazEld0e4DJadfES51
+Z223 I2>SX@l>_;a8d0AK]HdS:91
+Z224 VeRK]:Al;kT@2idkd4WU9P1
+Z225 !s105 nois_system_mm_interconnect_0_cmd_mux_sv_unit
+S1
+R4
+R5
+Z226 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_mux.sv
+Z227 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_mux.sv
+L0 38
+R8
+r1
+31
+Z228 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_mux.sv|
+R41
+R42
+Z229 !s108 1417749668.981000
+Z230 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_mux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_cmd_mux_006
+R30
+Z231 !s100 E]=;X=fA37lbFCHJn@[NF2
+Z232 I:6X5NVY>LNY3VKKZ^Wz@X0
+Z233 V4;8cW@zI8Mb:C4^[:1]YG1
+Z234 !s105 nois_system_mm_interconnect_0_cmd_mux_006_sv_unit
+S1
+R4
+R5
+Z235 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_mux_006.sv
+Z236 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_mux_006.sv
+L0 38
+R8
+r1
+31
+Z237 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_mux_006.sv|
+R41
+R42
+Z238 !s108 1417749668.783000
+Z239 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_mux_006.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_router
+R30
+Z240 !s100 ?S7^Qk9^6l916Ta8N_i4a1
+Z241 IkMZ[1T@mo:30_B;g2V9RV3
+Z242 VfHf43iLNg6Pn7e4Q[hnci3
+Z243 !s105 nois_system_mm_interconnect_0_router_sv_unit
+S1
+R4
+R5
+Z244 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router.sv
+Z245 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router.sv
+L0 86
+R8
+r1
+31
+Z246 !s108 1417749672.020000
+Z247 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router.sv|
+Z248 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router.sv|
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_router_001
+R30
+Z249 !s100 77<7ezoNzJ^<MCj7V1j_X1
+Z250 I:oN>4k9aOGiaA1E?3CYTj1
+Z251 V3Y1mcC5RbYfQT]WZ>;6683
+Z252 !s105 nois_system_mm_interconnect_0_router_001_sv_unit
+S1
+R4
+R5
+Z253 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_001.sv
+Z254 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_001.sv
+L0 86
+R8
+r1
+31
+Z255 !s108 1417749671.736000
+Z256 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_001.sv|
+Z257 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_001.sv|
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_router_001_default_decode
+R30
+Z258 !s100 mFGAHWHdPJC4MnW`c6oj^0
+Z259 IPM>z>Da;@meAGD8M@EXgU2
+Z260 VHdY_D=XCcP[9iiPH_Q:LN0
+R252
+S1
+R4
+R5
+R253
+R254
+L0 45
+R8
+r1
+31
+R255
+R256
+R257
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_router_002
+R30
+Z261 !s100 IBhTk]f0S<LRMigMnL8>g2
+Z262 ICo^KAc_CRn>VeQ^VWoU>43
+Z263 Vlg>6haXccMVIKk:LDe6h_1
+Z264 !s105 nois_system_mm_interconnect_0_router_002_sv_unit
+S1
+R4
+R5
+Z265 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_002.sv
+Z266 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_002.sv
+L0 86
+R8
+r1
+31
+Z267 !s108 1417749671.499000
+Z268 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_002.sv|
+Z269 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_002.sv|
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_router_002_default_decode
+R30
+Z270 !s100 eIIeR4mUG;h@m7SZ?lY^L2
+Z271 I>h7ZgT`ezKiK;V6TGohQ51
+Z272 VG`j[jGjm@YD<29moTMaJ_1
+R264
+S1
+R4
+R5
+R265
+R266
+L0 45
+R8
+r1
+31
+R267
+R268
+R269
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_router_005
+R30
+Z273 !s100 VNXSUhA62EkNIBDImf23M3
+Z274 I]mCW@bj9nXLi9:6PWOH^Z1
+Z275 V=6c>E01JITO9GSR=>Z0mm0
+Z276 !s105 nois_system_mm_interconnect_0_router_005_sv_unit
+S1
+R4
+R5
+Z277 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_005.sv
+Z278 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_005.sv
+L0 86
+R8
+r1
+31
+Z279 !s108 1417749671.182000
+Z280 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_005.sv|
+Z281 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_005.sv|
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_router_005_default_decode
+R30
+Z282 !s100 ]Tzhe?GkdOm@:iP9kX@D30
+Z283 I]>2O2aSz1]4LEYMZdD5AK1
+Z284 V_9c>iH3=mQIh1fi:SB_He0
+R276
+S1
+R4
+R5
+R277
+R278
+L0 45
+R8
+r1
+31
+R279
+R280
+R281
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_router_008
+R30
+Z285 !s100 Bml25OC44O9cP[OFl>Enh0
+Z286 I>UbdG:9f9goF?`0m2LGaj2
+Z287 Vm5[ccTnbbMoEbA?i@78Z51
+Z288 !s105 nois_system_mm_interconnect_0_router_008_sv_unit
+S1
+R4
+R5
+Z289 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_008.sv
+Z290 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_008.sv
+L0 86
+R8
+r1
+31
+Z291 !s108 1417749670.913000
+Z292 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_008.sv|
+Z293 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_008.sv|
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_router_008_default_decode
+R30
+Z294 !s100 fJAib2]>01aeQ`9V@Jg7n0
+Z295 I>JQzP=2zi9=]1J[O9PC3c1
+Z296 VPKG58Pg0H<lai[n7^:>1X0
+R288
+S1
+R4
+R5
+R289
+R290
+L0 45
+R8
+r1
+31
+R291
+R292
+R293
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_router_default_decode
+R30
+Z297 !s100 n14KYd0C2bZ4^YzlhAmWR1
+Z298 II9QX;TKYC=<[Z=`=Xhjzd3
+Z299 Vh];5>_9M:h=NQ8bCahY7T1
+R243
+S1
+R4
+R5
+R244
+R245
+L0 45
+R8
+r1
+31
+R246
+R247
+R248
+R41
+R42
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_rsp_demux
+R30
+Z300 !s100 Tjd]8ADc8zPLIVNXm=The3
+Z301 IWU4VA5;RoXO=JZMk7f7IP0
+Z302 Vabl9NICMFgMm?kdzhIb@A2
+Z303 !s105 nois_system_mm_interconnect_0_rsp_demux_sv_unit
+S1
+R4
+R5
+Z304 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_demux.sv
+Z305 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_demux.sv
+L0 43
+R8
+r1
+31
+Z306 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_demux.sv|
+R41
+R42
+Z307 !s108 1417749668.556000
+Z308 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_demux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_rsp_demux_006
+R30
+Z309 !s100 NWLf5g[lk1Jo3ZY7zR]:;3
+Z310 I3Vz1ei7S5gfoT_[25eYLT0
+Z311 VK[CI8m=:3XS:OkH=cMlf93
+Z312 !s105 nois_system_mm_interconnect_0_rsp_demux_006_sv_unit
+S1
+R4
+R5
+Z313 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_demux_006.sv
+Z314 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_demux_006.sv
+L0 43
+R8
+r1
+31
+Z315 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_demux_006.sv|
+R41
+R42
+Z316 !s108 1417749667.948000
+Z317 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_demux_006.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_rsp_mux
+R30
+Z318 !s100 XR229H^0lY<Q=H4EODo7@1
+Z319 IoZ:Sd9aeICEY`5fX:=YTN2
+Z320 VS6HKaFVWl=TBCdlKT;V_P3
+Z321 !s105 nois_system_mm_interconnect_0_rsp_mux_sv_unit
+S1
+R4
+R5
+Z322 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_mux.sv
+Z323 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_mux.sv
+L0 38
+R8
+r1
+31
+Z324 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_mux.sv|
+R41
+R42
+Z325 !s108 1417749667.711000
+Z326 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_mux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_mm_interconnect_0_rsp_mux_001
+R30
+Z327 !s100 GSYV6Qcf0EXf<]G4hPDPX3
+Z328 Igi9jR]1`3:7;;>SCXQ>WH1
+Z329 V^Q6SD_L9dPLJUFXfU5T@B0
+Z330 !s105 nois_system_mm_interconnect_0_rsp_mux_001_sv_unit
+S1
+R4
+R5
+Z331 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_mux_001.sv
+Z332 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_mux_001.sv
+L0 38
+R8
+r1
+31
+Z333 !s90 -reportprogress|300|-sv|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_mux_001.sv|
+R41
+R42
+Z334 !s108 1417749667.509000
+Z335 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_mux_001.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0
+Z336 !s100 S[GBkWVEe<S=`]:DX97Wl2
+Z337 IIdh4kX?;1;_aYFamKDdK30
+Z338 VW4kL1PA5EJ@iniI[NfeNJ2
+R4
+R5
+Z339 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0.v
+Z340 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0.v
+Z341 L0 3166
+R8
+r1
+31
+Z342 !s108 1417749656.177000
+Z343 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0.v|
+Z344 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0.v|
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_jtag_debug_module_sysclk
+Z345 !s100 OC[]SJSLE[NQQCOnz5h462
+Z346 Ie8X2k^PPfNfdM^I>P^LoE1
+Z347 VPRNiX^LcghQU4@U5`Rj353
+R4
+R5
+Z348 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_sysclk.v
+Z349 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_sysclk.v
+L0 21
+R8
+r1
+31
+Z350 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_sysclk.v|
+R10
+R11
+Z351 !s108 1417749659.249000
+Z352 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_sysclk.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_jtag_debug_module_tck
+Z353 !s100 1NbbjR>A]oIIJz5n^:UPJ0
+Z354 IfGg6@f9jmKhG1Q;j]8c>60
+Z355 V18lAc[OAOeY6d7m0P1gHW3
+R4
+R5
+Z356 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_tck.v
+Z357 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_tck.v
+L0 21
+R8
+r1
+31
+Z358 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_tck.v|
+R10
+R11
+Z359 !s108 1417749659.451000
+Z360 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_tck.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_jtag_debug_module_wrapper
+Z361 !s100 gT7oeOZ6HR<UfFh:0Ab^k3
+Z362 IeG9Ozz;cV4B>M6]kK?P1O3
+Z363 V:AikC9]2MkcSR5l2ZJd_D0
+R4
+R5
+Z364 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_wrapper.v
+Z365 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_wrapper.v
+L0 21
+R8
+r1
+31
+Z366 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_wrapper.v|
+R10
+R11
+Z367 !s108 1417749659.658000
+Z368 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_wrapper.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_avalon_reg
+Z369 !s100 eE0GJVXQAN8YnCVP1VfB00
+Z370 I0[VBa@4@BV63L?4NCYldg3
+Z371 V?6R1I40b5A3]?h9d7_CoS1
+R4
+R5
+R339
+R340
+Z372 L0 536
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci
+Z373 !s100 C7jieY]Md<oX:?>Q`B0QR0
+Z374 InY4bgWh0]>IOE>O<YWC[_2
+Z375 VXQYWL`VY8V_6XmD[5`HGD2
+R4
+R5
+R339
+R340
+Z376 L0 2658
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_break
+Z377 !s100 :[z_4a;R_BH=1l9J2<SYk0
+Z378 I@J_XnlPMUS0SdRI^2jTT@1
+Z379 V@Sf;lkmbmP;clg8Jld<[D0
+R4
+R5
+R339
+R340
+Z380 L0 628
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_compute_input_tm_cnt
+Z381 !s100 G<^SYS3BZHfa4AQ<OFQ1J1
+Z382 Io3ZbL1Xkom;cEH?X3d>UI1
+Z383 VS^`AhDARI0^87ESEXIjTm0
+R4
+R5
+R339
+R340
+Z384 L0 1798
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_dbrk
+Z385 !s100 O_YG0UlBF6?gYEIQL]d5`1
+Z386 IBB<zWabTV6dkaf:V99U6]2
+Z387 VP<CG4g`Fn0:cozZ8;YgV20
+R4
+R5
+R339
+R340
+Z388 L0 1128
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_debug
+Z389 !s100 h8]biR<YeWOZ5Dlke8e2@2
+Z390 IZaEl5G]8GNZZhd;[B_3[m2
+Z391 V5]cQ2UNccY<RYH?h0mZ;T0
+R4
+R5
+R339
+R340
+Z392 L0 151
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_dtrace
+Z393 !s100 aZ;AbcWG`b@oSg?CznTIS3
+Z394 IMYkh?4fJU[NET5fYDiziR0
+Z395 ViGji6L0Mgoa4;B;AE]Hej0
+R4
+R5
+R339
+R340
+Z396 L0 1704
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_fifo
+Z397 !s100 EJ2I05E7WCcgT9o5GYXRh1
+Z398 IQMahH7LMTJJPHT3XfMm1E3
+Z399 VI?0D<I>SPXGCO^86LoDkT2
+R4
+R5
+R339
+R340
+Z400 L0 1957
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_fifo_cnt_inc
+Z401 !s100 fADij<To`MEOQ6nZkk=Z@3
+Z402 IYPWFZBd>CKP31@l^oe7zi2
+Z403 VBKQh785AYCc1QJ[z7LJ]F1
+R4
+R5
+R339
+R340
+Z404 L0 1911
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_fifo_wrptr_inc
+Z405 !s100 ]i1]4HII[nFV]`[^Gnb:31
+Z406 I@J]b3d]O?RjG^olkPdJ<83
+Z407 VKgF5^_a=iAm=J:_Kg0T>L2
+R4
+R5
+R339
+R340
+Z408 L0 1869
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_im
+Z409 !s100 C8^z]?cjazZSNf1IR7`<X2
+Z410 I9>dFm`GkR;@zedLT:aiaU0
+Z411 VChdJf<YB@@gdY6K5zAIOZ0
+R4
+R5
+R339
+R340
+Z412 L0 2526
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_itrace
+Z413 !s100 98E^JXMk;R@o?7?doBV[a2
+Z414 ImNWB@Pb1SLF>[nRccUW=P0
+Z415 VOhe^@7CLCHcHQPX6LBA<Q0
+R4
+R5
+R339
+R340
+Z416 L0 1314
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_pib
+Z417 !s100 J^bl3^81]zz@k4kL9Obe@2
+Z418 I?[`_z=TF[b3Ma>akV@c]c3
+Z419 V46eg8WP:z2<FSYfih[@Hm3
+R4
+R5
+R339
+R340
+Z420 L0 2458
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_td_mode
+Z421 !s100 XghUCl6J55dPlQffSVU8n0
+Z422 IB6IRbR_akl9A321;3A4Gg2
+Z423 V`g[o>XefeIAgQ^RgogNY`3
+R4
+R5
+R339
+R340
+Z424 L0 1637
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_oci_xbrk
+Z425 !s100 bnC@PiEfCG>5T@Sa8gdgh2
+Z426 I47J?Tn[[3AL>gR8aGjinR2
+Z427 V;lX:mLQ47[K0cUDQIMI1`3
+R4
+R5
+R339
+R340
+Z428 L0 922
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_ocimem
+Z429 !s100 oTe9AF<L;5eoXI5hcYId11
+Z430 Ic1[Uf<m23_@RWbhY:j3Ma0
+Z431 V@cFEB@U0mzgE8R_GiJa5j1
+R4
+R5
+R339
+R340
+Z432 L0 355
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_nios2_performance_monitors
+Z433 !s100 AgPlE3BXbV1VnU6E1jCC`2
+Z434 IKDmRi7X][_2<ooFb[1WFd3
+Z435 VP8fDW;J42GQmMC^HHzZmY1
+R4
+R5
+R339
+R340
+Z436 L0 2642
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_oci_test_bench
+Z437 !s100 i30mB0fA``mA]8LML8eVF2
+Z438 ILm;@_SM9CC=eoYOJESXXA0
+Z439 V03Q?AeWOOj<7^homW:[WV1
+R4
+R5
+Z440 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_oci_test_bench.v
+Z441 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_oci_test_bench.v
+L0 21
+R8
+r1
+31
+Z442 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_oci_test_bench.v|
+R10
+R11
+Z443 !s108 1417749660.387000
+Z444 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_oci_test_bench.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_ociram_sp_ram_module
+Z445 !s100 BNXIE<_?Sd8RG^]Zj=@9:2
+Z446 IX@kk2Wo6Yd5_e<C=efh0g1
+Z447 V<l8ol]ZGX1;<[A;ZI]o[I2
+R4
+R5
+R339
+R340
+Z448 L0 292
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_register_bank_a_module
+Z449 !s100 OS@47HHm:f8EHO?laWc^i3
+Z450 I3IZNQ3a_:]9]C5dI7R7CK3
+Z451 VRn?V9e?dT1LakOH8ekHme1
+R4
+R5
+R339
+R340
+L0 21
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_register_bank_b_module
+Z452 !s100 2_B1RVEDHSR40oRk[:Q;E2
+Z453 IOkm=W5fV]cPZU>J<=lgYQ1
+Z454 V9:183>hzzXabZ1BFfOziO0
+R4
+R5
+R339
+R340
+L0 86
+R8
+r1
+31
+R342
+R343
+R344
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_nios2_qsys_0_test_bench
+Z455 !s100 QSi9A1:_ACm[3FdN[i@FN2
+Z456 Ig2:DlKTe2;6Bi@oKWXL291
+Z457 V[S[?de]aYnYVXS;BG?WZ=0
+R4
+R5
+Z458 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_test_bench.v
+Z459 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_test_bench.v
+L0 21
+R8
+r1
+31
+Z460 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_test_bench.v|
+R10
+R11
+Z461 !s108 1417749660.637000
+Z462 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_test_bench.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_onchip_memory2_0
+Z463 !s100 37A3YPB_llI7OaQ751[Ud0
+Z464 IMm77C@_0Nc4P0mRDSZhSc1
+Z465 VBfHEXXfA[X=z2Ag]ifPPJ0
+R4
+R5
+Z466 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_onchip_memory2_0.v
+Z467 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_onchip_memory2_0.v
+L0 21
+R8
+r1
+31
+Z468 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_onchip_memory2_0.v|
+R10
+R11
+Z469 !s108 1417749655.995000
+Z470 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_onchip_memory2_0.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_onchip_memory2_1
+Z471 !s100 Gh`Hn9d;GK4f@XVR4l03^2
+Z472 I;[9GoUM2c;D<O_j4[oY_d3
+Z473 VAg]KVD;T;FIm_@ZSCb75d2
+R4
+R5
+Z474 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_onchip_memory2_1.v
+Z475 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_onchip_memory2_1.v
+L0 21
+R8
+r1
+31
+Z476 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_onchip_memory2_1.v|
+R10
+R11
+Z477 !s108 1417749654.511000
+Z478 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_onchip_memory2_1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_PCCM_ctl
+Z479 !s100 SN0ZDZ7aYR6kVOI;Jo9cc3
+Z480 InVk]_0`N_BmTlf39U64Mf0
+Z481 VK_=2?3WXLRGbKg<?_<@M<2
+R4
+R5
+Z482 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_PCCM_ctl.v
+Z483 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_PCCM_ctl.v
+L0 21
+R8
+r1
+31
+Z484 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_PCCM_ctl.v|
+R10
+R11
+Z485 nnois_system_@p@c@c@m_ctl
+Z486 !s108 1417749654.919000
+Z487 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_PCCM_ctl.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_PCCM_rsp
+Z488 !s100 1J<80z`[:J5:;:3Xn90@i3
+Z489 I=iN;?jifI2kTW_1l6FROb2
+Z490 VQ55jCN_VHSlnT>`bQzSSO0
+R4
+R5
+Z491 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_PCCM_rsp.v
+Z492 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_PCCM_rsp.v
+L0 21
+R8
+r1
+31
+Z493 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_PCCM_rsp.v|
+R10
+R11
+Z494 nnois_system_@p@c@c@m_rsp
+Z495 !s108 1417749654.709000
+Z496 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_PCCM_rsp.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_sdram
+Z497 !s100 aL4QZB2T=hkh8z`b2nT<o1
+Z498 IO0::>V`b;lBlNHQA]zV>f2
+Z499 V`=[9DlA>FShhFlbUOJZ6B0
+R4
+R5
+Z500 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sdram.v
+Z501 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sdram.v
+Z502 L0 158
+R8
+r1
+31
+Z503 !s108 1417749653.983000
+Z504 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sdram.v|
+Z505 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sdram.v|
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_sdram_clk
+Z506 !s100 C7_5bH3kN_z<kocC_C<N62
+Z507 IDEGRA2bAf:2WV`]Yi@i`z0
+Z508 Vcc6>zX5NZfbA`Z2@Z^kjU0
+R4
+R5
+Z509 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sdram_clk.v
+Z510 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sdram_clk.v
+Z511 L0 214
+R8
+r1
+31
+Z512 !s108 1417749653.534000
+Z513 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sdram_clk.v|
+Z514 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sdram_clk.v|
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_sdram_clk_altpll_l942
+Z515 !s100 8CRNP[N9ObdN9Z1jS<0Cm2
+Z516 IgA_Mk48J;VGo[QKPa5JK11
+Z517 V_3:7:jfc]66Yf6MbESj:k1
+R4
+R5
+R509
+R510
+Z518 L0 131
+R8
+r1
+31
+R512
+R513
+R514
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_sdram_clk_dffpipe_l2c
+Z519 !s100 54<:7PW0A]oo;T]^<F4RO0
+Z520 I4YVT7jhiN1F<_dYCFEQB32
+Z521 Vi0igN_QX[0<kFRVW;LiTT0
+R4
+R5
+R509
+R510
+L0 38
+R8
+r1
+31
+R512
+R513
+R514
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_sdram_clk_stdsync_sv6
+Z522 !s100 f1=4_In?a1B5TTSOMPF5:2
+Z523 IgaO^;K8T5_<Y1VBY0TjNI1
+Z524 VebVM`EBfPoe;1^@TjjNFl2
+R4
+R5
+R509
+R510
+L0 99
+R8
+r1
+31
+R512
+R513
+R514
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_sdram_input_efifo_module
+Z525 !s100 ]SPONCCn4f`IK^VK5a6LO3
+Z526 IRYH2zeK@FQ13dD0EgUXB;2
+Z527 Vkd78<h1eHKN[Dj5KP6L7z2
+R4
+R5
+R500
+R501
+L0 21
+R8
+r1
+31
+R503
+R504
+R505
+R10
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vnois_system_sysid_qsys_0
+Z528 !s100 2CEc^00NRABHYz47hN8D41
+Z529 INN@L17;UT^To?hJO:[bjX2
+Z530 V_;3jXN:BCUz^czQSR4c`G2
+R4
+R5
+Z531 8C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sysid_qsys_0.v
+Z532 FC:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sysid_qsys_0.v
+L0 21
+R8
+r1
+31
+Z533 !s90 -reportprogress|300|-vlog01compat|-work|nois_system|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules|C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sysid_qsys_0.v|
+R10
+R11
+Z534 !s108 1417749655.088000
+Z535 !s107 C:/Users/steven/Desktop/ECE 385/fp2/nois_system/synthesis/submodules/nois_system_sysid_qsys_0.v|
+!i10b 1
+!s85 0
+!s101 -O0

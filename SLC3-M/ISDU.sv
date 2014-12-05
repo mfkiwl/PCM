@@ -18,7 +18,6 @@ module ISDU(input	logic			Clk,
 										Reset,
 										Run,
 										Continue,
-										ContinueIR,
 
 				input logic [2:0] NZP,
 				input logic	[15:0]IR,

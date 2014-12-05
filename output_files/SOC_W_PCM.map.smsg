@@ -1,3 +1,12 @@
+Warning (10268): Verilog HDL information at PCM_MM_reg.sv(27): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at testbench.sv(10): object "Data_in" differs only in case from object "data_in" in the same scope
+Warning (10268): Verilog HDL information at PCM_MM.sv(128): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at ISDU.sv(75): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at ISDU.sv(147): always construct contains both blocking and non-blocking assignments
+Warning (10273): Verilog HDL warning at HexDriver.sv(23): extended using "x" or "z"
+Info (10281): Verilog HDL Declaration information at CPU.sv(10): object "PCMUX" differs only in case from object "PCmux" in the same scope
+Info (10281): Verilog HDL Declaration information at CPU.sv(11): object "MARMUX" differs only in case from object "MARmux" in the same scope
+Info (10281): Verilog HDL Declaration information at CPU.sv(11): object "SR2MUX" differs only in case from object "SR2mux" in the same scope
 Info (10281): Verilog HDL Declaration information at altera_merlin_burst_adapter_new.sv(265): object "BYTE_TO_WORD_SHIFT" differs only in case from object "byte_to_word_shift" in the same scope
 Info (10281): Verilog HDL Declaration information at altera_wrap_burst_converter.sv(279): object "addr_incr" differs only in case from object "ADDR_INCR" in the same scope
 Info (10281): Verilog HDL Declaration information at nois_system_mm_interconnect_0_router_008.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope

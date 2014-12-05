@@ -7,20 +7,73 @@ timeprecision 1ns;
 logic Clk = 0;
 logic Reset, Run, Continue, ContinueIR; 
 wire  [15:0]  I_O;
+logic [15:0] Data_in,Data_out;
 logic [19:0]  A;
 logic [11:0] LED;
 logic CE, UB, LB, OE, WE;
 logic [6:0] HEX0, HEX1, HEX2, HEX3;
 logic [15:0] PCout, IRout, Data_cpu_out, Other_out;
 wire[15:0] index;
+logic [12:0] sdram_wire_addr;
+logic  [1:0] sdram_wire_ba;
+logic        sdram_wire_cas_n;
+logic		sdram_wire_cke;
+logic		sdram_wire_cs_n;
+logic  [31:0] sdram_wire_dq;
+logic  [3:0] sdram_wire_dqm;
+logic		sdram_wire_ras_n;
+logic		sdram_wire_we_n;
+logic		sdram_wire_clk;
+
+logic cpu0_write;										
+logic [19:0] cpu0_addr;
+logic [15:0] cpu0_data_in;
+logic cpu0_ready;
+logic [15:0] cpu0_data_out;
+logic cpu1_write;										
+logic[19:0] cpu1_addr;
+logic[15:0] cpu1_data_in;
+logic cpu1_ready;
+logic [15:0] cpu1_data_out;
+logic cpu2_write;									
+logic[19:0] cpu2_addr;
+logic[15:0] cpu2_data_in;
+logic cpu2_ready;
+logic [15:0] cpu2_data_out;
+logic cpu3_write;									
+logic[19:0] cpu3_addr;
+logic[15:0] cpu3_data_in;
+logic cpu3_ready;
+logic [15:0] cpu3_data_out;
+wire [10:0] pcm_mem_mm_address;
+wire pcm_mem_mm_chipselect;
+wire pcm_mem_mm_clken;
+wire pcm_mem_mm_write;
+wire  [15:0] pcm_mem_mm_readdata;
+wire [15:0] pcm_mem_mm_writedata;
+wire [1:0] pcm_mem_mm_byteenable;
+
+//PCM_MM_REG variables
+logic resolved, cpu_write;
+logic [19:0] addr;
+logic [15:0] data_in, cpu_in;
+logic schedule, cpu_ready;
+logic [15:0] cpu_out;
+logic [19:0] addr_reg;
 
 logic [15:0] S;
 
 integer ErrorCnt = 0; //Error counter; succesful run means count=0
 
-test_memory mem(.*, .Reset(~Reset));
+//test_memory mem(.*, .Reset(~Reset));
 												
-SLC lc(.*, .DIS3(HEX3), .DIS2(HEX2), .DIS1(HEX1), .DIS0(HEX0), .Data(I_O));
+//SLC lc(.*, .DIS3(HEX3), .DIS2(HEX2), .DIS1(HEX1), .DIS0(HEX0), .Data(I_O));
+
+//SOC_W_PCM soc(.*, .clk(Clk), .reset(~Reset));
+
+//PCM_MM pcm (.*, .clk(Clk), .reset(~Reset));
+
+PCM_MM_reg pcm_reg(.*, .clk(Clk), .reset(~Reset));
 
 always begin : CLOCK_GENERATION //1 timeunit delay
 	#1 Clk = ~Clk;
@@ -52,6 +105,27 @@ task test_add(int num1, int num2, reg [15:0] addr);
 	test_setup(addr);
 		
 endtask
+
+task PCM_MM_REG_test(reg [19:0] newaddr);
+@(posedge Clk)
+#2 addr =newaddr ;
+
+if(schedule == 1)
+begin
+#5	$display ("Schedule was set correctly");
+end
+else
+begin
+#5	$display ("Schedule was not correctly");
+end
+
+#5 data_in = 16'h0FF0;
+
+#5 resolved = 1 ;
+
+	
+
+endtask
 //Begin testing
 initial begin: TEST_VECTORS
 Reset = 1;
@@ -62,19 +136,10 @@ Continue = 1;
 
 
 begin
-test_setup(16'h005A);
-
-
-#100 Continue = 0;
-
-#10 Continue = 1; 
-
-#50 S = 16'h0606;
+PCM_MM_REG_test(20'hFFFFF);
 
 
 	
-
-
 
 end
 

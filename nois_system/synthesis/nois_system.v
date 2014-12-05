@@ -26,10 +26,10 @@ module nois_system (
 		output wire        sdram_wire_we_n,        //             .we_n
 		output wire			 sdram_wire_clk
 	);
-	
+	wire         sdram_clk_c0_clk;
 	assign sdram_wire_clk = sdram_clk_c0_clk;
 
-	wire         sdram_clk_c0_clk;                                             // sdram_clk:c0 -> [mm_interconnect_0:sdram_clk_c0_clk, rst_controller_002:clk, sdram:clk]
+	                                             // sdram_clk:c0 -> [mm_interconnect_0:sdram_clk_c0_clk, rst_controller_002:clk, sdram:clk]
 	wire         nios2_qsys_0_instruction_master_waitrequest;                  // mm_interconnect_0:nios2_qsys_0_instruction_master_waitrequest -> nios2_qsys_0:i_waitrequest
 	wire  [26:0] nios2_qsys_0_instruction_master_address;                      // nios2_qsys_0:i_address -> mm_interconnect_0:nios2_qsys_0_instruction_master_address
 	wire         nios2_qsys_0_instruction_master_read;                         // nios2_qsys_0:i_read -> mm_interconnect_0:nios2_qsys_0_instruction_master_read

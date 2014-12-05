@@ -55,7 +55,7 @@ module SOC_W_PCM(input clk, reset,
 									.sdram_wire_we_n(sdram_wire_we_n),
 									.sdram_wire_clk(sdram_wire_clk) );
 			
-			PCCM pccm_i(.*, .reset(~reset));
+			//PCCM pccm_i(.*, .reset(~reset));
 			
 			// CPU 0
 			logic cpu0_run, cpu0_continue, cpu0_CE, cpu0_UB, cpu0_LB, cpu0_OE, cpu0_WE;

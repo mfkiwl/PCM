@@ -1,0 +1,4 @@
+library verilog;
+use verilog.vl_types.all;
+entity nois_system_nios2_qsys_0_nios2_performance_monitors is
+end nois_system_nios2_qsys_0_nios2_performance_monitors;

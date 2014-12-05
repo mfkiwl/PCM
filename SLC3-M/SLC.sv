@@ -4,7 +4,8 @@ module SLC(	input logic			Clk, Reset, Run, Continue, ContinueIR, // CPU input //
 				output logic[19:0]A,								// CPU output directly to memory
 				output logic[11:0]LED,							// CPU output
 				output logic [6:0]DIS3, DIS2, DIS1, DIS0,	// Mem2IO output
-				inout	wire		 [15:0]Data,
+				input logic	[15:0]Data_in,
+				output logic [15:0]Data_out,
 				inout wire [15:0] index);					// Mem2IO inout
 
 logic Mem_CE, Mem_UB, Mem_LB, Mem_OE, Mem_WE;
@@ -12,7 +13,7 @@ logic [19:0] ADDR;
 logic [3:0]	 HEX3, HEX2, HEX1, HEX0;
 tri	[15:0] CPUdata;
 
-CPU		cpu	(.*, .Reset(~Reset), .Run(~Run), .Continue(~Continue), .ContinueIR(~ContinueIR), .Data(CPUdata));
+CPU		cpu	(.*, .Reset(~Reset), .Run(~Run), .Continue(~Continue), .ContinueIR(~ContinueIR), .Data_in(CPUdata));
 
 Mem2IO 	mem2io(.*, .Reset(~Reset), .A(ADDR), .CE(Mem_CE), .UB(Mem_UB), .LB(Mem_LB), .OE(Mem_OE), .WE(Mem_WE),
 						.Switches(S), .Data_CPU(CPUdata), .Data_Mem(Data));

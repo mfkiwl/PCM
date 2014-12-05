@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Mon Nov 17 23:28:12 2014
+Analysis & Synthesis Status : Successful - Thu Dec 04 21:20:29 2014
 Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Web Edition
 Revision Name : SOC_W_PCM
 Top-level Entity Name : SOC_W_PCM
 Family : Cyclone IV E
-Total logic elements : 3,465
-    Total combinational functions : 2,537
-    Dedicated logic registers : 2,093
-Total registers : 2093
+Total logic elements : 3,439
+    Total combinational functions : 2,513
+    Dedicated logic registers : 2,074
+Total registers : 2074
 Total pins : 59
 Total virtual pins : 0
 Total memory bits : 76,800
