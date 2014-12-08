@@ -104,6 +104,9 @@ task test_cpu1(reg [15:0] instr);
 
 #10 Data_in = instr;
 
+// This should add 1 to reg1 in LC3, instead puts it into Data_in.
+// It goes into the correct register but the data is wrong.
+
 endtask
 
 /*task test_add(int num1, int num2, reg [15:0] addr);
@@ -192,7 +195,7 @@ Reset = 0;
 
 #2 Reset = 1;
 
-#5 test_cpu1(16'b0001010001100001);
+#5 test_cpu1(16'b0001001001100001);
 
 	
 end

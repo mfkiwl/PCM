@@ -20,18 +20,18 @@ SEXT11		JSR_PCin		(.In(IRout[10:0]), .Out(PCoffset11));
 Mux2			PCoffsetmux	(.Sel(ADDR1MUX), .Din0(PCoffset9)/*BR*/, .Din1(PCoffset11)/*JSR*/, .Dout(PCoffset));
 Mux4			PCmux			(.Sel(PCMUX), .Din0(PCout+1)/*FETCH*/, .Din1(PCout+PCoffset)/*BR and JSR*/, .Din2(SR2out)/*JMP*/, .Din3(Data_in)/*Switches*/, .Dout(PCin));
 Reg16 		PC				(.*, .Load(LD_PC), .Din(PCin), .Dout(PCout));
-//TSB			PCgate		(.Switch(GatePC), .Din(PCout), .Dout(Data_out));
+//TSB			PCgate		(.Switch(GatePC), .Din(PCout), .Dout(Data_out)); //*********************** 
 
 Reg16			IR				(.*, .Load(LD_IR), .Din(Data_in), .Dout(IRout));
 
 SEXT6			LDR_MARin	(.In(IRout[5:0]), .Out(MARoffset6));
 Mux2			MEM_IOmux	(.Sel(ADDR2MUX), .Din0(MARoffset6+SR2out), .Din1(16'hFFFF), .Dout(MEM_IOaddr));	// BaseR+offset for LDR/STR and FFFF for loading PC when starting execution
 Mux2			MARmux		(.Sel(MARMUX), .Din0(Data_in)/*PC*/, .Din1(MEM_IOaddr), .Dout(MARin));
-//TSB			MARMUXgate	(.Switch(GateMARMUX), .Din(MARin), .Dout(Data_out));
+//TSB			MARMUXgate	(.Switch(GateMARMUX), .Din(MARin), .Dout(Data_out)); //***************************
 Reg16			MAR			(.*, .Load(LD_MAR), .Din(Data_in), .Dout(MARout));
 
 Reg16 		MDR			(.*, .Load(LD_MDR), .Din(Data_in), .Dout(MDRout));
-//TSB			MDRgate		(.Switch(GateMDR), .Din(MDRout), .Dout(Data_out));
+//TSB			MDRgate		(.Switch(GateMDR), .Din(MDRout), .Dout(Data_out));  //****************************
 
 RegAddrMux	regAddrMux	(.*, .IR(IRout));						// SR		= SR1 when there's only one source register
 RegFile		Registers	(.*, .Load(LD_REG), .Din(Data_in));	//	BaseR = SR1 for JMP, LDR, STR
@@ -39,7 +39,7 @@ RegFile		Registers	(.*, .Load(LD_REG), .Din(Data_in));	//	BaseR = SR1 for JMP, L
 SEXT5			operand2sext(.In(IRout[4:0]), .Out(imm5));
 Mux2			SR2mux		(.Sel(SR2MUX), .Din0(SR2out)/*SR2 for ADD and AND*/, .Din1(imm5)/*immediate value for ADD and AND*/, .Dout(B));
 ALU			alu			(.*, .A(SR1out));
-TSB			ALUgate		(.Switch(GateALU), .Din(ALUout), .Dout(Data_out));
+TSB			ALUgate		(.Switch(GateALU), .Din(ALUout), .Dout(Data_out)); //********************************
 
 NZPreg		nzpreg		(.*, .Load(LD_CC), .LastResult(Data_out));
 
