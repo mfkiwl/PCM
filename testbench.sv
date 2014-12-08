@@ -7,16 +7,16 @@ timeprecision 1ns;
 logic Clk = 0;
 logic Reset, Run;
 logic Continue;
-/*
-logic ContinueIR;
+
+//logic ContinueIR;
 wire  [15:0]  I_O;
 logic [15:0] Data_in,Data_out;
-logic [19:0]  A;
-logic [11:0] LED;
-logic CE, UB, LB, OE, WE;
-logic [6:0] HEX0, HEX1, HEX2, HEX3;
-logic [15:0] PCout, IRout, Data_cpu_out, Other_out;
 wire[15:0] index;
+logic [19:0]  A;
+//logic [11:0] LED;
+logic CE, UB, LB, OE, WE;
+/*logic [6:0] HEX0, HEX1, HEX2, HEX3;
+logic [15:0] PCout, IRout, Data_cpu_out, Other_out;
 logic [12:0] sdram_wire_addr;
 logic  [1:0] sdram_wire_ba;
 logic        sdram_wire_cas_n;
@@ -28,8 +28,10 @@ logic           sdram_wire_ras_n;
 logic           sdram_wire_we_n;
 logic           sdram_wire_clk;
 */
- 
+logic	Mem_CE, Mem_UB, Mem_LB, Mem_OE, Mem_WE;
+logic[19:0]ADDR;
 //PCM_MM Variables
+/*
 logic cpu0_write,init;                                                                              
 logic [19:0] cpu0_addr;
 logic [15:0] cpu0_data_in;
@@ -57,21 +59,21 @@ wire pcm_mem_mm_write;
 wire  [15:0] pcm_mem_mm_readdata;
 wire [15:0] pcm_mem_mm_writedata;
 wire [1:0] pcm_mem_mm_byteenable;
- 
+*/ 
 //PCM_MM_REG variables
- 
+/* 
 logic resolved, cpu_write;
 logic [19:0] addr;
 logic [15:0] data_in, cpu_in;
 logic schedule, cpu_ready;
 logic [15:0] cpu_out;
 logic [19:0] addr_reg;
- 
-logic [15:0] S;
+*/ 
+//logic [15:0] S;
  
 integer ErrorCnt = 0; //Error counter; succesful run means count=0
  
-//test_memory mem(.*, .Reset(~Reset));
+test_memory mem(.*, .Reset(~Reset));
                                                                                                
 //SLC lc(.*, .DIS3(HEX3), .DIS2(HEX2), .DIS1(HEX1), .DIS0(HEX0), .Data(I_O));
  
@@ -79,7 +81,9 @@ integer ErrorCnt = 0; //Error counter; succesful run means count=0
  
 //PCM_MM pcm (.*, .clk(Clk), .reset(~Reset));
  
-PCM_MM_reg pcm_reg(.*, .clk(Clk), .reset(~Reset));
+//PCM_MM_reg pcm_reg(.*, .clk(Clk), .reset(~Reset));
+
+CPU tcpu(.*,.Reset(~Reset));
  
 always begin : CLOCK_GENERATION //1 timeunit delay
         #1 Clk = ~Clk;
@@ -88,22 +92,21 @@ end
 initial begin: CLOCK_INITIALIZATION
         Clk=0;
 end
-task test_setup(reg [15:0] addr);
+task test_cpu1(reg [15:0] instr);
 @(posedge Clk)
-#10 Reset = 0;
+#5 Reset = 0;
 
-#10 Reset = 1;
+#5 Reset = 1;
 
-#2 S= addr;
+//#5 index = 16'h0000;
 
-#100 Run = 0;
+//#10 ADDR= 20'b0;
 
-#10 Run = 1;
+#10 Data_in = instr;
 
-//#2 index = 16'hFFFF;
 endtask
 
-task test_add(int num1, int num2, reg [15:0] addr);
+/*task test_add(int num1, int num2, reg [15:0] addr);
 //@(posedge Clk)
 	int sum = 0;
 	sum = num1 + num2;
@@ -175,6 +178,7 @@ end
 
 
 endtask
+*/
 //Begin testing
 initial begin: TEST_VECTORS
 Reset = 1;
@@ -188,7 +192,7 @@ Reset = 0;
 
 #2 Reset = 1;
 
-#5 PCM_MM_test0(20'hABCD,16'hF0F0);
+#5 test_cpu1(16'b0001010001100001);
 
 	
 end
