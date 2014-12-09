@@ -188,8 +188,7 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 2000 ns
-add wave -position insertpoint sim:/testbench/tcpu/Registers/R1/*
-add wave -position insertpoint sim:/testbench/tcpu/Registers/R2/*
+add wave -position insertpoint sim:/testbench/tcpu/Registers/*
 restart
 # Loading sv_std.std
 # Loading work.testbench

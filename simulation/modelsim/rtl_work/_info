@@ -23,7 +23,7 @@ n@a@l@u
 !s100 DnZdgkog3QSI1d;QDEzME3
 !s105 ALU_sv_unit
 !s85 0
-!s108 1418002599.236000
+!s108 1418090010.798000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv|
 !s101 -O0
@@ -33,7 +33,7 @@ I]=BdNi<C<iZ8QiQazAh:Z1
 VJSS?Zn<OL_n@9Hg;A;E<n1
 S1
 R2
-w1418001739
+w1418006809
 8C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv
 FC:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv
 L0 1
@@ -47,7 +47,7 @@ n@c@p@u
 !s100 @]VDf`B=XW7YnA]=LXmiH2
 !s105 CPU_sv_unit
 !s85 0
-!s108 1418002600.467000
+!s108 1418090011.842000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv|
 !s101 -O0
@@ -71,7 +71,7 @@ n@i@s@d@u
 !s100 71YhO`JheE1=5ibZQ7DQc2
 !s105 ISDU_sv_unit
 !s85 0
-!s108 1418002599.012000
+!s108 1418090010.307000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ISDU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ISDU.sv|
 !s101 -O0
@@ -95,7 +95,7 @@ n@mux2
 !s100 oMz8C=OUJUO]mY?Ge5RlH1
 !s105 Mux2_sv_unit
 !s85 0
-!s108 1418002598.678000
+!s108 1418090010.147000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux2.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux2.sv|
 !s101 -O0
@@ -119,7 +119,7 @@ n@mux4
 !s100 DQb95V4BCenR]i<;c]06I2
 !s105 Mux4_sv_unit
 !s85 0
-!s108 1418002598.046000
+!s108 1418090009.960000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux4.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux4.sv|
 !s101 -O0
@@ -143,7 +143,7 @@ n@n@z@preg
 !s100 _:N<ETeIFe0zaQDLa1NY62
 !s105 NZPreg_sv_unit
 !s85 0
-!s108 1418002597.894000
+!s108 1418090009.739000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/NZPreg.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/NZPreg.sv|
 !s101 -O0
@@ -167,7 +167,7 @@ n@reg16
 !s100 Y[F0R3F?kHE[HFeM2:TJz3
 !s105 Reg16_sv_unit
 !s85 0
-!s108 1418002597.723000
+!s108 1418090009.575000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Reg16.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Reg16.sv|
 !s101 -O0
@@ -191,7 +191,7 @@ n@reg@addr@mux
 !s100 eS6QH[fNT>BWede]@m;D`3
 !s105 RegAddrMux_sv_unit
 !s85 0
-!s108 1418002597.563000
+!s108 1418090009.225000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/RegAddrMux.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/RegAddrMux.sv|
 !s101 -O0
@@ -201,7 +201,7 @@ I>;M4l`P2T<UNB`_610AAN2
 VB]YI34JA4Fd]JGHnZOSmh0
 S1
 R2
-R3
+w1418089724
 8C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/RegFile.sv
 FC:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/RegFile.sv
 L0 1
@@ -215,7 +215,7 @@ n@reg@file
 !s100 Cb2Rc`FYjE<X=3[c3O6d33
 !s105 RegFile_sv_unit
 !s85 0
-!s108 1418002600.242000
+!s108 1418090011.639000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/RegFile.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/RegFile.sv|
 !s101 -O0
@@ -239,7 +239,7 @@ n@s@e@x@t11
 !s100 Y>EU@zK^VR^JEi`@_i^MW2
 !s105 SEXT11_sv_unit
 !s85 0
-!s108 1418002596.668000
+!s108 1418090008.457000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT11.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT11.sv|
 !s101 -O0
@@ -263,7 +263,7 @@ n@s@e@x@t5
 !s100 C[160NN:B9Ah>zfK_1C@b0
 !s105 SEXT5_sv_unit
 !s85 0
-!s108 1418002597.354000
+!s108 1418090008.936000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT5.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT5.sv|
 !s101 -O0
@@ -287,7 +287,7 @@ n@s@e@x@t6
 !s100 enYn?ZnG@B@E>RTD4=;P]1
 !s105 SEXT6_sv_unit
 !s85 0
-!s108 1418002597.142000
+!s108 1418090008.752000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT6.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT6.sv|
 !s101 -O0
@@ -311,7 +311,7 @@ n@s@e@x@t9
 !s100 bSKE?VO?^]1NIP3^fIOFm0
 !s105 SEXT9_sv_unit
 !s85 0
-!s108 1418002596.941000
+!s108 1418090008.606000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT9.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT9.sv|
 !s101 -O0
@@ -321,7 +321,7 @@ IgRi4`M]gZSH]oFl_?X`mS2
 VgRi4`M]gZSH]oFl_?X`mS2
 S1
 R2
-Z7 w1417672726
+Z7 w1418006982
 Z8 FC:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SLC3_2.sv
 Z9 8C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/test_memory.sv
 Z10 FC:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/test_memory.sv
@@ -329,7 +329,7 @@ L0 23
 R4
 r1
 31
-Z11 !s108 1418002599.476000
+Z11 !s108 1418090011.088000
 Z12 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SLC3_2.sv|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/test_memory.sv|
 Z13 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/test_memory.sv|
 R5
@@ -346,7 +346,7 @@ DXx4 work 19 test_memory_sv_unit 0 22 JNDMDi`M`g28S_6Sn]PZE1
 VMlGDidiXibbBh?ZnEOB7E1
 r1
 31
-IH4?VoFnKcnS5zM5Sfnk0o0
+ID;3oIHL[fbdzhR00Z;mDd0
 S1
 R2
 R7
@@ -361,7 +361,7 @@ R5
 R6
 !s85 0
 !i10b 1
-!s100 I@255ZcD_kiRMa=QmzWUD2
+!s100 L1QZk^4l7gPWKOFHjC>]10
 !s105 test_memory_sv_unit
 !s101 -O0
 Xtest_memory_sv_unit
@@ -392,13 +392,13 @@ R6
 vtestbench
 R1
 !i10b 1
-!s100 YZPHnPHdm<jjJfZ^3fFYX3
-Il4B>[gfaQY4_J@dVa?@7<2
+!s100 l?jdb]Ho4a6@lBo2=kP[;3
+I_aUiW`PVLgdhk^[D[GHHR0
 VhGfW:390DM[oDMzegDH9`2
 !s105 testbench_sv_unit
 S1
 R2
-w1418002573
+w1418089978
 8C:/Users/steven/Desktop/ECE 385/fp2/testbench.sv
 FC:/Users/steven/Desktop/ECE 385/fp2/testbench.sv
 L0 1
@@ -406,7 +406,7 @@ R4
 r1
 !s85 0
 31
-!s108 1418002600.774000
+!s108 1418090012.291000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/testbench.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2|C:/Users/steven/Desktop/ECE 385/fp2/testbench.sv|
 !s101 -O0
@@ -432,7 +432,7 @@ R6
 !s100 8AkQ@XKl^l@KN>Faz_Dk_0
 !s105 TSB_sv_unit
 !s85 0
-!s108 1418002596.238000
+!s108 1418090007.934000
 !s107 C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/TSB.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M|C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/TSB.sv|
 !s101 -O0
