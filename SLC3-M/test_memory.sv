@@ -63,7 +63,7 @@ module test_memory ( input 			Clk,
    begin
 		if(Reset)   // Insert initial memory contents here
 		begin
-			mem_array[   0 ] <=    opCLR(R0)                ;       // Clear the register so it can be used as a base
+			mem_array[   0 ] <=    opADDi(R1,R1,1)                ;       // Clear the register so it can be used as a base
 			mem_array[   1 ] <=    opLDR(R1, R0, inSW)      ;       // Load switches
 			mem_array[   2 ] <=    opBR(nzp, 0)                ;       // Jump to the start of a program opJMP(R1)
 

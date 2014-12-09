@@ -20,7 +20,7 @@ module PCM_MM(input clk, reset, init,
 				  output logic cpu3_ready,
 				  output logic [15:0] cpu3_data_out,
 				  
-				  output logic [19:0] pcm_mem_mm_address,
+				  output logic [10:0] pcm_mem_mm_address,
 				  output logic pcm_mem_mm_chipselect,
 				  output logic pcm_mem_mm_clken,
 				  output logic pcm_mem_mm_write,
@@ -226,25 +226,25 @@ module PCM_MM(input clk, reset, init,
 								
 								if(reg0_pos == 4'b1)
 								begin
-									pcm_mem_mm_address <= cpu0_addr;
+									pcm_mem_mm_address <= cpu0_addr[10:0];
 									pcm_mem_mm_writedata <= cpu0_data_in;
 								end
 								
 								if(reg1_pos == 4'b1)
 								begin
-									pcm_mem_mm_address <= cpu1_addr;
+									pcm_mem_mm_address <= cpu1_addr[10:0];
 									pcm_mem_mm_writedata <= cpu1_data_in;
 								end
 								
 								if(reg2_pos == 4'b1)
 								begin
-									pcm_mem_mm_address <= cpu2_addr;
+									pcm_mem_mm_address <= cpu2_addr[10:0];
 									pcm_mem_mm_writedata <= cpu2_data_in;
 								end
 								
 								if(reg3_pos == 4'b1)
 								begin
-									pcm_mem_mm_address <= cpu3_addr;
+									pcm_mem_mm_address <= cpu3_addr[10:0];
 									pcm_mem_mm_writedata <= cpu3_data_in;
 								end
 								
@@ -255,28 +255,28 @@ module PCM_MM(input clk, reset, init,
 								
 								if(reg0_pos == 4'b1)
 								begin
-									pcm_mem_mm_address <= cpu0_addr;
+									pcm_mem_mm_address <= cpu0_addr[10:0];
 									pcm_mem_mm_writedata <= cpu0_data_in;
 									pcm_mem_mm_write <= cpu0_write;
 								end
 								
 								if(reg1_pos == 4'b1)
 								begin
-									pcm_mem_mm_address <= cpu1_addr;
+									pcm_mem_mm_address <= cpu1_addr[10:0];
 									pcm_mem_mm_writedata <= cpu1_data_in;
 									pcm_mem_mm_write <= cpu1_write;
 								end
 								
 								if(reg2_pos == 4'b1)
 								begin
-									pcm_mem_mm_address <= cpu2_addr;
+									pcm_mem_mm_address <= cpu2_addr[10:0];
 									pcm_mem_mm_writedata <= cpu2_data_in;
 									pcm_mem_mm_write <= cpu2_write;
 								end
 								
 								if(reg3_pos == 4'b1)
 								begin
-									pcm_mem_mm_address <= cpu3_addr;
+									pcm_mem_mm_address <= cpu3_addr[10:0];
 									pcm_mem_mm_writedata <= cpu3_data_in;
 									pcm_mem_mm_write <= cpu3_write;
 								end

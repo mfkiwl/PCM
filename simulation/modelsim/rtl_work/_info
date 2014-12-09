@@ -3,74 +3,409 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\Thomas\Documents\ECE385\finalProj\simulation\modelsim
-vPCM_MM
+vALU
 Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-I@Nfb3`Dkl7?ZNBAUOdRi`3
-V_L1ZIR?VEUT2K[o_aJNiR0
+I:dWWJVz__7XY<`azRdfo72
+V^gAKd_m0RfI7GN>z13;jX2
 S1
 Z2 dC:\Users\Thomas\Documents\ECE385\finalProj\simulation\modelsim
-w1418105969
-8C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM.sv
-FC:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM.sv
+Z3 w1418112452
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ALU.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ALU.sv
 L0 1
-Z3 OV;L;10.1d;51
+Z4 OV;L;10.1d;51
 r1
 31
-Z4 o-sv -work work -O0
-Z5 !s92 -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj -O0
-n@p@c@m_@m@m
+Z5 o-sv -work work -O0
+Z6 !s92 -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M -O0
+n@a@l@u
 !i10b 1
-!s100 h2XE:lWNU7b=kA6ZS9VJ70
-!s105 PCM_MM_sv_unit
+!s100 QfH0n_fKfe?iR:4K]e;3?2
+!s105 ALU_sv_unit
 !s85 0
-!s108 1418106373.393000
-!s107 C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj|C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM.sv|
+!s108 1418117724.252000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ALU.sv|
 !s101 -O0
-vPCM_MM_reg
+vCPU
 R1
-IOe8KWa>g_`=INon84zTP33
-Ve=74[95Z0_zn[NK0B;Ea33
+IS_Y`Xe3<62@Q=NmfA[h8U2
+VkPcU8]@z1k@AL=1IcVR1k0
 S1
 R2
-w1418090061
-8C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv
-FC:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv
+w1418113764
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/CPU.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/CPU.sv
 L0 1
-R3
+R4
 r1
 31
-R4
-n@p@c@m_@m@m_reg
 R5
+R6
+n@c@p@u
 !i10b 1
-!s100 fcAa8P>Ah3f2:=Iegl2>93
-!s105 PCM_MM_reg_sv_unit
+!s100 >UA7BjLJI8a1jZ`g@Xg_50
+!s105 CPU_sv_unit
 !s85 0
-!s108 1418106373.320000
-!s107 C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj|C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv|
+!s108 1418117728.481000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/CPU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/CPU.sv|
+!s101 -O0
+vdatapath_control
+R1
+InNbi3:n:Z`T2F=ZRUIm011
+VIkQW><zQ3<f0CAoQCFdBl2
+S1
+R2
+R3
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/datapath_control.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/datapath_control.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 82U7bMTP[267ZBBB<^SH`2
+!s105 datapath_control_sv_unit
+!s85 0
+!s108 1418117723.342000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/datapath_control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/datapath_control.sv|
+!s101 -O0
+vISDU
+R1
+I^U@6DU3oebgFGA:TWA?[I3
+V4F=^d7`_C;8;[gYH^mg6@0
+S1
+R2
+w1418113829
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ISDU.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ISDU.sv
+L0 17
+R4
+r1
+31
+R5
+R6
+n@i@s@d@u
+!i10b 1
+!s100 KS>KiZ?FzKV7J0eTUoN?i3
+!s105 ISDU_sv_unit
+!s85 0
+!s108 1418117724.172000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ISDU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ISDU.sv|
+!s101 -O0
+vMux2
+R1
+IYnZAbHMZEidH7]aHc_67A0
+VeW^^OAL`hSW3nzJ^1a1jZ2
+S1
+R2
+w1382129560
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux2.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux2.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+n@mux2
+!i10b 1
+!s100 @jh`j=@=9<0=INO_EfA1z3
+!s105 Mux2_sv_unit
+!s85 0
+!s108 1418117724.085000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux2.sv|
+!s101 -O0
+vMux4
+R1
+IBZe0FefVSJIDHOUVV;NoP3
+Va:IdE@M>_QOP:fU4ZmmmR3
+S1
+R2
+w1382129586
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux4.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux4.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+n@mux4
+!i10b 1
+!s100 `FSAIJMZPUlCf7AMlJ2J^3
+!s105 Mux4_sv_unit
+!s85 0
+!s108 1418117723.994000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux4.sv|
+!s101 -O0
+vNZPreg
+R1
+IH>58W>Q`N@6dkb@R13DdF1
+V4T66jc7VbiFWYcIbVDJoD0
+S1
+R2
+w1382739460
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/NZPreg.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/NZPreg.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+n@n@z@preg
+!i10b 1
+!s100 PFzJo]RELjCb@a;A^J^RW0
+!s105 NZPreg_sv_unit
+!s85 0
+!s108 1418117723.904000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/NZPreg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/NZPreg.sv|
+!s101 -O0
+vPCCM
+R1
+I:dS[G=<bd75i7?lYGl6B<1
+VQ9T[5U`SAd;?4WjABFC6U0
+S1
+R2
+w1418116618
+8C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/PCCM.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/PCCM.sv
+L0 1
+R4
+r1
+31
+R5
+n@p@c@c@m
+Z7 !s92 -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis -O0
+!i10b 1
+!s100 6o]caB8GC^RO_O8CM^9I_1
+!s105 PCCM_sv_unit
+!s85 0
+!s108 1418117724.341000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/PCCM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis|C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/PCCM.sv|
+!s101 -O0
+vReg16
+R1
+IOk472<f?b7FU^B7I@l]6C3
+VB8GLliD6dC;Z7]MYX^H5n2
+S1
+R2
+w1417655522
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Reg16.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Reg16.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+n@reg16
+!i10b 1
+!s100 =l;43f4z<>ndBLVdjGE8L1
+!s105 Reg16_sv_unit
+!s85 0
+!s108 1418117723.817000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Reg16.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Reg16.sv|
+!s101 -O0
+vRegAddrMux
+R1
+I:a4iAKalaPelaaTQUij5C3
+V@bc`=N_oAK`z7mk`^a]jT1
+S1
+R2
+R3
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/RegAddrMux.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/RegAddrMux.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+n@reg@addr@mux
+!i10b 1
+!s100 fHQ0hnT10ni_2dKzSQQf^0
+!s105 RegAddrMux_sv_unit
+!s85 0
+!s108 1418117723.742000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/RegAddrMux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/RegAddrMux.sv|
+!s101 -O0
+vRegFile
+R1
+InfLELQ9iUYa9QNZIO6gA82
+VB]YI34JA4Fd]JGHnZOSmh0
+S1
+R2
+w1417655645
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/RegFile.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/RegFile.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+n@reg@file
+!i10b 1
+!s100 @CNa=52LSjE9[j7RcLIRG0
+!s105 RegFile_sv_unit
+!s85 0
+!s108 1418117724.423000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/RegFile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/RegFile.sv|
+!s101 -O0
+vSEXT11
+R1
+ICc;<nHH]YzC]HLHC77I;I3
+VZJme_NgO]WjHZF38Ej4YQ1
+S1
+R2
+w1382191722
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT11.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT11.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+n@s@e@x@t11
+!i10b 1
+!s100 X^6SZB>zS5TNdS6V4b66F3
+!s105 SEXT11_sv_unit
+!s85 0
+!s108 1418117723.418000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT11.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT11.sv|
+!s101 -O0
+vSEXT5
+R1
+I9JVR8?:dfbD;0@Vm32]IH2
+V:Wn:f_deZeFYBAz?3:S8h2
+S1
+R2
+w1382191176
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT5.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT5.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+n@s@e@x@t5
+!i10b 1
+!s100 AIX;ZmK71B^dezS@c:Dk`1
+!s105 SEXT5_sv_unit
+!s85 0
+!s108 1418117723.661000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT5.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT5.sv|
+!s101 -O0
+vSEXT6
+R1
+I>9zFiYcRD4aV9mY>=cIM00
+V05:mzCYaA:SD_C8e?NIjU2
+S1
+R2
+w1382191540
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT6.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT6.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+n@s@e@x@t6
+!i10b 1
+!s100 X4D;OQJW5dnSS]eBSNk[E1
+!s105 SEXT6_sv_unit
+!s85 0
+!s108 1418117723.581000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT6.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT6.sv|
+!s101 -O0
+vSEXT9
+R1
+Il`0M_nWoEhTjNZLb2OfcW0
+VmhoEoeRCY@O2aZL>eJcJ<2
+S1
+R2
+w1382191608
+8C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT9.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT9.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+n@s@e@x@t9
+!i10b 1
+!s100 boAYF3XA@^j5ZmJgM0>181
+!s105 SEXT9_sv_unit
+!s85 0
+!s108 1418117723.503000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT9.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M|C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT9.sv|
+!s101 -O0
+vSOC_W_PCM
+R1
+IAg82I^1N7]>548_b06=W_0
+VO>OUDHdblg>Z`Hg_h=Qac1
+S1
+R2
+w1418117397
+8C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/SOC_W_PCM.sv
+FC:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/SOC_W_PCM.sv
+L0 1
+R4
+r1
+31
+R5
+R7
+n@s@o@c_@w_@p@c@m
+!i10b 1
+!s100 SkdNX0AX>g[>>12ZbC=gY3
+!s105 SOC_W_PCM_sv_unit
+!s85 0
+!s108 1418117727.831000
+!s107 C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/SOC_W_PCM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis|C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/SOC_W_PCM.sv|
 !s101 -O0
 vtestbench
 R1
 !i10b 1
-!s100 AdC>[hae0jFYAN=QVW[eC3
-I@Ga8Z103IQRi<O4iHJd;A3
+!s100 0=0;ECb[VUUVQEDc[XMj83
+Icl<G?Cl[Q?3h4cPoI4;ji2
 VhGfW:390DM[oDMzegDH9`2
 !s105 testbench_sv_unit
 S1
 R2
-w1418106208
+w1418117683
 8C:/Users/Thomas/Documents/ECE385/finalProj/testbench.sv
 FC:/Users/Thomas/Documents/ECE385/finalProj/testbench.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1418106373.568000
+!s108 1418117728.558000
 !s107 C:/Users/Thomas/Documents/ECE385/finalProj/testbench.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thomas/Documents/ECE385/finalProj|C:/Users/Thomas/Documents/ECE385/finalProj/testbench.sv|
 !s101 -O0
-R4
 R5
+!s92 -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj -O0

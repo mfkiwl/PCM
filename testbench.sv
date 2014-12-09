@@ -13,6 +13,7 @@ wire  [15:0]  I_O;
 logic [15:0] Data_in,Data_out;
 wire[15:0] index;
 logic [19:0]  A;
+logic mem_ready;
 //logic [11:0] LED;
 logic CE, UB, LB, OE, WE;
 /*logic [6:0] HEX0, HEX1, HEX2, HEX3;
@@ -68,6 +69,15 @@ logic [15:0] data_in, cpu_in;
 logic schedule, cpu_ready;
 logic [15:0] cpu_out;
 logic [19:0] addr_reg;
+
+
+logic [3:0] pccm_ctl_con_export;	// used for NIOS to PCCM control communication
+logic [3:0] pccm_rsp_con_export;	// used for PCCM to NIOS control communication
+logic cpu0_sync, cpu1_sync, cpu2_sync, cpu3_sync, cpu0_halt, cpu1_halt, cpu2_halt, cpu3_halt;
+logic int_reset, int_init, cpu0_Continue, cpu1_Continue, cpu2_Continue, cpu3_Continue;
+
+PCCM control(.*, .clk(Clk), .reset(~Reset));
+
  
 //logic [15:0] S;
  
@@ -79,7 +89,7 @@ integer ErrorCnt = 0; //Error counter; succesful run means count=0
  
 //SOC_W_PCM soc(.*, .clk(Clk), .reset(~Reset));
  
-PCM_MM pcm (.*, .clk(Clk), .reset(~Reset));
+//PCM_MM pcm (.*, .clk(Clk), .reset(~Reset));
  
 //PCM_MM_reg pcm_reg(.*, .clk(Clk), .reset(~Reset));
 
@@ -98,14 +108,12 @@ task test_cpu1(reg [15:0] instr);
 
 #5 Reset = 1;
 
-//#5 index = 16'h0000;
+#1 mem_ready =1;
 
-//#10 ADDR= 20'b0;
+#5 Data_in =16'b0010110000000111;
 
-#10 Data_in = instr;
+#25 Data_in = instr;
 
-// This should add 1 to reg1 in LC3, instead puts it into Data_in.
-// It goes into the correct register but the data is wrong.
 
 endtask
 
@@ -200,7 +208,11 @@ Reset = 0;
 
 #2 Reset = 1;
 
-PCM_MM_test0(20'h00606, 16'h0909);
+#5 pccm_ctl_con_export = 1;
+
+#10 pccm_ctl_con_export = 5;
+#5 pccm_ctl_con_export = 0;
+
 
 	
 end
