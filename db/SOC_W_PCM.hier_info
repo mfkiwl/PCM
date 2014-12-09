@@ -1,6 +1,7 @@
 |SOC_W_PCM
 clk => clk.IN5
 reset => reset.IN1
+ctn_button => _.IN1
 sdram_wire_addr[0] << nois_system:nios_i.sdram_wire_addr
 sdram_wire_addr[1] << nois_system:nios_i.sdram_wire_addr
 sdram_wire_addr[2] << nois_system:nios_i.sdram_wire_addr
@@ -58,6 +59,46 @@ sdram_wire_dqm[3] << nois_system:nios_i.sdram_wire_dqm
 sdram_wire_ras_n << nois_system:nios_i.sdram_wire_ras_n
 sdram_wire_we_n << nois_system:nios_i.sdram_wire_we_n
 sdram_wire_clk << nois_system:nios_i.sdram_wire_clk
+HEX3[0] << HexDriver:h3.Out0
+HEX3[1] << HexDriver:h3.Out0
+HEX3[2] << HexDriver:h3.Out0
+HEX3[3] << HexDriver:h3.Out0
+HEX3[4] << HexDriver:h3.Out0
+HEX3[5] << HexDriver:h3.Out0
+HEX3[6] << HexDriver:h3.Out0
+HEX2[0] << HexDriver:h2.Out0
+HEX2[1] << HexDriver:h2.Out0
+HEX2[2] << HexDriver:h2.Out0
+HEX2[3] << HexDriver:h2.Out0
+HEX2[4] << HexDriver:h2.Out0
+HEX2[5] << HexDriver:h2.Out0
+HEX2[6] << HexDriver:h2.Out0
+HEX1[0] << HexDriver:h1.Out0
+HEX1[1] << HexDriver:h1.Out0
+HEX1[2] << HexDriver:h1.Out0
+HEX1[3] << HexDriver:h1.Out0
+HEX1[4] << HexDriver:h1.Out0
+HEX1[5] << HexDriver:h1.Out0
+HEX1[6] << HexDriver:h1.Out0
+HEX0[0] << HexDriver:h0.Out0
+HEX0[1] << HexDriver:h0.Out0
+HEX0[2] << HexDriver:h0.Out0
+HEX0[3] << HexDriver:h0.Out0
+HEX0[4] << HexDriver:h0.Out0
+HEX0[5] << HexDriver:h0.Out0
+HEX0[6] << HexDriver:h0.Out0
+LED[0] << CPU:cpu0.LED
+LED[1] << CPU:cpu0.LED
+LED[2] << CPU:cpu0.LED
+LED[3] << CPU:cpu0.LED
+LED[4] << CPU:cpu0.LED
+LED[5] << CPU:cpu0.LED
+LED[6] << CPU:cpu0.LED
+LED[7] << CPU:cpu0.LED
+LED[8] << CPU:cpu0.LED
+LED[9] << CPU:cpu0.LED
+LED[10] << CPU:cpu0.LED
+LED[11] << CPU:cpu0.LED
 
 
 |SOC_W_PCM|nois_system:nios_i
@@ -53218,6 +53259,62 @@ cpu2_Continue <= cpu2_Continue$latch.DB_MAX_OUTPUT_PORT_TYPE
 cpu3_Continue <= cpu3_Continue$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|SOC_W_PCM|HexDriver:h3
+In0[0] => Decoder0.IN3
+In0[1] => Decoder0.IN2
+In0[2] => Decoder0.IN1
+In0[3] => Decoder0.IN0
+Out0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SOC_W_PCM|HexDriver:h2
+In0[0] => Decoder0.IN3
+In0[1] => Decoder0.IN2
+In0[2] => Decoder0.IN1
+In0[3] => Decoder0.IN0
+Out0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SOC_W_PCM|HexDriver:h1
+In0[0] => Decoder0.IN3
+In0[1] => Decoder0.IN2
+In0[2] => Decoder0.IN1
+In0[3] => Decoder0.IN0
+Out0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SOC_W_PCM|HexDriver:h0
+In0[0] => Decoder0.IN3
+In0[1] => Decoder0.IN2
+In0[2] => Decoder0.IN1
+In0[3] => Decoder0.IN0
+Out0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |SOC_W_PCM|CPU:cpu0
 Clk => Reg16:PC.Clk
 Clk => Reg16:IR.Clk
@@ -53311,6 +53408,34 @@ Data_out[15] <= Data_out[15].DB_MAX_OUTPUT_PORT_TYPE
 mem_ready => ISDU:isdu.mem_ready
 sync_b <= ISDU:isdu.sync_b
 halt_b <= ISDU:isdu.halt_b
+IRout_peek[0] <= IRout[0].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[1] <= IRout[1].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[2] <= IRout[2].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[3] <= IRout[3].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[4] <= IRout[4].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[5] <= IRout[5].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[6] <= IRout[6].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[7] <= IRout[7].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[8] <= IRout[8].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[9] <= IRout[9].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[10] <= IRout[10].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[11] <= Reg16:IR.Dout[11]
+IRout_peek[12] <= Reg16:IR.Dout[12]
+IRout_peek[13] <= Reg16:IR.Dout[13]
+IRout_peek[14] <= Reg16:IR.Dout[14]
+IRout_peek[15] <= Reg16:IR.Dout[15]
+LED[0] <= ISDU:isdu.State_out[0]
+LED[1] <= ISDU:isdu.State_out[1]
+LED[2] <= ISDU:isdu.State_out[2]
+LED[3] <= ISDU:isdu.State_out[3]
+LED[4] <= ISDU:isdu.State_out[4]
+LED[5] <= ISDU:isdu.State_out[5]
+LED[6] <= <GND>
+LED[7] <= <GND>
+LED[8] <= <GND>
+LED[9] <= <GND>
+LED[10] <= <GND>
+LED[11] <= <GND>
 
 
 |SOC_W_PCM|CPU:cpu0|SEXT9:BR_PCin
@@ -55533,10 +55658,8 @@ Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
-Continue => Selector3.IN6
-Continue => Selector3.IN7
-Continue => Selector28.IN3
-Continue => Selector29.IN3
+Continue => Selector29.IN4
+Continue => Selector4.IN4
 mem_ready => Selector22.IN3
 mem_ready => Selector26.IN3
 mem_ready => Selector21.IN3
@@ -55593,6 +55716,7 @@ State_out[1] <= WideOr37.DB_MAX_OUTPUT_PORT_TYPE
 State_out[2] <= WideOr36.DB_MAX_OUTPUT_PORT_TYPE
 State_out[3] <= WideOr35.DB_MAX_OUTPUT_PORT_TYPE
 State_out[4] <= WideOr34.DB_MAX_OUTPUT_PORT_TYPE
+State_out[5] <= <GND>
 sync_b <= sync_b.DB_MAX_OUTPUT_PORT_TYPE
 halt_b <= halt_b.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -55690,6 +55814,34 @@ Data_out[15] <= Data_out[15].DB_MAX_OUTPUT_PORT_TYPE
 mem_ready => ISDU:isdu.mem_ready
 sync_b <= ISDU:isdu.sync_b
 halt_b <= ISDU:isdu.halt_b
+IRout_peek[0] <= IRout[0].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[1] <= IRout[1].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[2] <= IRout[2].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[3] <= IRout[3].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[4] <= IRout[4].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[5] <= IRout[5].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[6] <= IRout[6].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[7] <= IRout[7].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[8] <= IRout[8].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[9] <= IRout[9].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[10] <= IRout[10].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[11] <= Reg16:IR.Dout[11]
+IRout_peek[12] <= Reg16:IR.Dout[12]
+IRout_peek[13] <= Reg16:IR.Dout[13]
+IRout_peek[14] <= Reg16:IR.Dout[14]
+IRout_peek[15] <= Reg16:IR.Dout[15]
+LED[0] <= ISDU:isdu.State_out[0]
+LED[1] <= ISDU:isdu.State_out[1]
+LED[2] <= ISDU:isdu.State_out[2]
+LED[3] <= ISDU:isdu.State_out[3]
+LED[4] <= ISDU:isdu.State_out[4]
+LED[5] <= ISDU:isdu.State_out[5]
+LED[6] <= <GND>
+LED[7] <= <GND>
+LED[8] <= <GND>
+LED[9] <= <GND>
+LED[10] <= <GND>
+LED[11] <= <GND>
 
 
 |SOC_W_PCM|CPU:cpu1|SEXT9:BR_PCin
@@ -57912,10 +58064,8 @@ Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
-Continue => Selector3.IN6
-Continue => Selector3.IN7
-Continue => Selector28.IN3
-Continue => Selector29.IN3
+Continue => Selector29.IN4
+Continue => Selector4.IN4
 mem_ready => Selector22.IN3
 mem_ready => Selector26.IN3
 mem_ready => Selector21.IN3
@@ -57972,6 +58122,7 @@ State_out[1] <= WideOr37.DB_MAX_OUTPUT_PORT_TYPE
 State_out[2] <= WideOr36.DB_MAX_OUTPUT_PORT_TYPE
 State_out[3] <= WideOr35.DB_MAX_OUTPUT_PORT_TYPE
 State_out[4] <= WideOr34.DB_MAX_OUTPUT_PORT_TYPE
+State_out[5] <= <GND>
 sync_b <= sync_b.DB_MAX_OUTPUT_PORT_TYPE
 halt_b <= halt_b.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -58069,6 +58220,34 @@ Data_out[15] <= Data_out[15].DB_MAX_OUTPUT_PORT_TYPE
 mem_ready => ISDU:isdu.mem_ready
 sync_b <= ISDU:isdu.sync_b
 halt_b <= ISDU:isdu.halt_b
+IRout_peek[0] <= IRout[0].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[1] <= IRout[1].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[2] <= IRout[2].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[3] <= IRout[3].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[4] <= IRout[4].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[5] <= IRout[5].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[6] <= IRout[6].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[7] <= IRout[7].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[8] <= IRout[8].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[9] <= IRout[9].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[10] <= IRout[10].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[11] <= Reg16:IR.Dout[11]
+IRout_peek[12] <= Reg16:IR.Dout[12]
+IRout_peek[13] <= Reg16:IR.Dout[13]
+IRout_peek[14] <= Reg16:IR.Dout[14]
+IRout_peek[15] <= Reg16:IR.Dout[15]
+LED[0] <= ISDU:isdu.State_out[0]
+LED[1] <= ISDU:isdu.State_out[1]
+LED[2] <= ISDU:isdu.State_out[2]
+LED[3] <= ISDU:isdu.State_out[3]
+LED[4] <= ISDU:isdu.State_out[4]
+LED[5] <= ISDU:isdu.State_out[5]
+LED[6] <= <GND>
+LED[7] <= <GND>
+LED[8] <= <GND>
+LED[9] <= <GND>
+LED[10] <= <GND>
+LED[11] <= <GND>
 
 
 |SOC_W_PCM|CPU:cpu2|SEXT9:BR_PCin
@@ -60291,10 +60470,8 @@ Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
-Continue => Selector3.IN6
-Continue => Selector3.IN7
-Continue => Selector28.IN3
-Continue => Selector29.IN3
+Continue => Selector29.IN4
+Continue => Selector4.IN4
 mem_ready => Selector22.IN3
 mem_ready => Selector26.IN3
 mem_ready => Selector21.IN3
@@ -60351,6 +60528,7 @@ State_out[1] <= WideOr37.DB_MAX_OUTPUT_PORT_TYPE
 State_out[2] <= WideOr36.DB_MAX_OUTPUT_PORT_TYPE
 State_out[3] <= WideOr35.DB_MAX_OUTPUT_PORT_TYPE
 State_out[4] <= WideOr34.DB_MAX_OUTPUT_PORT_TYPE
+State_out[5] <= <GND>
 sync_b <= sync_b.DB_MAX_OUTPUT_PORT_TYPE
 halt_b <= halt_b.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -60448,6 +60626,34 @@ Data_out[15] <= Data_out[15].DB_MAX_OUTPUT_PORT_TYPE
 mem_ready => ISDU:isdu.mem_ready
 sync_b <= ISDU:isdu.sync_b
 halt_b <= ISDU:isdu.halt_b
+IRout_peek[0] <= IRout[0].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[1] <= IRout[1].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[2] <= IRout[2].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[3] <= IRout[3].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[4] <= IRout[4].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[5] <= IRout[5].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[6] <= IRout[6].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[7] <= IRout[7].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[8] <= IRout[8].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[9] <= IRout[9].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[10] <= IRout[10].DB_MAX_OUTPUT_PORT_TYPE
+IRout_peek[11] <= Reg16:IR.Dout[11]
+IRout_peek[12] <= Reg16:IR.Dout[12]
+IRout_peek[13] <= Reg16:IR.Dout[13]
+IRout_peek[14] <= Reg16:IR.Dout[14]
+IRout_peek[15] <= Reg16:IR.Dout[15]
+LED[0] <= ISDU:isdu.State_out[0]
+LED[1] <= ISDU:isdu.State_out[1]
+LED[2] <= ISDU:isdu.State_out[2]
+LED[3] <= ISDU:isdu.State_out[3]
+LED[4] <= ISDU:isdu.State_out[4]
+LED[5] <= ISDU:isdu.State_out[5]
+LED[6] <= <GND>
+LED[7] <= <GND>
+LED[8] <= <GND>
+LED[9] <= <GND>
+LED[10] <= <GND>
+LED[11] <= <GND>
 
 
 |SOC_W_PCM|CPU:cpu3|SEXT9:BR_PCin
@@ -62670,10 +62876,8 @@ Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
 Continue => Next_state.OUTPUTSELECT
-Continue => Selector3.IN6
-Continue => Selector3.IN7
-Continue => Selector28.IN3
-Continue => Selector29.IN3
+Continue => Selector29.IN4
+Continue => Selector4.IN4
 mem_ready => Selector22.IN3
 mem_ready => Selector26.IN3
 mem_ready => Selector21.IN3
@@ -62730,6 +62934,7 @@ State_out[1] <= WideOr37.DB_MAX_OUTPUT_PORT_TYPE
 State_out[2] <= WideOr36.DB_MAX_OUTPUT_PORT_TYPE
 State_out[3] <= WideOr35.DB_MAX_OUTPUT_PORT_TYPE
 State_out[4] <= WideOr34.DB_MAX_OUTPUT_PORT_TYPE
+State_out[5] <= <GND>
 sync_b <= sync_b.DB_MAX_OUTPUT_PORT_TYPE
 halt_b <= halt_b.DB_MAX_OUTPUT_PORT_TYPE
 

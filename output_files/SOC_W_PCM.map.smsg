@@ -2,11 +2,11 @@ Info (10281): Verilog HDL Declaration information at testbench.sv(33): object "A
 Info (10281): Verilog HDL Declaration information at testbench.sv(13): object "Data_in" differs only in case from object "data_in" in the same scope
 Warning (10268): Verilog HDL information at PCM_MM_reg.sv(24): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at ISDU.sv(77): always construct contains both blocking and non-blocking assignments
-Warning (10268): Verilog HDL information at ISDU.sv(159): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at ISDU.sv(175): always construct contains both blocking and non-blocking assignments
 Warning (10273): Verilog HDL warning at HexDriver.sv(23): extended using "x" or "z"
-Info (10281): Verilog HDL Declaration information at CPU.sv(12): object "PCMUX" differs only in case from object "PCmux" in the same scope
-Info (10281): Verilog HDL Declaration information at CPU.sv(13): object "MARMUX" differs only in case from object "MARmux" in the same scope
-Info (10281): Verilog HDL Declaration information at CPU.sv(13): object "SR2MUX" differs only in case from object "SR2mux" in the same scope
+Info (10281): Verilog HDL Declaration information at CPU.sv(14): object "PCMUX" differs only in case from object "PCmux" in the same scope
+Info (10281): Verilog HDL Declaration information at CPU.sv(15): object "MARMUX" differs only in case from object "MARmux" in the same scope
+Info (10281): Verilog HDL Declaration information at CPU.sv(15): object "SR2MUX" differs only in case from object "SR2mux" in the same scope
 Info (10281): Verilog HDL Declaration information at altera_merlin_burst_adapter_new.sv(265): object "BYTE_TO_WORD_SHIFT" differs only in case from object "byte_to_word_shift" in the same scope
 Info (10281): Verilog HDL Declaration information at altera_wrap_burst_converter.sv(279): object "addr_incr" differs only in case from object "ADDR_INCR" in the same scope
 Info (10281): Verilog HDL Declaration information at nois_system_mm_interconnect_0_router_008.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
@@ -19,8 +19,8 @@ Info (10281): Verilog HDL Declaration information at nois_system_mm_interconnect
 Info (10281): Verilog HDL Declaration information at nois_system_mm_interconnect_0_router_001.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
 Info (10281): Verilog HDL Declaration information at nois_system_mm_interconnect_0_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
 Info (10281): Verilog HDL Declaration information at nois_system_mm_interconnect_0_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
-Info (10281): Verilog HDL Declaration information at SOC_W_PCM.sv(61): object "cpu0_Continue" differs only in case from object "cpu0_continue" in the same scope
-Info (10281): Verilog HDL Declaration information at SOC_W_PCM.sv(61): object "cpu1_Continue" differs only in case from object "cpu1_continue" in the same scope
-Info (10281): Verilog HDL Declaration information at SOC_W_PCM.sv(61): object "cpu2_Continue" differs only in case from object "cpu2_continue" in the same scope
-Info (10281): Verilog HDL Declaration information at SOC_W_PCM.sv(61): object "cpu3_Continue" differs only in case from object "cpu3_continue" in the same scope
+Info (10281): Verilog HDL Declaration information at SOC_W_PCM.sv(63): object "cpu0_Continue" differs only in case from object "cpu0_continue" in the same scope
+Info (10281): Verilog HDL Declaration information at SOC_W_PCM.sv(63): object "cpu1_Continue" differs only in case from object "cpu1_continue" in the same scope
+Info (10281): Verilog HDL Declaration information at SOC_W_PCM.sv(63): object "cpu2_Continue" differs only in case from object "cpu2_continue" in the same scope
+Info (10281): Verilog HDL Declaration information at SOC_W_PCM.sv(63): object "cpu3_Continue" differs only in case from object "cpu3_continue" in the same scope
 Info (10281): Verilog HDL Declaration information at PCCM.sv(1): object "reset" differs only in case from object "RESET" in the same scope

@@ -8,15 +8,15 @@ module datapath_control(input [15:0] MAR, PC, ALU, MDR,Data_in,
 				  
 						
 						case ({GateMARMUX, GateMDR, GatePC, GateALU, Mem_OE})
-							4'b10000 :
+							5'b10000 :
 								Data_out = MAR;
-							4'b01000 :
+							5'b01000 :
 								Data_out = MDR;
-							4'b00100 :
+							5'b00100 :
 								Data_out = PC;
-							4'b00010 :
+							5'b00010 :
 								Data_out = ALU;
-							4'b00001 :
+							5'b00001 :
 								Data_out = Data_in;	
 							default :
 								Data_out = 16'b1010101010101010;

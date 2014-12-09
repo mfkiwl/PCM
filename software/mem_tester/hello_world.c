@@ -32,6 +32,11 @@ int main()
 	*pccm_ctl = 1;
 	volatile alt_u16* pcm_mem_base = 0x00002000;
 
+	for(i = 0; i < 2048; i++)
+	{
+		pcm_mem_base[i] = 7;
+	}
+
 	printf("Initializing Processor\n");
 
 	*pccm_ctl = 5;

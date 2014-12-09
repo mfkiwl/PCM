@@ -15,7 +15,7 @@ logic [3:0]	 HEX3, HEX2, HEX1, HEX0;
 tri	[15:0] CPUdata;
 logic mem_ready;
 
-CPU		cpu	(.*, .Reset(~Reset), .Run(~Run), .Continue(~Continue), .ContinueIR(~ContinueIR), .Data_in(CPUdata));
+//CPU		cpu	(.*, .Reset(~Reset), .Run(~Run), .Continue(~Continue), .ContinueIR(~ContinueIR), .Data_in(CPUdata));
 
 Mem2IO 	mem2io(.*, .Reset(~Reset), .A(ADDR), .CE(Mem_CE), .UB(Mem_UB), .LB(Mem_LB), .OE(Mem_OE), .WE(Mem_WE),
 						.Switches(S), .Data_CPU(CPUdata), .Data_Mem(Data));

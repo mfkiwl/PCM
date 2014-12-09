@@ -48,7 +48,7 @@ module ISDU(input	logic			Clk,
 										Mem_LB,
 										Mem_OE,
 										Mem_WE, 
-				output logic[4:0] State_out,
+				output logic[5:0] State_out,
 				output logic sync_b,halt_b);
 
  
@@ -77,9 +77,11 @@ begin
 	Next_state  = State;
 	
 	unique case (State)
-		Halted: 
+		Halted:
+		begin
 			if (Continue) 
 				Next_state <= Fetch1;
+		end
 		LoadPC1: Next_state <= LoadPC2;
 		LoadPC2: Next_state <= LoadPC3;
 		LoadPC3: Next_state <= LoadPC4;
@@ -87,7 +89,10 @@ begin
 		Fetch1: Next_state <= Fetch2;
 		Fetch2: Next_state <= Fetch3;
 		Fetch3: Next_state <= Fetch4;
-		Fetch4: Next_state <= Decode;
+		Fetch4: 
+		begin
+			Next_state <= Halted;
+		end
 		Decode: 
 			case (IR[15:12])
 				4'b0000:
@@ -118,10 +123,12 @@ begin
 		LD_1: Next_state <= S25_1;
 		ST: Next_state <= S23_1;
 		HALT: 
-			if (~Continue) 
+		begin
+			if (Continue) 
 				Next_state <= HALT;
 			else 
 				Next_state <= Fetch1;
+		end
 		AND: Next_state <= Fetch1;
 		NOT: Next_state <= Fetch1;
 		MULT: Next_state <= Fetch1;
@@ -132,25 +139,34 @@ begin
 		JMP: Next_state <= Fetch1;
 		LDR1: Next_state <= S25_1;
 		S25_1: 
+		begin
 			if (~mem_ready)
 				Next_state <= S25_1;
 			else
 				Next_state <= S25_2;
+		end
 		S25_2: Next_state <= S27;
 		S27: Next_state <= Fetch1;
 		STR1: Next_state <= S23_1;
 		S23_1: 
+		begin
 			if (~mem_ready)
 				Next_state <= S23_1;
 			else
 				Next_state <= S23_2;
+		end
 		S23_2: Next_state <= S16;
 		S16: Next_state <= Fetch1;
-		SYNC: 
+		SYNC:
+		begin
+			Next_state <= SYNC;
+		/*
 			if (~Continue) 
 				Next_state <= SYNC;
 			else 
 				Next_state <= Fetch1;
+		*/
+		end
 		default: ;
 	endcase
 end

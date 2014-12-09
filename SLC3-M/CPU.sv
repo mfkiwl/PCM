@@ -5,7 +5,9 @@ module CPU(	input	logic 		Clk, Reset, Run, Continue,
 				input logic			[15:0]Data_in,
 				output logic [15:0]Data_out,
 				input logic mem_ready,
-				output logic sync_b,halt_b);
+				output logic sync_b,halt_b,
+				output logic [15:0] IRout_peek,
+				output logic [11:0] LED);
 				
 logic			LD_MAR, LD_MDR, LD_IR, LD_CC, LD_REG, LD_PC;
 logic			GatePC, GateMDR, GateALU, GateMARMUX;
@@ -14,7 +16,7 @@ logic			SR2MUX, ADDR1MUX, ADDR2MUX, MARMUX;
 logic [2:0]	DR, SR1, SR2, NZP;
 logic	[2:0] ALUK;
 logic [15:0]PCin, PCout, IRout, MARin, MARout, MDRout, ALUout, SR1out, SR2out, imm5, B, PCoffset9, PCoffset11, PCoffset, MARoffset6, MEM_IOaddr;
-logic [4:0] State;
+logic [5:0] State;
 
 
 SEXT9			BR_PCin		(.In(IRout[8:0]), .Out(PCoffset9));	
@@ -44,8 +46,9 @@ NZPreg		nzpreg		(.*, .Load(LD_CC), .LastResult(Data_out));
 
 ISDU			isdu			(.*, .IR(IRout), .State_out(State));
 
-assign ADDR = {(4'b00), MARout};
-assign LED = IRout[11:0]; //for pause instruction
+assign ADDR = {(4'b0), MARout};
+assign LED = {PC[9:0],State}; //for pause instruction
+assign IRout_peek = IRout;
 
 //test_memory mem();
 
