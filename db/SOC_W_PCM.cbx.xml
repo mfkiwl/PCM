@@ -1,5 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="SOC_W_PCM">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:alu|lpm_mult:Mult0" CBX_FILE_NAME="mult_7dt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|ALU:alu|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_lkm.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

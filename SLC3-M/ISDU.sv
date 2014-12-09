@@ -18,6 +18,7 @@ module ISDU(input	logic			Clk,
 										Reset,
 										Run,
 										Continue,
+										mem_ready,
 
 				input logic [2:0] NZP,
 				input logic	[15:0]IR,
@@ -50,12 +51,12 @@ module ISDU(input	logic			Clk,
 				output logic[4:0] State_out);
 
  
-enum logic [4:0] {Halted, 
+enum logic [5:0] {Halted, 
 						LoadPC1, LoadPC2, LoadPC3, LoadPC4,
 						Fetch1, Fetch2, Fetch3, Fetch4,
 						Decode,
 						ADD, AND, NOT, BR, JMP,
-						SUB,MULT,DIV,LEA,ST,LD,
+						SUB,MULT,DIV,LEA,ST,LD,LD_1,
 						LDR1, S25_1, S25_2, S27,
 						STR1, S23_1, S23_2, S16,
 						SYNC,HALT}   State, Next_state;   // Internal state logic
@@ -76,8 +77,8 @@ begin
 	
 	unique case (State)
 		Halted: 
-			if (Run) 
-				Next_state <= LoadPC1;
+			if (Continue) 
+				Next_state <= Fetch1;
 		LoadPC1: Next_state <= LoadPC2;
 		LoadPC2: Next_state <= LoadPC3;
 		LoadPC3: Next_state <= LoadPC4;
@@ -107,11 +108,13 @@ begin
 				4'b1011: Next_state <= DIV;
 				4'b1100: Next_state <= JMP;
 				4'b1101: Next_state <= SYNC;
+				4'b1110: Next_state <= LEA;
 				4'b1111: Next_state <= SUB;
 				default: Next_state <= Fetch1;
 			endcase
 		ADD: Next_state <= Fetch1;
-		LD: Next_state <= S25_1;
+		LD: Next_state <= LD_1;
+		LD_1: Next_state <= S25_1;
 		ST: Next_state <= S23_1;
 		HALT: 
 			if (~Continue) 
@@ -127,11 +130,19 @@ begin
 		BR: Next_state <= Fetch1;
 		JMP: Next_state <= Fetch1;
 		LDR1: Next_state <= S25_1;
-		S25_1: Next_state <= S25_2;
+		S25_1: 
+			if (~mem_ready)
+				Next_state <= S25_1;
+			else
+				Next_state <= S25_2;
 		S25_2: Next_state <= S27;
 		S27: Next_state <= Fetch1;
 		STR1: Next_state <= S23_1;
-		S23_1: Next_state <= S23_2;
+		S23_1: 
+			if (~mem_ready)
+				Next_state <= S23_1;
+			else
+				Next_state <= S23_2;
 		S23_2: Next_state <= S16;
 		S16: Next_state <= Fetch1;
 		SYNC: 
@@ -288,7 +299,7 @@ begin
 			GateALU <= 1'b1;
 			LD_MDR <= 1'b1;
 			end
-		S23_1:	// M[MAR]<-MDR
+		S23_2:	// M[MAR]<-MDR
 			begin
 			Mem_WE <= 1'b0;
 			GateMDR <= 1'b1;
@@ -302,8 +313,23 @@ begin
 		HALT: ;
 		LD: 	
 			begin
-			LD_MAR <= 1'b1;
+			ADDR1MUX <= 1'b0;
+			PCMUX <= 2'b01;
 			GatePC <= 1'b1;	
+			end
+		LD_1: 	
+			begin
+			ADDR1MUX <= 1'b0;
+			PCMUX <= 2'b01;
+			GatePC <= 1'b1;
+			LD_MAR <= 1'b1;	
+			end
+		ST:
+			begin
+			ADDR1MUX <= 1'b0;
+			PCMUX <= 2'b01;
+			GatePC <= 1'b1;
+			LD_MAR <= 1'b1;
 			end
 		SUB: 
 			begin
@@ -331,7 +357,11 @@ begin
 			end
 		LEA:
 			begin
-			
+			ADDR1MUX <= 1'b0;
+			PCMUX <= 2'b01;
+			GatePC <= 1'b1;
+			LD_REG <= 1'b1;
+			LD_CC <= 1'b1;
 			end
 		default: ;
 	endcase

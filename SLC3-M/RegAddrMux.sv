@@ -13,6 +13,14 @@ begin
 			SR1 <= IR[8:6];
 			SR2 <= IR[2:0];
 			end
+		4'b0010:// LD
+			begin
+			DR <= IR[11:9];
+			end
+		4'b0011:// ST
+			begin
+			SR1 <= IR[11:9];
+			end
 		4'b1010:// MULT
 			begin
 			DR <= IR[11:9];
@@ -55,6 +63,10 @@ begin
 			begin
 			SR1 <= IR[11:9];
 			SR2 <= IR[8:6];
+			end
+		4'b1110: //LEA
+			begin
+			DR <= IR[11:9];
 			end
 		default: ;
 	endcase

@@ -10,18 +10,22 @@
 # ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/TSB.sv}
+# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/datapath_control.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module TSB
+# -- Compiling module datapath_control
+# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/datapath_control.sv(11): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/datapath_control.sv(13): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/datapath_control.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/datapath_control.sv(17): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/datapath_control.sv(19): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
 # 
 # Top level modules:
-# 	TSB
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SLC3_2.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package SLC3_2
-# 
-# Top level modules:
-# 	--none--
+# 	datapath_control
 # vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT11.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module SEXT11
@@ -85,32 +89,9 @@
 # vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ALU
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(9): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(11): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(12): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(13): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
 # 
 # Top level modules:
 # 	ALU
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/test_memory.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package SLC3_2
-# -- Compiling package test_memory_sv_unit
-# -- Importing package SLC3_2
-# -- Compiling module test_memory
-# 
-# Top level modules:
-# 	test_memory
 # vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/RegFile.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module RegFile
@@ -140,47 +121,26 @@
 # vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L nois_system -voptargs=\"+acc\" -t 1ps testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.SLC3_2
-# Loading work.test_memory_sv_unit
-# Loading work.test_memory
 # Loading work.CPU
 # Loading work.SEXT9
 # Loading work.SEXT11
 # Loading work.Mux2
 # Loading work.Mux4
 # Loading work.Reg16
+# Loading work.datapath_control
 # Loading work.SEXT6
 # Loading work.RegAddrMux
 # Loading work.RegFile
 # Loading work.SEXT5
 # Loading work.ALU
-# Loading work.TSB
 # Loading work.NZPreg
 # Loading work.ISDU
 # ** Warning: (vsim-3015) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(21): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'Din0'. The port definition is at: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux4.sv(2).
 # 
 #         Region: /testbench/tcpu/PCmux
-# ** Warning: (vsim-3017) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Too few port connections. Expected 9, found 0.
+# ** Warning: (vsim-3015) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(23): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'MAR'. The port definition is at: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/datapath_control.sv(1).
 # 
-#         Region: /testbench/tcpu/mem
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'Clk'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'Reset'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'I_O'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'A'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'CE'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'UB'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'LB'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'OE'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'WE'.
-# 
+#         Region: /testbench/tcpu/Dcontrol
 # 
 # add wave *
 # view structure
@@ -188,49 +148,63 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 2000 ns
-add wave -position insertpoint sim:/testbench/tcpu/Registers/*
+add wave -position insertpoint  \
+sim:/testbench/tcpu/isdu/State
+add wave -position insertpoint  \
+sim:/testbench/tcpu/Registers/R6/Din \
+sim:/testbench/tcpu/Registers/R6/Dout
+add wave -position insertpoint  \
+sim:/testbench/tcpu/Registers/R7/Din \
+sim:/testbench/tcpu/Registers/R7/Dout
+add wave -position insertpoint  \
+sim:/testbench/tcpu/PC/Dout
 restart
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.SLC3_2
-# Loading work.test_memory_sv_unit
-# Loading work.test_memory
 # Loading work.CPU
 # Loading work.SEXT9
 # Loading work.SEXT11
 # Loading work.Mux2
 # Loading work.Mux4
 # Loading work.Reg16
+# Loading work.datapath_control
 # Loading work.SEXT6
 # Loading work.RegAddrMux
 # Loading work.RegFile
 # Loading work.SEXT5
 # Loading work.ALU
-# Loading work.TSB
 # Loading work.NZPreg
 # Loading work.ISDU
 # ** Warning: (vsim-3015) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(21): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'Din0'. The port definition is at: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux4.sv(2).
 # 
 #         Region: /testbench/tcpu/PCmux
-# ** Warning: (vsim-3017) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Too few port connections. Expected 9, found 0.
+# ** Warning: (vsim-3015) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(23): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'MAR'. The port definition is at: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/datapath_control.sv(1).
 # 
-#         Region: /testbench/tcpu/mem
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'Clk'.
+#         Region: /testbench/tcpu/Dcontrol
+run
+add wave -position insertpoint  \
+sim:/testbench/tcpu/MAR/Dout
+restart
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.CPU
+# Loading work.SEXT9
+# Loading work.SEXT11
+# Loading work.Mux2
+# Loading work.Mux4
+# Loading work.Reg16
+# Loading work.datapath_control
+# Loading work.SEXT6
+# Loading work.RegAddrMux
+# Loading work.RegFile
+# Loading work.SEXT5
+# Loading work.ALU
+# Loading work.NZPreg
+# Loading work.ISDU
+# ** Warning: (vsim-3015) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(21): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'Din0'. The port definition is at: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux4.sv(2).
 # 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'Reset'.
+#         Region: /testbench/tcpu/PCmux
+# ** Warning: (vsim-3015) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(23): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'MAR'. The port definition is at: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/datapath_control.sv(1).
 # 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'I_O'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'A'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'CE'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'UB'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'LB'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'OE'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'WE'.
-# 
+#         Region: /testbench/tcpu/Dcontrol
 run

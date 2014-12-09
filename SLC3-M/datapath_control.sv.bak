@@ -1,0 +1,28 @@
+module datapath(input [15:0] MAR, PC, ALU, MDR,
+				  input logic gateMAR, gateMDR, gatePC, gateALU,
+				  output logic [15:0] O);
+				  
+				  //Logic for the datapath wire
+				  always_comb
+				  begin
+				  
+						
+						case ({gateMAR, gateMDR, gatePC, gateALU})
+							4'b1000 :
+								O = MAR;
+							4'b0100 :
+								O = MDR;
+							4'b0010 :
+								O = PC;
+							4'b0001 :
+								O = ALU;
+							default :
+								O = 16'h1010101010101010;
+						
+						endcase
+						
+				  
+				  end
+
+				  endmodule
+				  

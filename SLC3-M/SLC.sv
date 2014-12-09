@@ -12,6 +12,7 @@ logic Mem_CE, Mem_UB, Mem_LB, Mem_OE, Mem_WE;
 logic [19:0] ADDR;
 logic [3:0]	 HEX3, HEX2, HEX1, HEX0;
 tri	[15:0] CPUdata;
+logic mem_ready;
 
 CPU		cpu	(.*, .Reset(~Reset), .Run(~Run), .Continue(~Continue), .ContinueIR(~ContinueIR), .Data_in(CPUdata));
 

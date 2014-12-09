@@ -5,8 +5,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/TSB.sv}
-vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SLC3_2.sv}
+vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/datapath_control.sv}
 vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT11.sv}
 vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT9.sv}
 vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT6.sv}
@@ -18,7 +17,6 @@ vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/User
 vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux2.sv}
 vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ISDU.sv}
 vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv}
-vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/test_memory.sv}
 vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/RegFile.sv}
 vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv}
 vlib nois_system

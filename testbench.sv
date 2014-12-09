@@ -13,6 +13,7 @@ wire  [15:0]  I_O;
 logic [15:0] Data_in,Data_out;
 wire[15:0] index;
 logic [19:0]  A;
+logic mem_ready;
 //logic [11:0] LED;
 logic CE, UB, LB, OE, WE;
 /*logic [6:0] HEX0, HEX1, HEX2, HEX3;
@@ -73,7 +74,7 @@ logic [19:0] addr_reg;
  
 integer ErrorCnt = 0; //Error counter; succesful run means count=0
  
-test_memory mem(.*, .Reset(~Reset));
+//test_memory mem(.*, .Reset(~Reset));
                                                                                                
 //SLC lc(.*, .DIS3(HEX3), .DIS2(HEX2), .DIS1(HEX1), .DIS0(HEX0), .Data(I_O));
  
@@ -98,14 +99,12 @@ task test_cpu1(reg [15:0] instr);
 
 #5 Reset = 1;
 
-//#5 index = 16'h0000;
+#1 mem_ready =1;
 
-//#10 ADDR= 20'b0;
+#5 Data_in =16'b0010110000000111;
 
-#10 Data_in = instr;
+#25 Data_in = instr;
 
-// This should add 1 to reg1 in LC3, instead puts it into Data_in.
-// It goes into the correct register but the data is wrong.
 
 endtask
 
@@ -195,7 +194,7 @@ Reset = 0;
 
 #2 Reset = 1;
 
-#5 test_cpu1(16'b0001000011100001);
+#5 test_cpu1(16'b0011101000000111);
 
 	
 end
