@@ -1,4 +1,5 @@
 # Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
 # do SOC_W_PCM_run_msim_rtl_systemverilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -10,126 +11,27 @@
 # ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/TSB.sv}
+# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj {C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module TSB
-# 
-# Top level modules:
-# 	TSB
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SLC3_2.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package SLC3_2
-# 
-# Top level modules:
-# 	--none--
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT11.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SEXT11
-# 
-# Top level modules:
-# 	SEXT11
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT9.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SEXT9
-# 
-# Top level modules:
-# 	SEXT9
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT6.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SEXT6
-# 
-# Top level modules:
-# 	SEXT6
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/SEXT5.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SEXT5
-# 
-# Top level modules:
-# 	SEXT5
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/RegAddrMux.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RegAddrMux
-# 
-# Top level modules:
-# 	RegAddrMux
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Reg16.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Reg16
-# 
-# Top level modules:
-# 	Reg16
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/NZPreg.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module NZPreg
-# 
-# Top level modules:
-# 	NZPreg
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux4.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Mux4
-# 
-# Top level modules:
-# 	Mux4
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux2.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Mux2
-# 
-# Top level modules:
-# 	Mux2
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ISDU.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ISDU
-# 
-# Top level modules:
-# 	ISDU
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALU
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(9): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(11): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(12): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(13): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/ALU.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module PCM_MM_reg
+# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv(45): (vlog-2182) 'addr_reg' might be read before written in always_comb block.
 # 
 # 
 # Top level modules:
-# 	ALU
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/test_memory.sv}
+# 	PCM_MM_reg
+# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj {C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package SLC3_2
-# -- Compiling package test_memory_sv_unit
-# -- Importing package SLC3_2
-# -- Compiling module test_memory
+# -- Compiling module PCM_MM
 # 
 # Top level modules:
-# 	test_memory
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/RegFile.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RegFile
-# 
-# Top level modules:
-# 	RegFile
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2/SLC3-M {C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
-# 
-# Top level modules:
-# 	CPU
+# 	PCM_MM
 # vlib nois_system
 # ** Warning: (vlib-34) Library already exists at "nois_system".
 # 
 # vmap nois_system nois_system
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/steven/Desktop/ECE\ 385/fp2 {C:/Users/steven/Desktop/ECE 385/fp2/testbench.sv}
+# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj {C:/Users/Thomas/Documents/ECE385/finalProj/testbench.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module testbench
 # 
@@ -140,47 +42,8 @@
 # vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L nois_system -voptargs=\"+acc\" -t 1ps testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.SLC3_2
-# Loading work.test_memory_sv_unit
-# Loading work.test_memory
-# Loading work.CPU
-# Loading work.SEXT9
-# Loading work.SEXT11
-# Loading work.Mux2
-# Loading work.Mux4
-# Loading work.Reg16
-# Loading work.SEXT6
-# Loading work.RegAddrMux
-# Loading work.RegFile
-# Loading work.SEXT5
-# Loading work.ALU
-# Loading work.TSB
-# Loading work.NZPreg
-# Loading work.ISDU
-# ** Warning: (vsim-3015) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(21): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'Din0'. The port definition is at: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux4.sv(2).
-# 
-#         Region: /testbench/tcpu/PCmux
-# ** Warning: (vsim-3017) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Too few port connections. Expected 9, found 0.
-# 
-#         Region: /testbench/tcpu/mem
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'Clk'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'Reset'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'I_O'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'A'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'CE'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'UB'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'LB'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'OE'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'WE'.
-# 
+# Loading work.PCM_MM
+# Loading work.PCM_MM_reg
 # 
 # add wave *
 # view structure
@@ -188,50 +51,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 2000 ns
-add wave -position insertpoint sim:/testbench/tcpu/Registers/R1/*
-add wave -position insertpoint sim:/testbench/tcpu/Registers/R2/*
-restart
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.SLC3_2
-# Loading work.test_memory_sv_unit
-# Loading work.test_memory
-# Loading work.CPU
-# Loading work.SEXT9
-# Loading work.SEXT11
-# Loading work.Mux2
-# Loading work.Mux4
-# Loading work.Reg16
-# Loading work.SEXT6
-# Loading work.RegAddrMux
-# Loading work.RegFile
-# Loading work.SEXT5
-# Loading work.ALU
-# Loading work.TSB
-# Loading work.NZPreg
-# Loading work.ISDU
-# ** Warning: (vsim-3015) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(21): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'Din0'. The port definition is at: C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/Mux4.sv(2).
-# 
-#         Region: /testbench/tcpu/PCmux
-# ** Warning: (vsim-3017) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Too few port connections. Expected 9, found 0.
-# 
-#         Region: /testbench/tcpu/mem
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'Clk'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'Reset'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'I_O'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'A'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'CE'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'UB'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'LB'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'OE'.
-# 
-# ** Warning: (vsim-3722) C:/Users/steven/Desktop/ECE 385/fp2/SLC3-M/CPU.sv(51): [TFMPC] - Missing connection for port 'WE'.
-# 
-run
+# pcm_mem_mm_address was set correctly
+# pcm_mem_mm_readdata was set correctly

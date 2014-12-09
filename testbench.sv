@@ -31,7 +31,7 @@ logic           sdram_wire_clk;
 logic	Mem_CE, Mem_UB, Mem_LB, Mem_OE, Mem_WE;
 logic[19:0]ADDR;
 //PCM_MM Variables
-/*
+
 logic cpu0_write,init;                                                                              
 logic [19:0] cpu0_addr;
 logic [15:0] cpu0_data_in;
@@ -52,38 +52,38 @@ logic[19:0] cpu3_addr;
 logic[15:0] cpu3_data_in;
 logic cpu3_ready;
 logic [15:0] cpu3_data_out;
-wire [19:0] pcm_mem_mm_address;
-wire pcm_mem_mm_chipselect;
-wire pcm_mem_mm_clken;
-wire pcm_mem_mm_write;
-wire  [15:0] pcm_mem_mm_readdata;
-wire [15:0] pcm_mem_mm_writedata;
-wire [1:0] pcm_mem_mm_byteenable;
-*/ 
+logic [19:0] pcm_mem_mm_address;
+logic pcm_mem_mm_chipselect;
+logic pcm_mem_mm_clken;
+logic pcm_mem_mm_write;
+logic  [15:0] pcm_mem_mm_readdata;
+logic [15:0] pcm_mem_mm_writedata;
+logic [1:0] pcm_mem_mm_byteenable;
+
 //PCM_MM_REG variables
-/* 
+
 logic resolved, cpu_write;
 logic [19:0] addr;
 logic [15:0] data_in, cpu_in;
 logic schedule, cpu_ready;
 logic [15:0] cpu_out;
 logic [19:0] addr_reg;
-*/ 
+ 
 //logic [15:0] S;
  
 integer ErrorCnt = 0; //Error counter; succesful run means count=0
  
-test_memory mem(.*, .Reset(~Reset));
+//test_memory mem(.*, .Reset(~Reset));
                                                                                                
 //SLC lc(.*, .DIS3(HEX3), .DIS2(HEX2), .DIS1(HEX1), .DIS0(HEX0), .Data(I_O));
  
 //SOC_W_PCM soc(.*, .clk(Clk), .reset(~Reset));
  
-//PCM_MM pcm (.*, .clk(Clk), .reset(~Reset));
+PCM_MM pcm (.*, .clk(Clk), .reset(~Reset));
  
 //PCM_MM_reg pcm_reg(.*, .clk(Clk), .reset(~Reset));
 
-CPU tcpu(.*,.Reset(~Reset));
+//CPU tcpu(.*,.Reset(~Reset));
  
 always begin : CLOCK_GENERATION //1 timeunit delay
         #1 Clk = ~Clk;
@@ -151,12 +151,19 @@ end
 #5 Reset = 0;	
 
 endtask
-
+*/
 task PCM_MM_test0(reg [19:0] newaddr, reg [15:0] newdata);
 cpu0_addr = 20'b0;
-#3 cpu0_addr = newaddr;
+cpu1_addr = 20'b0;
+cpu2_addr = 20'b0;
+cpu3_addr = 20'b0;
+pcm_mem_mm_readdata = 15'b0;
+#1 init = 1'b1;
+#2 init = 1'b0;
+#40 cpu0_addr = newaddr;
+pcm_mem_mm_readdata = newdata;
 
-#10 if(cpu0_addr ==pcm_mem_mm_address )
+#10 if(cpu0_addr == pcm_mem_mm_address )
 begin
 #5 $display ("pcm_mem_mm_address was set correctly");
 end
@@ -165,23 +172,21 @@ begin
 #5 $display ("pcm_mem_mm_address was not set correctly");
 end
 
-#5 pcm_mem_mm_readdata = newdata;
-
-#10 if(cpu_ready)
+#10 if(cpu0_ready)
 begin
 	#1 if(pcm_mem_mm_readdata == cpu0_data_out)
 	begin
-	#5 $display ("pcm_mem_mm_address was set correctly");
+	#5 $display ("pcm_mem_mm_readdata was set correctly");
 	end
 	else
 	begin
-	#5 $display ("pcm_mem_mm_address was not set correctly");
+	#5 $display ("pcm_mem_mm_readdata was not set correctly");
 	end
 end
 
 
 endtask
-*/
+
 //Begin testing
 initial begin: TEST_VECTORS
 Reset = 1;
@@ -195,7 +200,7 @@ Reset = 0;
 
 #2 Reset = 1;
 
-#5 test_cpu1(16'b0001001001100001);
+PCM_MM_test0(20'h00606, 16'h0909);
 
 	
 end

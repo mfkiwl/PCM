@@ -91,12 +91,7 @@ module SOC_W_PCM(input clk, reset,
 			CPU cpu3( .Clk(clk), .Reset(~reset), .Run(cpu3_run) , .Continue(cpu3_continue), .index(index3), .Mem_CE(cpu3_CE), .Mem_UB(cpu3_UB), .Mem_LB(cpu3_LB), .Mem_OE(cpu3_OE), .Mem_WE(cpu3_WE), .ADDR(cpu3_addr), .Data_in(cpu3_data));
 			*/
 			
-			logic resolved, cpu_write, init;
-			logic [19:0] addr;
-			logic [15:0] data_in, cpu_in;
-			logic schedule, cpu_ready;
-			logic [15:0] cpu_out;
-			PCM_MM_reg( .*);
+			
 					
 					
 			endmodule
