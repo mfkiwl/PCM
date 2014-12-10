@@ -34,8 +34,15 @@ int main()
 
 	for(i = 0; i < 2048; i++)
 	{
-		pcm_mem_base[i] = 7;
+		pcm_mem_base[i] = 0x6666;
 	}
+
+	printf("Copying Data to PCM Memory\n");
+	for(i = 0; i < DATA_SIZE; i++)
+	{
+		pcm_mem_base[i] = data[i];
+	}
+	printf("Data has been copied to PCM Memory\n");
 
 	printf("Initializing Processor\n");
 
@@ -47,14 +54,6 @@ int main()
 	*pccm_ctl = 1;
 	while(*pccm_rsp != 1);
 	printf("Processor Initialized\n");
-
-
-	printf("Copying Data to PCM Memory\n");
-	for(i = 0; i < DATA_SIZE; i++)
-	{
-		pcm_mem_base[i] = data[i];
-	}
-	printf("Data has been copied to PCM Memory\n");
 
 	*pccm_ctl = 2;
 	while(*pccm_rsp != 3);

@@ -87,11 +87,17 @@ begin
 		LoadPC3: Next_state <= LoadPC4;
 		LoadPC4: Next_state <= Fetch1;
 		Fetch1: Next_state <= Fetch2;
-		Fetch2: Next_state <= Fetch3;
+		Fetch2: 
+		begin	
+			if (~mem_ready)
+				Next_state <= Fetch2;
+			else
+				Next_state <= Fetch3;
+		end
 		Fetch3: Next_state <= Fetch4;
 		Fetch4: 
 		begin
-			Next_state <= Halted;
+			Next_state <= Decode;
 		end
 		Decode: 
 			case (IR[15:12])
@@ -124,11 +130,15 @@ begin
 		ST: Next_state <= S23_1;
 		HALT: 
 		begin
-			if (Continue) 
+			Next_state <= HALT;
+		/*
+			if (~Continue) 
 				Next_state <= HALT;
 			else 
 				Next_state <= Fetch1;
+		*/
 		end
+		
 		AND: Next_state <= Fetch1;
 		NOT: Next_state <= Fetch1;
 		MULT: Next_state <= Fetch1;
@@ -149,23 +159,21 @@ begin
 		S27: Next_state <= Fetch1;
 		STR1: Next_state <= S23_1;
 		S23_1: 
+			Next_state <= S23_2;
+		S23_2:
 		begin
 			if (~mem_ready)
-				Next_state <= S23_1;
-			else
 				Next_state <= S23_2;
+			else
+				Next_state <= S16;;
 		end
-		S23_2: Next_state <= S16;
 		S16: Next_state <= Fetch1;
 		SYNC:
 		begin
-			Next_state <= SYNC;
-		/*
 			if (~Continue) 
 				Next_state <= SYNC;
 			else 
 				Next_state <= Fetch1;
-		*/
 		end
 		default: ;
 	endcase

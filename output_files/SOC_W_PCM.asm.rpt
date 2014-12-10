@@ -1,5 +1,5 @@
 Assembler report for SOC_W_PCM
-Tue Dec 09 11:22:58 2014
+Tue Dec 09 12:44:49 2014
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Dec 09 11:22:58 2014 ;
+; Assembler Status      ; Successful - Tue Dec 09 12:44:49 2014 ;
 ; Revision Name         ; SOC_W_PCM                             ;
 ; Top-level Entity Name ; SOC_W_PCM                             ;
 ; Family                ; Cyclone IV E                          ;
@@ -79,8 +79,8 @@ agreement for further details.
 ; Option         ; Setting                                                                        ;
 +----------------+--------------------------------------------------------------------------------+
 ; Device         ; EP4CE115F29C7                                                                  ;
-; JTAG usercode  ; 0x007AFFEE                                                                     ;
-; Checksum       ; 0x007AFFEE                                                                     ;
+; JTAG usercode  ; 0x009E750D                                                                     ;
+; Checksum       ; 0x009E750D                                                                     ;
 +----------------+--------------------------------------------------------------------------------+
 
 
@@ -90,14 +90,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Tue Dec 09 11:22:44 2014
+    Info: Processing started: Tue Dec 09 12:44:34 2014
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off SOC_W_PCM -c SOC_W_PCM
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 524 megabytes
-    Info: Processing ended: Tue Dec 09 11:22:58 2014
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 547 megabytes
+    Info: Processing ended: Tue Dec 09 12:44:49 2014
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:15
 
 

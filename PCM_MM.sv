@@ -142,7 +142,7 @@ module PCM_MM(input clk, reset, init,
 								
 							end
 							
-							if(cur_state == OPERATION_1 || cur_state == RESOLVED)
+							if(cur_state == OPERATION_1 || cur_state == WAIT) // || RESOLVED
 							begin
 								reg0_resolved = reg0_resolved_next;
 								reg0_waiting = reg0_waiting_next ;

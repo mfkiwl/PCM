@@ -85,7 +85,7 @@ module SOC_W_PCM(input clk, reset, ctn_button,
 		   logic cpu3_ready;
 		   logic [15:0] cpu3_data_out;
 
-			//PCM_MM pcm_mem(.*, .init(int_init));
+			PCM_MM pcm_mem(.*, .init(int_init));
 			
 			HexDriver h3(.In0(IRout0[15:12]), .Out0(HEX3));
 			HexDriver h2(.In0(IRout0[11:8]), .Out0(HEX2));
@@ -99,9 +99,10 @@ module SOC_W_PCM(input clk, reset, ctn_button,
 			wire [15:0] cpu0_data;
 			logic [15:0] IRout0;
 			
-			CPU cpu0( .Clk(clk), .Reset(0), .Run(cpu0_run) , .Continue(~ctn_button), .index(index0), .Mem_CE(cpu0_CE), .Mem_UB(cpu0_UB), .Mem_LB(cpu0_LB), .Mem_OE(cpu0_OE), .Mem_WE(cpu0_write), .ADDR(cpu0_addr), .Data_in(cpu0_data_out), .mem_ready(cpu0_ready), .sync_b(cpu0_sync), .halt_b(cpu0_halt), .Data_out(cpu0_data_in), .IRout_peek(IRout0), .LED(LED));
+			CPU cpu0( .Clk(clk), .Reset(~reset), .Run(cpu0_run) , .Continue(~ctn_button), .index(index0), .Mem_CE(cpu0_CE), .Mem_UB(cpu0_UB), .Mem_LB(cpu0_LB), .Mem_OE(cpu0_OE), .Mem_WE(cpu0_write), .ADDR(cpu0_addr), .Data_in(cpu0_data_out), .mem_ready(cpu0_ready), .sync_b(cpu0_sync), .halt_b(cpu0_halt), .Data_out(cpu0_data_in), .IRout_peek(IRout0), .LED(LED));
 			
 			// CPU DEMO
+			/*
 			assign pcm_mem_mm_address = cpu0_addr[10:0];
 			assign pcm_mem_mm_chipselect = 1'b1;
 			assign pcm_mem_mm_byteenable = 2'b11;
@@ -109,6 +110,8 @@ module SOC_W_PCM(input clk, reset, ctn_button,
 			assign cpu0_data_out = pcm_mem_mm_readdata;
 			assign pcm_mem_mm_write = ~cpu0_write;        //              .write
 			assign pcm_mem_mm_writedata = cpu0_data_in;
+			assign cpu0_ready = 1'b1;
+			*/
 			// CPU DEMO - END
 			
 			// CPU 1
@@ -117,7 +120,7 @@ module SOC_W_PCM(input clk, reset, ctn_button,
 			assign index1 = 16'h0001;
 			wire [15:0] cpu1_data;
 			
-			CPU cpu1( .Clk(clk), .Reset(int_reset), .Run(cpu1_run) , .Continue(cpu1_continue), .index(index1), .Mem_CE(cpu1_CE), .Mem_UB(cpu1_UB), .Mem_LB(cpu1_LB), .Mem_OE(cpu1_OE), .Mem_WE(cpu1_write), .ADDR(cpu1_addr), .Data_in(cpu1_data_out), .mem_ready(cpu1_ready), .sync_b(cpu1_sync), .halt_b(cpu1_halt), .Data_out(cpu1_data_in), .IRout_peek(), .LED());
+			CPU cpu1( .Clk(clk), .Reset(~reset), .Run(cpu1_run) , .Continue(~ctn_button), .index(index1), .Mem_CE(cpu1_CE), .Mem_UB(cpu1_UB), .Mem_LB(cpu1_LB), .Mem_OE(cpu1_OE), .Mem_WE(cpu1_write), .ADDR(cpu1_addr), .Data_in(cpu1_data_out), .mem_ready(cpu1_ready), .sync_b(cpu1_sync), .halt_b(cpu1_halt), .Data_out(cpu1_data_in), .IRout_peek(), .LED());
 			
 			// CPU 2
 			logic cpu2_run, cpu2_continue, cpu2_CE, cpu2_UB, cpu2_LB, cpu2_OE, cpu2_WE;
@@ -125,7 +128,7 @@ module SOC_W_PCM(input clk, reset, ctn_button,
 			assign index2 = 16'h0002;
 			wire [15:0] cpu2_data;
 			
-			CPU cpu2( .Clk(clk), .Reset(int_reset), .Run(cpu2_run) , .Continue(cpu2_continue), .index(index2), .Mem_CE(cpu2_CE), .Mem_UB(cpu2_UB), .Mem_LB(cpu2_LB), .Mem_OE(cpu2_OE), .Mem_WE(cpu2_write), .ADDR(cpu2_addr), .Data_in(cpu2_data_out), .mem_ready(cpu2_ready), .sync_b(cpu2_sync), .halt_b(cpu2_halt), .Data_out(cpu2_data_in), .IRout_peek(), .LED());
+			CPU cpu2( .Clk(clk), .Reset(~reset), .Run(cpu2_run) , .Continue(~ctn_button), .index(index2), .Mem_CE(cpu2_CE), .Mem_UB(cpu2_UB), .Mem_LB(cpu2_LB), .Mem_OE(cpu2_OE), .Mem_WE(cpu2_write), .ADDR(cpu2_addr), .Data_in(cpu2_data_out), .mem_ready(cpu2_ready), .sync_b(cpu2_sync), .halt_b(cpu2_halt), .Data_out(cpu2_data_in), .IRout_peek(), .LED());
 			
 			// CPU 3
 			logic cpu3_run, cpu3_continue, cpu3_CE, cpu3_UB, cpu3_LB, cpu3_OE, cpu3_WE;
@@ -133,7 +136,7 @@ module SOC_W_PCM(input clk, reset, ctn_button,
 			assign index3 = 16'h0003;
 			wire [15:0] cpu3_data;
 			
-			CPU cpu3( .Clk(clk), .Reset(int_reset), .Run(cpu3_run) , .Continue(cpu3_continue), .index(index3), .Mem_CE(cpu3_CE), .Mem_UB(cpu3_UB), .Mem_LB(cpu3_LB), .Mem_OE(cpu3_OE), .Mem_WE(cpu3_write), .ADDR(cpu3_addr), .Data_in(cpu3_data_out), .mem_ready(cpu3_ready), .sync_b(cpu3_sync), .halt_b(cpu3_halt), .Data_out(cpu3_data_in), .IRout_peek(), .LED());
+			CPU cpu3( .Clk(clk), .Reset(~reset), .Run(cpu3_run) , .Continue(~ctn_button), .index(index3), .Mem_CE(cpu3_CE), .Mem_UB(cpu3_UB), .Mem_LB(cpu3_LB), .Mem_OE(cpu3_OE), .Mem_WE(cpu3_write), .ADDR(cpu3_addr), .Data_in(cpu3_data_out), .mem_ready(cpu3_ready), .sync_b(cpu3_sync), .halt_b(cpu3_halt), .Data_out(cpu3_data_in), .IRout_peek(), .LED());
 			
 			
 			

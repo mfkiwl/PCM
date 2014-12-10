@@ -892,12 +892,12 @@ int main()
  4000280:	e03fcc15 	stw	zero,-208(fp)
  4000284:	00000906 	br	40002ac <main+0xb8>
 	{
-		pcm_mem_base[i] = 7;
+		pcm_mem_base[i] = 0x6666;
  4000288:	e0bfcc17 	ldw	r2,-208(fp)
  400028c:	1085883a 	add	r2,r2,r2
  4000290:	e0ffcd17 	ldw	r3,-204(fp)
  4000294:	1885883a 	add	r2,r3,r2
- 4000298:	00c001c4 	movi	r3,7
+ 4000298:	00d99984 	movi	r3,26214
  400029c:	10c0000d 	sth	r3,0(r2)
 	int i;
 	alt_u16 data[DATA_SIZE] = {0x5260, 0x54A0, 0x1220, 0xA268, 0x126F, 0x126F, 0x126A, 0x14A9, 0x7440, 0x4000};
@@ -912,97 +912,96 @@ int main()
  40002b0:	10820010 	cmplti	r2,r2,2048
  40002b4:	103ff41e 	bne	r2,zero,4000288 <__alt_data_end+0xfe000288>
 	{
-		pcm_mem_base[i] = 7;
+		pcm_mem_base[i] = 0x6666;
 	}
 
-	printf("Initializing Processor\n");
+	printf("Copying Data to PCM Memory\n");
  40002b8:	01010074 	movhi	r4,1025
  40002bc:	21314b04 	addi	r4,r4,-15060
  40002c0:	40006580 	call	4000658 <puts>
-
-	*pccm_ctl = 5;
- 40002c4:	00900c04 	movi	r2,16432
- 40002c8:	00c00144 	movi	r3,5
- 40002cc:	10c00005 	stb	r3,0(r2)
-	for(i = 0; i < 1000; i++);
- 40002d0:	e03fcc15 	stw	zero,-208(fp)
- 40002d4:	00000306 	br	40002e4 <main+0xf0>
- 40002d8:	e0bfcc17 	ldw	r2,-208(fp)
- 40002dc:	10800044 	addi	r2,r2,1
- 40002e0:	e0bfcc15 	stw	r2,-208(fp)
- 40002e4:	e0bfcc17 	ldw	r2,-208(fp)
- 40002e8:	1080fa10 	cmplti	r2,r2,1000
- 40002ec:	103ffa1e 	bne	r2,zero,40002d8 <__alt_data_end+0xfe0002d8>
-	*pccm_ctl = 0;
- 40002f0:	00900c04 	movi	r2,16432
- 40002f4:	10000005 	stb	zero,0(r2)
-
-	while(*pccm_rsp != 5);
- 40002f8:	0001883a 	nop
- 40002fc:	00900804 	movi	r2,16416
- 4000300:	10800003 	ldbu	r2,0(r2)
- 4000304:	10803fcc 	andi	r2,r2,255
- 4000308:	1080201c 	xori	r2,r2,128
- 400030c:	10bfe004 	addi	r2,r2,-128
- 4000310:	10800158 	cmpnei	r2,r2,5
- 4000314:	103ff91e 	bne	r2,zero,40002fc <__alt_data_end+0xfe0002fc>
-	*pccm_ctl = 1;
- 4000318:	00900c04 	movi	r2,16432
- 400031c:	00c00044 	movi	r3,1
- 4000320:	10c00005 	stb	r3,0(r2)
-	while(*pccm_rsp != 1);
- 4000324:	0001883a 	nop
- 4000328:	00900804 	movi	r2,16416
- 400032c:	10800003 	ldbu	r2,0(r2)
- 4000330:	10803fcc 	andi	r2,r2,255
- 4000334:	1080201c 	xori	r2,r2,128
- 4000338:	10bfe004 	addi	r2,r2,-128
- 400033c:	10800058 	cmpnei	r2,r2,1
- 4000340:	103ff91e 	bne	r2,zero,4000328 <__alt_data_end+0xfe000328>
-	printf("Processor Initialized\n");
- 4000344:	01010074 	movhi	r4,1025
- 4000348:	21315104 	addi	r4,r4,-15036
- 400034c:	40006580 	call	4000658 <puts>
-
-
-	printf("Copying Data to PCM Memory\n");
- 4000350:	01010074 	movhi	r4,1025
- 4000354:	21315704 	addi	r4,r4,-15012
- 4000358:	40006580 	call	4000658 <puts>
 	for(i = 0; i < DATA_SIZE; i++)
- 400035c:	e03fcc15 	stw	zero,-208(fp)
- 4000360:	00000e06 	br	400039c <main+0x1a8>
+ 40002c4:	e03fcc15 	stw	zero,-208(fp)
+ 40002c8:	00000e06 	br	4000304 <main+0x110>
 	{
 		pcm_mem_base[i] = data[i];
- 4000364:	e0bfcc17 	ldw	r2,-208(fp)
- 4000368:	1085883a 	add	r2,r2,r2
- 400036c:	e0ffcd17 	ldw	r3,-204(fp)
- 4000370:	1887883a 	add	r3,r3,r2
- 4000374:	e0bfcc17 	ldw	r2,-208(fp)
- 4000378:	1085883a 	add	r2,r2,r2
- 400037c:	e13fcc04 	addi	r4,fp,-208
- 4000380:	2085883a 	add	r2,r4,r2
- 4000384:	10800204 	addi	r2,r2,8
- 4000388:	1080000b 	ldhu	r2,0(r2)
- 400038c:	1880000d 	sth	r2,0(r3)
-	while(*pccm_rsp != 1);
-	printf("Processor Initialized\n");
-
+ 40002cc:	e0bfcc17 	ldw	r2,-208(fp)
+ 40002d0:	1085883a 	add	r2,r2,r2
+ 40002d4:	e0ffcd17 	ldw	r3,-204(fp)
+ 40002d8:	1887883a 	add	r3,r3,r2
+ 40002dc:	e0bfcc17 	ldw	r2,-208(fp)
+ 40002e0:	1085883a 	add	r2,r2,r2
+ 40002e4:	e13fcc04 	addi	r4,fp,-208
+ 40002e8:	2085883a 	add	r2,r4,r2
+ 40002ec:	10800204 	addi	r2,r2,8
+ 40002f0:	1080000b 	ldhu	r2,0(r2)
+ 40002f4:	1880000d 	sth	r2,0(r3)
+	{
+		pcm_mem_base[i] = 0x6666;
+	}
 
 	printf("Copying Data to PCM Memory\n");
 	for(i = 0; i < DATA_SIZE; i++)
- 4000390:	e0bfcc17 	ldw	r2,-208(fp)
- 4000394:	10800044 	addi	r2,r2,1
- 4000398:	e0bfcc15 	stw	r2,-208(fp)
- 400039c:	e0bfcc17 	ldw	r2,-208(fp)
- 40003a0:	10801910 	cmplti	r2,r2,100
- 40003a4:	103fef1e 	bne	r2,zero,4000364 <__alt_data_end+0xfe000364>
+ 40002f8:	e0bfcc17 	ldw	r2,-208(fp)
+ 40002fc:	10800044 	addi	r2,r2,1
+ 4000300:	e0bfcc15 	stw	r2,-208(fp)
+ 4000304:	e0bfcc17 	ldw	r2,-208(fp)
+ 4000308:	10801910 	cmplti	r2,r2,100
+ 400030c:	103fef1e 	bne	r2,zero,40002cc <__alt_data_end+0xfe0002cc>
 	{
 		pcm_mem_base[i] = data[i];
 	}
 	printf("Data has been copied to PCM Memory\n");
+ 4000310:	01010074 	movhi	r4,1025
+ 4000314:	21315204 	addi	r4,r4,-15032
+ 4000318:	40006580 	call	4000658 <puts>
+
+	printf("Initializing Processor\n");
+ 400031c:	01010074 	movhi	r4,1025
+ 4000320:	21315b04 	addi	r4,r4,-14996
+ 4000324:	40006580 	call	4000658 <puts>
+
+	*pccm_ctl = 5;
+ 4000328:	00900c04 	movi	r2,16432
+ 400032c:	00c00144 	movi	r3,5
+ 4000330:	10c00005 	stb	r3,0(r2)
+	for(i = 0; i < 1000; i++);
+ 4000334:	e03fcc15 	stw	zero,-208(fp)
+ 4000338:	00000306 	br	4000348 <main+0x154>
+ 400033c:	e0bfcc17 	ldw	r2,-208(fp)
+ 4000340:	10800044 	addi	r2,r2,1
+ 4000344:	e0bfcc15 	stw	r2,-208(fp)
+ 4000348:	e0bfcc17 	ldw	r2,-208(fp)
+ 400034c:	1080fa10 	cmplti	r2,r2,1000
+ 4000350:	103ffa1e 	bne	r2,zero,400033c <__alt_data_end+0xfe00033c>
+	*pccm_ctl = 0;
+ 4000354:	00900c04 	movi	r2,16432
+ 4000358:	10000005 	stb	zero,0(r2)
+
+	while(*pccm_rsp != 5);
+ 400035c:	0001883a 	nop
+ 4000360:	00900804 	movi	r2,16416
+ 4000364:	10800003 	ldbu	r2,0(r2)
+ 4000368:	10803fcc 	andi	r2,r2,255
+ 400036c:	1080201c 	xori	r2,r2,128
+ 4000370:	10bfe004 	addi	r2,r2,-128
+ 4000374:	10800158 	cmpnei	r2,r2,5
+ 4000378:	103ff91e 	bne	r2,zero,4000360 <__alt_data_end+0xfe000360>
+	*pccm_ctl = 1;
+ 400037c:	00900c04 	movi	r2,16432
+ 4000380:	00c00044 	movi	r3,1
+ 4000384:	10c00005 	stb	r3,0(r2)
+	while(*pccm_rsp != 1);
+ 4000388:	0001883a 	nop
+ 400038c:	00900804 	movi	r2,16416
+ 4000390:	10800003 	ldbu	r2,0(r2)
+ 4000394:	10803fcc 	andi	r2,r2,255
+ 4000398:	1080201c 	xori	r2,r2,128
+ 400039c:	10bfe004 	addi	r2,r2,-128
+ 40003a0:	10800058 	cmpnei	r2,r2,1
+ 40003a4:	103ff91e 	bne	r2,zero,400038c <__alt_data_end+0xfe00038c>
+	printf("Processor Initialized\n");
  40003a8:	01010074 	movhi	r4,1025
- 40003ac:	21315e04 	addi	r4,r4,-14984
+ 40003ac:	21316104 	addi	r4,r4,-14972
  40003b0:	40006580 	call	4000658 <puts>
 
 	*pccm_ctl = 2;

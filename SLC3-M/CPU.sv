@@ -47,7 +47,7 @@ NZPreg		nzpreg		(.*, .Load(LD_CC), .LastResult(Data_out));
 ISDU			isdu			(.*, .IR(IRout), .State_out(State));
 
 assign ADDR = {(4'b0), MARout};
-assign LED = {PC[9:0],State}; //for pause instruction
+assign LED = {PC[4:0],State}; //for pause instruction
 assign IRout_peek = IRout;
 
 //test_memory mem();

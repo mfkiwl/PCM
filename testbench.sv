@@ -53,7 +53,7 @@ logic[19:0] cpu3_addr;
 logic[15:0] cpu3_data_in;
 logic cpu3_ready;
 logic [15:0] cpu3_data_out;
-logic [19:0] pcm_mem_mm_address;
+logic [10:0] pcm_mem_mm_address;
 logic pcm_mem_mm_chipselect;
 logic pcm_mem_mm_clken;
 logic pcm_mem_mm_write;
@@ -76,7 +76,7 @@ logic [3:0] pccm_rsp_con_export;	// used for PCCM to NIOS control communication
 logic cpu0_sync, cpu1_sync, cpu2_sync, cpu3_sync, cpu0_halt, cpu1_halt, cpu2_halt, cpu3_halt;
 logic int_reset, int_init, cpu0_Continue, cpu1_Continue, cpu2_Continue, cpu3_Continue;
 
-PCCM control(.*, .clk(Clk), .reset(~Reset));
+//PCCM control(.*, .clk(Clk), .reset(~Reset));
 
  
 //logic [15:0] S;
@@ -89,7 +89,7 @@ integer ErrorCnt = 0; //Error counter; succesful run means count=0
  
 //SOC_W_PCM soc(.*, .clk(Clk), .reset(~Reset));
  
-//PCM_MM pcm (.*, .clk(Clk), .reset(~Reset));
+PCM_MM pcm (.*, .clk(Clk), .reset(~Reset));
  
 //PCM_MM_reg pcm_reg(.*, .clk(Clk), .reset(~Reset));
 
@@ -160,11 +160,11 @@ end
 
 endtask
 */
-task PCM_MM_test0(reg [19:0] newaddr, reg [15:0] newdata);
-cpu0_addr = 20'b0;
-cpu1_addr = 20'b0;
-cpu2_addr = 20'b0;
-cpu3_addr = 20'b0;
+task PCM_MM_test0(reg [10:0] newaddr, reg [15:0] newdata);
+cpu0_addr = 16'b0;
+cpu1_addr = 16'b0;
+cpu2_addr = 16'b0;
+cpu3_addr = 16'b0;
 pcm_mem_mm_readdata = 15'b0;
 #1 init = 1'b1;
 #2 init = 1'b0;
@@ -208,10 +208,7 @@ Reset = 0;
 
 #2 Reset = 1;
 
-#5 pccm_ctl_con_export = 1;
-
-#10 pccm_ctl_con_export = 5;
-#5 pccm_ctl_con_export = 0;
+#5 PCM_MM_test0(10'h066, 16'h9999);
 
 
 	

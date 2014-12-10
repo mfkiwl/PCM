@@ -11,442 +11,25 @@
 # ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj {C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PCM_MM_reg
+# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM_reg.sv(45): (vlog-2182) 'addr_reg' might be read before written in always_comb block.
+# 
+# 
+# Top level modules:
+# 	PCM_MM_reg
+# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj {C:/Users/Thomas/Documents/ECE385/finalProj/PCM_MM.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PCM_MM
+# 
+# Top level modules:
+# 	PCM_MM
 # vlib nois_system
 # ** Warning: (vlib-34) Library already exists at "nois_system".
 # 
 # vmap nois_system nois_system
 # Modifying modelsim.ini
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/nois_system.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system
-# 
-# Top level modules:
-# 	nois_system
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_reset_controller.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_reset_controller
-# 
-# Top level modules:
-# 	altera_reset_controller
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_reset_synchronizer.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_reset_synchronizer
-# 
-# Top level modules:
-# 	altera_reset_synchronizer
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_avalon_sc_fifo.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_avalon_sc_fifo
-# 
-# Top level modules:
-# 	altera_avalon_sc_fifo
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_sdram_clk.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_sdram_clk_dffpipe_l2c
-# -- Compiling module nois_system_sdram_clk_stdsync_sv6
-# -- Compiling module nois_system_sdram_clk_altpll_l942
-# -- Compiling module nois_system_sdram_clk
-# 
-# Top level modules:
-# 	nois_system_sdram_clk
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_sdram.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_sdram_input_efifo_module
-# -- Compiling module nois_system_sdram
-# 
-# Top level modules:
-# 	nois_system_sdram
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_onchip_memory2_1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_onchip_memory2_1
-# 
-# Top level modules:
-# 	nois_system_onchip_memory2_1
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_PCCM_rsp.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_PCCM_rsp
-# 
-# Top level modules:
-# 	nois_system_PCCM_rsp
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_PCCM_ctl.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_PCCM_ctl
-# 
-# Top level modules:
-# 	nois_system_PCCM_ctl
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_sysid_qsys_0.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_sysid_qsys_0
-# 
-# Top level modules:
-# 	nois_system_sysid_qsys_0
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_jtag_uart_0.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_jtag_uart_0_sim_scfifo_w
-# -- Compiling module nois_system_jtag_uart_0_scfifo_w
-# -- Compiling module nois_system_jtag_uart_0_sim_scfifo_r
-# -- Compiling module nois_system_jtag_uart_0_scfifo_r
-# -- Compiling module nois_system_jtag_uart_0
-# 
-# Top level modules:
-# 	nois_system_jtag_uart_0
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_onchip_memory2_0.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_onchip_memory2_0
-# 
-# Top level modules:
-# 	nois_system_onchip_memory2_0
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_nios2_qsys_0.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_nios2_qsys_0_register_bank_a_module
-# -- Compiling module nois_system_nios2_qsys_0_register_bank_b_module
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_debug
-# -- Compiling module nois_system_nios2_qsys_0_ociram_sp_ram_module
-# -- Compiling module nois_system_nios2_qsys_0_nios2_ocimem
-# -- Compiling module nois_system_nios2_qsys_0_nios2_avalon_reg
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_break
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_xbrk
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_dbrk
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_itrace
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_td_mode
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_dtrace
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_compute_input_tm_cnt
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_fifo_wrptr_inc
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_fifo_cnt_inc
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_fifo
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_pib
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci_im
-# -- Compiling module nois_system_nios2_qsys_0_nios2_performance_monitors
-# -- Compiling module nois_system_nios2_qsys_0_nios2_oci
-# -- Compiling module nois_system_nios2_qsys_0
-# 
-# Top level modules:
-# 	nois_system_nios2_qsys_0_nios2_performance_monitors
-# 	nois_system_nios2_qsys_0
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_sysclk.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_nios2_qsys_0_jtag_debug_module_sysclk
-# 
-# Top level modules:
-# 	nois_system_nios2_qsys_0_jtag_debug_module_sysclk
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_tck.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_nios2_qsys_0_jtag_debug_module_tck
-# 
-# Top level modules:
-# 	nois_system_nios2_qsys_0_jtag_debug_module_tck
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_jtag_debug_module_wrapper.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_nios2_qsys_0_jtag_debug_module_wrapper
-# 
-# Top level modules:
-# 	nois_system_nios2_qsys_0_jtag_debug_module_wrapper
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_oci_test_bench.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_nios2_qsys_0_oci_test_bench
-# 
-# Top level modules:
-# 	nois_system_nios2_qsys_0_oci_test_bench
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_nios2_qsys_0_test_bench.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_nios2_qsys_0_test_bench
-# 
-# Top level modules:
-# 	nois_system_nios2_qsys_0_test_bench
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/datapath_control.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module datapath_control
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/datapath_control.sv(11): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/datapath_control.sv(13): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/datapath_control.sv(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/datapath_control.sv(17): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/datapath_control.sv(19): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# 
-# Top level modules:
-# 	datapath_control
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT11.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SEXT11
-# 
-# Top level modules:
-# 	SEXT11
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT9.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SEXT9
-# 
-# Top level modules:
-# 	SEXT9
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT6.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SEXT6
-# 
-# Top level modules:
-# 	SEXT6
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/SEXT5.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SEXT5
-# 
-# Top level modules:
-# 	SEXT5
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/RegAddrMux.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RegAddrMux
-# 
-# Top level modules:
-# 	RegAddrMux
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Reg16.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Reg16
-# 
-# Top level modules:
-# 	Reg16
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/NZPreg.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module NZPreg
-# 
-# Top level modules:
-# 	NZPreg
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux4.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Mux4
-# 
-# Top level modules:
-# 	Mux4
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux2.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Mux2
-# 
-# Top level modules:
-# 	Mux2
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ISDU.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ISDU
-# 
-# Top level modules:
-# 	ISDU
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ALU.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/PCCM.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module PCCM
-# 
-# Top level modules:
-# 	PCCM
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/RegFile.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module RegFile
-# 
-# Top level modules:
-# 	RegFile
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_irq_mapper.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_irq_mapper
-# 
-# Top level modules:
-# 	nois_system_irq_mapper
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_avalon_st_handshake_clock_crosser
-# 
-# Top level modules:
-# 	altera_avalon_st_handshake_clock_crosser
-# vlog -vlog01compat -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_avalon_st_clock_crosser.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_avalon_st_clock_crosser
-# 
-# Top level modules:
-# 	altera_avalon_st_clock_crosser
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_width_adapter.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_merlin_width_adapter
-# 
-# Top level modules:
-# 	altera_merlin_width_adapter
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_merlin_burst_uncompressor
-# 
-# Top level modules:
-# 	altera_merlin_burst_uncompressor
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_arbitrator.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_merlin_arbitrator
-# -- Compiling module altera_merlin_arb_adder
-# 
-# Top level modules:
-# 	altera_merlin_arbitrator
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_mux_001.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_rsp_mux_001
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_rsp_mux_001
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_mux.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_rsp_mux
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_rsp_mux
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_demux_006.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_rsp_demux_006
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_rsp_demux_006
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_rsp_demux.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_rsp_demux
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_rsp_demux
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_mux_006.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_cmd_mux_006
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_cmd_mux_006
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_mux.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_cmd_mux
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_cmd_mux
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_demux_001.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_cmd_demux_001
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_cmd_demux_001
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_cmd_demux.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_cmd_demux
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_cmd_demux
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_merlin_burst_adapter_burstwrap_increment
-# -- Compiling module altera_merlin_burst_adapter_adder
-# -- Compiling module altera_merlin_burst_adapter_subtractor
-# -- Compiling module altera_merlin_burst_adapter_min
-# -- Compiling module altera_merlin_burst_adapter_13_1
-# -- Compiling module altera_merlin_burst_adapter_uncompressed_only_13_1
-# -- Compiling module altera_merlin_burst_adapter_full_13_1
-# 
-# Top level modules:
-# 	altera_merlin_burst_adapter_13_1
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_burst_adapter.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_merlin_burst_adapter
-# 
-# Top level modules:
-# 	altera_merlin_burst_adapter
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_008.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_router_008_default_decode
-# -- Compiling module nois_system_mm_interconnect_0_router_008
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_router_008
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_005.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_router_005_default_decode
-# -- Compiling module nois_system_mm_interconnect_0_router_005
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_router_005
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_002.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_router_002_default_decode
-# -- Compiling module nois_system_mm_interconnect_0_router_002
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_router_002
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router_001.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_router_001_default_decode
-# -- Compiling module nois_system_mm_interconnect_0_router_001
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_router_001
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/nois_system_mm_interconnect_0_router.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module nois_system_mm_interconnect_0_router_default_decode
-# -- Compiling module nois_system_mm_interconnect_0_router
-# 
-# Top level modules:
-# 	nois_system_mm_interconnect_0_router
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_slave_agent.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_merlin_slave_agent
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_slave_agent.sv(606): (vlog-2186) SystemVerilog testbench feature
-# 
-# (randomization, coverage or assertion) detected in the design.
-# 
-# These features are only supported in Questasim.
-# 
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_slave_agent.sv(486): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
-# 
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_slave_agent.sv(487): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
-# 
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
-# 
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
-# 
-# ** Warning: C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
-# 
-# (randomization, coverage or assertion) detected in the design.
-# 
-# These features are only supported in Questasim.
-# 
-# 
-# Top level modules:
-# 	altera_merlin_slave_agent
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_master_agent.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_merlin_master_agent
-# 
-# Top level modules:
-# 	altera_merlin_master_agent
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_slave_translator.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_merlin_slave_translator
-# 
-# Top level modules:
-# 	altera_merlin_slave_translator
-# vlog -sv -work nois_system +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/submodules/altera_merlin_master_translator.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module altera_merlin_master_translator
-# 
-# Top level modules:
-# 	altera_merlin_master_translator
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/SOC_W_PCM.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SOC_W_PCM
-# 
-# Top level modules:
-# 	SOC_W_PCM
-# vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/CPU.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
-# 
-# Top level modules:
-# 	CPU
 # 
 # vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj {C:/Users/Thomas/Documents/ECE385/finalProj/testbench.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -459,7 +42,8 @@
 # vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L nois_system -voptargs=\"+acc\" -t 1ps testbench 
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.PCCM
+# Loading work.PCM_MM
+# Loading work.PCM_MM_reg
 # 
 # add wave *
 # view structure
@@ -467,9 +51,14 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 2000 ns
-add wave -position insertpoint sim:/testbench/control/*
+# pcm_mem_mm_address was set correctly
+# pcm_mem_mm_readdata was set correctly
+run
+add wave -position insertpoint sim:/testbench/pcm/*
+run
 restart
 # Loading sv_std.std
 # Loading work.testbench
-# Loading work.PCCM
+# Loading work.PCM_MM
+# Loading work.PCM_MM_reg
 run

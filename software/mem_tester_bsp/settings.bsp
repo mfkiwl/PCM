@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 9, 2014 11:24:46 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1418145887000</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 9, 2014 12:47:00 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1418150820975</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Thomas\Documents\ECE385\finalProj\software\mem_tester_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\nois_system.sopcinfo</SopcDesignFile>

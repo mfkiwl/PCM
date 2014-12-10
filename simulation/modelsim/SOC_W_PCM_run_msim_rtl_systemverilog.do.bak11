@@ -37,6 +37,7 @@ vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C
 vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux4.sv}
 vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/Mux2.sv}
 vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ISDU.sv}
+vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/HexDriver.sv}
 vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/ALU.sv}
 vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis {C:/Users/Thomas/Documents/ECE385/finalProj/nois_system/synthesis/PCCM.sv}
 vlog -sv -work work +incdir+C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M {C:/Users/Thomas/Documents/ECE385/finalProj/SLC3-M/RegFile.sv}

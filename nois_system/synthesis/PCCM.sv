@@ -36,7 +36,7 @@ module PCCM(input clk, reset,
 					
 					INIT_1:
 					begin
-						if(counter >= 12'h032)
+						if(counter >= 12'h0ff)
 							next_state = START;
 					end
 					
